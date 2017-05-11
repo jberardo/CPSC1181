@@ -1,0 +1,23 @@
+package question03;
+
+public class Door {
+	private String name;
+	private String state;
+	
+	Door (String name, String state) {
+		this.name = name;
+		state = this.state;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String newName) {
+		name = newName;
+	}
+	
+	public String getState() {
+		return state;
+	}
+}

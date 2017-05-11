@@ -1,0 +1,15 @@
+/*
+ * Write a PerimeterTester program that constructs a Rectangle object and then com­
+ * putes and prints its perimeter. Use the getWidth and getHeight methods. Also print the
+ * expected answer
+ */
+
+package chapter2.exercises;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		PerimeterTester tester;
+		
+	}
+}

@@ -1,0 +1,19 @@
+package book;
+
+import common.Day;
+
+public class DaysAlive {
+
+	public static void main(String[] args) {
+		Day birthday = new Day(1980, 11, 26);
+		Day today = new Day();
+		int dif = today.daysFrom(birthday);
+		
+		int anos = dif / 365;
+		int meses = (dif / 365) % 12;
+		int dias = meses % 12;
+		
+		System.out.print(dias + " dias, " + meses + " meses e " + anos + " anos.");
+	}
+
+}

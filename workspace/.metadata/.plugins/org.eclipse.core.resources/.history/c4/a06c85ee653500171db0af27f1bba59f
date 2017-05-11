@@ -1,0 +1,11 @@
+package question03;
+
+public class DoorTester {
+	/**
+	Tests the methods of the Door class
+	@param args not used
+	*/
+	public static void main(String[] args) {
+
+	}
+}

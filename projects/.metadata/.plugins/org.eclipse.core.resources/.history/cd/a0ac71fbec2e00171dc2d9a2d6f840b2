@@ -1,0 +1,9 @@
+package chapter2.exercises;
+
+public class ReplaceTester {
+	private String text;
+	
+	ReplaceTester(String s) {
+		text = s;
+	}
+}

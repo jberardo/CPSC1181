@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="common.Day"/>
+<fullyQualifiedTypeName name="org.omg.CosNaming.BindingIterator"/>
+<fullyQualifiedTypeName name="common.Picture"/>
+<fullyQualifiedTypeName name="book.PictureDemo"/>
+<fullyQualifiedTypeName name="java.awt.Graphics"/>
+<fullyQualifiedTypeName name="java.awt.Graphics2D"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="javax.swing.JComponent"/>
+<fullyQualifiedTypeName name="java.awt.Rectangle"/>
+<fullyQualifiedTypeName name="chapter2.exercises.AddTester"/>
+<fullyQualifiedTypeName name="chapter2.exercises.ReplaceTester"/>
+</qualifiedTypeNameHistroy>

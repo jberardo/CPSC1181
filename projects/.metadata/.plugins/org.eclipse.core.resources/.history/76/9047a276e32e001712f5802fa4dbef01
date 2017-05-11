@@ -1,0 +1,10 @@
+package chapter2;
+
+import java.awt.Graphics;
+import javax.swing.JComponent;
+
+public class RectangleComponent extends JComponent {
+	public void paintComponent(Graphics g)
+	{
+	}
+}

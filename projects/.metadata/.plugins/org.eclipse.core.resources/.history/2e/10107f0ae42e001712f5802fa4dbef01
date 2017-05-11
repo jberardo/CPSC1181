@@ -1,0 +1,20 @@
+package chapter2;
+
+import
+import
+import
+import
+import
+import
+import
+java.awt.Color;
+java.awt.Graphics;
+java.awt.Graphics2D;
+java.awt.Rectangle;
+java.awt.geom.Ellipse2D;
+java.awt.geom.Line2D;
+javax.swing.JComponent;
+
+public class FaceComponent {
+
+}

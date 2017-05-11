@@ -1,0 +1,23 @@
+package chapter2.exercises;
+
+import java.awt.Rectangle;
+
+public class AreaTester {
+	public AreaTester(int w, int h) {
+		Rectangle rec = new Rectangle(5, 10, this.width, this.heigth);
+	}
+	
+	
+	
+	public void setWidth(int size) {
+		width = size;
+	}
+	
+	public void setHeigth(int size) {
+		heigth = size;
+	}
+	
+	public double getArea() {
+		return rec.getWidth() * rec.getHeight();
+	}
+}

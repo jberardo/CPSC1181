@@ -1,0 +1,35 @@
+package chapter2.exercises;
+
+import java.awt.Rectangle;
+
+public class AddTester {
+	private Rectangle box;
+
+	public AddTester(int w, int h) {
+		box = new Rectangle(10, 10, w, h);
+	}
+	
+	public AddTester(int x, int y, int w, int h) {
+		box = new Rectangle(x, y, w, h);
+	}
+	
+	public double getX() {
+		return getX();
+	}
+	
+	public double getY() {
+		return box.getY();
+	}
+	
+	public double getWidth() {
+		return box.getWidth();
+	}
+	
+	public double getHeight() {
+		return box.getHeight();
+	}
+	
+	public void add(int x, int y) {
+		box.add(x, y);		
+	}
+}

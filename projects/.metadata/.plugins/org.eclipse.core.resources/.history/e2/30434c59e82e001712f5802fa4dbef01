@@ -1,0 +1,17 @@
+/*
+ * Write a program that constructs a rectangle with area 42 and a rectangle with
+ * perimeter 42. Print the widths and heights of both rectangles.
+ */
+
+package chapter2.exercises;
+
+import java.awt.Rectangle;
+
+public class Ex4 {
+
+	public static void main(String[] args) {
+		AreaTester areaObj = new AreaTester(7, 7);
+		double area = areaObj.getArea();
+		
+	}
+}

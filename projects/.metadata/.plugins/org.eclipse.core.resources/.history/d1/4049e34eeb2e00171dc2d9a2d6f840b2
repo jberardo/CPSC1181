@@ -1,0 +1,11 @@
+package chapter2.exercises;
+
+public class AddTester {
+	public AddTester(int w, int h) {
+		
+	}
+	
+	public static void add(int x, int y) {
+		
+	}
+}

@@ -1,0 +1,14 @@
+package book;
+
+import javax.swing.JFrame;
+import java.awt.*;
+
+public class ShowPicture {
+	public static void main(String[] args) {
+		PictureDemo pic = new PictureDemo();
+		
+		JFrame j = new JFrame();
+		j.setTitle("Pictures");
+		j.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+}

@@ -1,0 +1,24 @@
+/*
+ * Write a program that initializes a string with "Mississippi" . Then replace all "i" with
+ * "ii" and print the length of the resulting string. In that string, replace all "ss" with "s"
+ * and print the length of the resulting string.
+ */
+
+package chapter2.exercises;
+
+public class Ex3 {
+
+	public static void main(String[] args) {
+		String msg = "Mississipi";
+		
+		System.out.println("Default string: " + msg);
+		
+		String newMsg = msg.replace("i","ii");
+
+		System.out.println("Replace 'i' to 'ii': " + );
+		System.out.println("Length: " + msg.replace("i","ii").length());
+		
+		System.out.println("Replace 's' to 'ss': " + msg.replace("s","ss"));
+		System.out.println("Length: " + msg.replace("s","ss").length());
+	}
+}

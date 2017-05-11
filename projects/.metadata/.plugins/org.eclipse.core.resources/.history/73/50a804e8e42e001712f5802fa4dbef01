@@ -1,0 +1,11 @@
+package chapter2.exercises;
+
+import java.awt.Rectangle;
+
+// constructs a Rectangle object and then computes
+// and prints its area. Use the getWidth and getHeight methods. Also print the expected
+// answer.
+
+public class AreaTester {
+	Rectangle rec = new Rectangle(5, 10, 50, 50);
+}

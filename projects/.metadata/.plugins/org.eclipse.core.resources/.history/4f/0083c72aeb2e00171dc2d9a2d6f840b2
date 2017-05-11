@@ -1,0 +1,7 @@
+package chapter2.exercises;
+
+public class AddTester {
+	public AddTester() {
+		
+	}
+}

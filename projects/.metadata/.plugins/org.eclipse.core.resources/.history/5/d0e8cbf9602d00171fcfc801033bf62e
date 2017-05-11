@@ -1,0 +1,16 @@
+package book;
+
+import common.Picture;
+
+public class PictureDemo
+{
+	public static void main(String[] args)
+	{
+		Picture pic = new Picture();
+		pic.load("skull.jpeg");
+        int newWidth = pic.getWidth() - 40;
+	    int newHeight = pic.getHeight() - 40;
+		pic.border(5);
+		pic.scale(200, 200);
+	}
+}

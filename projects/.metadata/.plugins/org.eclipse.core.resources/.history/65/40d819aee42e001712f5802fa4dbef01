@@ -1,0 +1,9 @@
+package chapter2.exercises;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

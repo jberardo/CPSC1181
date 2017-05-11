@@ -1,0 +1,27 @@
+package worked_examples;
+
+import java.util.Scanner;
+
+public class MainTester {
+
+	public static void main(String[] args) {
+		// Variables
+		Scanner input = new Scanner(System.in);
+		char response = ' ';
+		
+		// Menu
+		do {
+			response = show_menu();
+		} while (response != 'q');
+		
+		// DaysAlive
+		DaysAlive.run();
+		
+		// PictureDemo
+		PictureDemo.run();
+	}
+	
+	private static character show_menu() {
+		
+	}
+}

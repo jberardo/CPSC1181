@@ -1,0 +1,11 @@
+package chapter2;
+
+import java.awt.Rectangle;
+
+public class MoveTester {
+
+	public static void main(String[] args) {
+
+	}
+
+}

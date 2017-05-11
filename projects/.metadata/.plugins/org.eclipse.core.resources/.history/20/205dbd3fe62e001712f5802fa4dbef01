@@ -1,0 +1,15 @@
+package chapter2.exercises;
+
+import java.awt.Rectangle;
+
+public class PerimeterTester {
+	private Rectangle rec;
+	
+	public PerimeterTester(int w, int h) {
+		rec = new Rectangle(5, 10, w, h);
+	}
+	
+	public double getPerimeter() {
+		return rec.getWidth() * rec.getHeight();
+	}
+}

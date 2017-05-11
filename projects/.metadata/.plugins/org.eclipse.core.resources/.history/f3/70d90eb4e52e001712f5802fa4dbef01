@@ -1,0 +1,17 @@
+/*
+ * Write an AreaTester program that constructs a Rectangle object and then computes
+ * and prints its area. Use the getWidth and getHeight methods. Also print the expected
+ * answer.
+ */
+
+package chapter2.exercises;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		double area = 0;
+		
+		AreaTester tester = new AreaTester(5, 5);
+		tester.getArea();
+	}
+}

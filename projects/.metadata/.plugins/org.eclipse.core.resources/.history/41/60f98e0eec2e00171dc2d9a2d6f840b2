@@ -1,0 +1,16 @@
+/*
+ * Write a program AddTester that prints the expected and actual
+ * location, width, and height of box after the call to add()
+ */
+
+package chapter2.exercises;
+
+public class Ex5 {
+
+	public static void main(String[] args) {
+		AddTester test1 = new AddTester(10, 10, 20, 20);
+
+		System.out.println("*--- Rectangle ---*");
+		System.out.println("-------------------"
+	}
+}

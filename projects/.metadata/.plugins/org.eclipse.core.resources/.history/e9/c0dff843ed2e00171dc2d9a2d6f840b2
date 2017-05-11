@@ -1,0 +1,8 @@
+package chapter2.exercises;
+
+public class ReplaceTester {
+
+	public String encode(String s) {
+		
+	}
+}

@@ -1,0 +1,48 @@
+package worked_examples;
+
+import java.util.Scanner;
+
+public class MainTester {
+	static Scanner input = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		// Variables
+		int response = 0;
+		
+		// Menu
+		do {
+			response = show_menu();
+
+			run_option(response);
+		} while (response != 0);
+	}
+	
+	private static int show_menu() {
+		int response = 0;
+		
+		System.out.println("Please enter an option:");
+		System.out.println();
+		System.out.println("1. DaysAlive");
+		System.out.println("2. PictureDemo");
+		System.out.println("0. Quit");
+
+		response = input.nextInt();
+		
+		return response;
+	}
+	
+	private static void run_option(int option) {
+		switch(option) {
+			case '1':
+				// DaysAlive
+				DaysAlive.run();
+				break;
+			case '2':
+				// PictureDemo
+				PictureDemo.run();
+				break;
+			default:
+				break;
+		}
+	}
+}

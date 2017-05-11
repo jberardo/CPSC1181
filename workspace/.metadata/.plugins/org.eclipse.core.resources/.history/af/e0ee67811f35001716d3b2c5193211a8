@@ -1,0 +1,27 @@
+/**
+* Simple program to manipulate Strings.
+*
+* @author  Joao Berardo
+* @version 1.0
+* @since   2017-05-09
+*/
+
+package question01;
+
+public class ConcatDemo {
+
+	public static void main(String[] args) {
+		String animal1 = "quick brown fox";
+		String animal2 = "lazy dog";
+		String article = "the";
+		String action = "jumps over";
+		
+		String message = "";
+		message = article.concat(" " + animal1.concat(" " + action.concat(" " + article.concat(" " + animal2))));
+		
+		System.out.println(message);
+		
+		String catTest = "beginning" + "end";
+		System.out.println(catTest);
+	}
+}
