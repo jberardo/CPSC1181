@@ -26,5 +26,6 @@ public class SwapVals {
 		swapb = temp;
 		System.out.print(swapa+ "");
 		System.out.println(swapb);
+		
 	}
 }
