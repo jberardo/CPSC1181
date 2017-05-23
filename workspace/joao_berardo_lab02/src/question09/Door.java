@@ -3,12 +3,14 @@
 *
 * @author  Joao Berardo
 * @version 1.0
-* @since   2017-05-15
+* @since   2017-05-20
 */
 
-package question07;
+package question09;
 
-public class Door {
+import java.awt.Rectangle;
+
+public class Door extends Rectangle {
 	private String name;
 	private String state;
 	

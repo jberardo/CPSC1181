@@ -1,0 +1,5 @@
+7.2) 
+The door accepts a String as parameter. If the argument passed if different than "open" or "closed", the state would be invalid.
+Since it has only two states, I would recommend to use boolean type instead of string.
+The door could be locked, unlocked, half-open, etc.
+The program has two methods: open and close. To set other states, other functions should be created, as lock, unlock and so on. 

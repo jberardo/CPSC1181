@@ -22,7 +22,9 @@ public class Strings {
 		String capsIntro = intro.toUpperCase();
 		
 		// Output
-		System.out.println("Intro: " + intro + " \nUpper: " + capsIntro);
+		System.out.println("Intro: " + intro);
+		System.out.println("Lower case: " + intro.toLowerCase());
+		System.out.println("Upper case: " + capsIntro);
 		System.out.println("The sentence \""+intro+ "\" is "+ n+" characters long");
 	}
 }

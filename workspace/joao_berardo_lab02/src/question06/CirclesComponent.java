@@ -1,4 +1,12 @@
-package question02;
+/**
+* Class that draws 5 circles filled with diferent colors
+*
+* @author  Joao Berardo
+* @version 1.0
+* @since   2017-05-15
+*/
+
+package question06;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -7,8 +15,13 @@ import java.awt.geom.Ellipse2D;
 import javax.swing.JComponent;
 
 public class CirclesComponent extends JComponent {
-	   public void paintComponent(Graphics g)
-	   {  
+
+	/**
+	   * This method creates 5 circles, fill them with diferent colors and then draws them
+	   * @param g Graphics object passed to this method
+	   * @return void This method returns void.
+	   */
+	public void paintComponent(Graphics g) {  
 	      // Recover Graphics2D
 	      Graphics2D g2 = (Graphics2D) g;
 	      
@@ -20,8 +33,8 @@ public class CirclesComponent extends JComponent {
 	      Ellipse2D.Double circle5	= new Ellipse2D.Double(200 - 120, 250 - 200, 200, 200);
 	      
 	      // Debug
-	      deb(circle1);
-	      deb(circle2);
+	      //deb(circle1);
+	      //deb(circle2);
 	      //System.exit(0);
 	      
 	      // Draw circles
@@ -42,6 +55,7 @@ public class CirclesComponent extends JComponent {
 	      g2.draw(circle1);
 	   }
 	   
+	   /*
 	   private static void deb(Ellipse2D.Double circle) {
 		   System.out.print("x: " + circle.x + " // ");
 		   System.out.print("y: " + circle.y + " // ");
@@ -49,4 +63,5 @@ public class CirclesComponent extends JComponent {
 		   System.out.print("d: " + circle.height);
 		   System.out.println();
 	   }
+	   */
 }

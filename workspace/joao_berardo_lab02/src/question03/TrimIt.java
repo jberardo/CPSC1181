@@ -6,7 +6,7 @@
 * @since   2017-05-09
 */
 
-package question01;
+package question03;
 
 public class TrimIt {
 	/**

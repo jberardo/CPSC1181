@@ -6,7 +6,7 @@
 * @since   2017-05-09
 */
 
-package question01;
+package question02;
 
 public class ConcatDemo {
 	/**

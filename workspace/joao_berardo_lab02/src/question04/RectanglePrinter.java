@@ -1,9 +1,21 @@
-package question02;
+/**
+* Program to test the Rectangle class.
+*
+* @author  Joao Berardo
+* @version 1.0
+* @since   2017-05-15
+*/
+
+package question04;
 
 import java.awt.Rectangle;
 
 public class RectanglePrinter {
-
+	/**
+	   * Main method.
+	   * @param args Arrays of arguments passed to the program (Not Used).
+	   * @return void This method returns void.
+	   */
 	public static void main(String[] args) {
 		Rectangle r1 = new Rectangle(0, 0, 100, 50);
 		Rectangle r2 = new Rectangle(0, 0, 100, 50);
@@ -18,8 +30,15 @@ public class RectanglePrinter {
 		printRectangle(r2);
 	}
 
+	/**
+	   * Prints the rectangle properties.
+	   * @param x X coordinate
+	   * @param y Y coordinate
+	   * @param w Width
+	   * @param h Height
+	   * @return void This method returns void.
+	   */
 	private static void printRectangle(Rectangle r) {
-		//System.out.println(r);
 		double x, y, w, h;
 		x = r.getX();
 		y = r.getY();

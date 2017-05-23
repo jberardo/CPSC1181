@@ -1,4 +1,12 @@
-package question03;
+/**
+* Program to test the Door class
+*
+* @author  Joao Berardo
+* @version 1.0
+* @since   2017-05-15
+*/
+
+package question07;
 
 public class DoorTester {
 	/**

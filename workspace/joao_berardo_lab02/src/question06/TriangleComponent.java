@@ -1,17 +1,27 @@
-package question02;
+/**
+* Class that draws a simple triangle
+*
+* @author  Joao Berardo
+* @version 1.0
+* @since   2017-05-15
+*/
+
+package question06;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.Rectangle;
+//import java.awt.Rectangle;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 import javax.swing.JComponent;
 
-/*
-   A component that draws two rectangles.
-*/
 public class TriangleComponent extends JComponent
 {  
+	/**
+	   * This method creates a simple triangle and then draws it
+	   * @param g Graphics object passed to this method
+	   * @return void This method returns void.
+	   */
    public void paintComponent(Graphics g)
    {  
       // Recover Graphics2D
