@@ -1,0 +1,22 @@
+/**
+ * This program test the Day class.
+ * It generates a Day object representing February 28 for the current year
+ * and three other objects to represent February 28 for the next three years.
+ * Then, one day is added and the result is printed on the screen.
+ *
+ * @author  Joao Berardo
+ * @version 1.0
+ * @since   2017-05-23
+*/
+
+import java.util.Random;
+
+public class DieSimulator {
+
+	public static void main(String[] args) {
+		Random randomGenerator = new Random();
+		int cast = randomGenerator.nextInt(6) + 1;
+
+		System.out.println(cast);
+	}
+}

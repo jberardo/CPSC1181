@@ -1,0 +1,16 @@
+/**
+ * 
+ * @author jab
+ *
+ */
+
+public class DayTester {
+	public static void main(String[] args) {
+		Day year1 = new Day(2016, 2, 28);
+	    Day year2 = new Day(2017, 2, 28);
+	    Day year3 = new Day(2018, 2, 28);
+	    Day year4 = new Day(2019, 2, 28);
+	    
+	    year1.addDays(1);
+	}
+}

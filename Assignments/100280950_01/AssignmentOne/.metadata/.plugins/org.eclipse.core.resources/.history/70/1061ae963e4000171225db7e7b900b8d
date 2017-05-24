@@ -1,0 +1,12 @@
+/**
+ * 
+ * @author jab
+ *
+ */
+
+public class DayTester {
+	public static void main(String[] args) {
+		Day year1 = new Day(2016, 2, 28);
+	    Day later = new Day(2017, 2, 28);
+	}
+}

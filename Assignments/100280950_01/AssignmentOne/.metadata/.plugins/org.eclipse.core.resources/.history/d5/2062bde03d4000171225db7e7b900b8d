@@ -1,0 +1,12 @@
+import java.util.Random;
+
+public class DieSimulator {
+
+	public static void main(String[] args) {
+		Random randomGenerator = new Random();
+		int cast = randomGenerator.nextInt(6) + 1;
+
+		System.out.println(cast);
+	}
+
+}

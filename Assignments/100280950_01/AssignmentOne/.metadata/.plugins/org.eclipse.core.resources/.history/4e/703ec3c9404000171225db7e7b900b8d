@@ -1,0 +1,22 @@
+/**
+ * This program test the Day class.
+ *
+ * @author  Joao Berardo
+ * @version 1.0
+ * @since   2017-05-23
+*/
+
+import java.awt.Color;
+
+public class DarkerDemo {
+
+	public static void main(String[] args) {
+		Color c = new Color(255, 0, 0);
+		
+		c = c.darker();
+		c = c.darker();
+		
+		System.out.println("New color values: " + c);
+	}
+
+}

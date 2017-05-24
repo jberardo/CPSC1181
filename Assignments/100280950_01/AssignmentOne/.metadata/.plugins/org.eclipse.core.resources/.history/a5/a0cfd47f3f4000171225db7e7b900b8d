@@ -1,0 +1,36 @@
+/**
+ * 
+ * @author jab
+ *
+ */
+
+public class DayTester {
+	public static void main(String[] args) {
+		int year1 = 2016;
+		int year2 = 2017;
+		int year3 = 2018;
+		int year4 = 2019;
+		
+		Day day1 = new Day(year1, 2, 28);
+	    Day day2 = new Day(year2, 2, 28);
+	    Day day3 = new Day(year3, 2, 28);
+	    Day day4 = new Day(year4, 2, 28);
+	    
+	    day1 = day1.addDays(1);
+	    day2 = day2.addDays(1);
+	    day3 = day3.addDays(1);
+	    day 4 = day4.addDays(1);
+	    
+	    System.out.println(day1);
+	    System.out.println("Expected: 2016-02-29");
+	    
+	    System.out.println(day1);
+	    System.out.println("Expected: 2017-03-01");
+	    
+	    System.out.println(day1);
+	    System.out.println("Expected: 2018-03-01");
+	    
+	    System.out.println(day1);
+	    System.out.println("Expected: 2019-03-01");
+	}
+}
