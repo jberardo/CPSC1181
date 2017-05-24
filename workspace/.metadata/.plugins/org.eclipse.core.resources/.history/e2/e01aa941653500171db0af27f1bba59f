@@ -1,6 +1,0 @@
-package question03;
-
-public class Door {
-	private String name;
-	private String state;
-}

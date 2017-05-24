@@ -1,9 +1,0 @@
-package question02;
-
-public class TestFrameViewer {
-
-	public static void main(String[] args) {
-
-	}
-
-}

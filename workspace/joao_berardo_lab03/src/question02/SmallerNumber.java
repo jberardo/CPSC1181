@@ -10,6 +10,7 @@ public class SmallerNumber {
 		int b = 0;
 		Scanner input = new Scanner(System.in);
 		
+		
 		// Prompt user for 2 integers
 		System.out.print("Please enter the first integer: ");
 		a = input.nextInt();
