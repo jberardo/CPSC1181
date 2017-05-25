@@ -4,22 +4,24 @@ import java.util.Scanner;
 
 public class SmallestInt {
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter a value for x:");
-		int x = scan.nextInt();
+		int x = input.nextInt();
 
 		System.out.println("Enter a value for y:");
-		int y = scan.nextInt();
+		int y = input.nextInt();
 		
 		System.out.println("Enter a value for z:");
-		int z = scan.nextInt();
+		int z = input.nextInt();
 
 		if (x <= y) {
 			if (x <= z) {
 				System.out.println("The smallest value was " + x);
+			} else if (y >= z) {
+			System.out.println("The smallest value was " + z);
 			}
-		} else {
+		} else if (y <= z) {
 			System.out.println("The smallest value was " + y);
 		}
 	}
