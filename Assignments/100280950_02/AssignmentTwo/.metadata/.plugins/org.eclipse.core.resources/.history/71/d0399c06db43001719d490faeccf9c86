@@ -1,0 +1,12 @@
+/**
+ * Employee class.
+ * name String
+ * salary Double
+ * 
+ * @author jab
+ *
+ */
+public class Employee {
+	private String name;
+	private double salary;
+}

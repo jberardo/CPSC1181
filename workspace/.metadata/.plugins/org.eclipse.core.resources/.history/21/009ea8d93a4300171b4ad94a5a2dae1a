@@ -1,0 +1,37 @@
+package question12;
+
+import java.util.Scanner;
+
+/**
+ * Program to compute the first integral power to which 2 can be
+ * raised that is greater than that multiple of a given integer.
+ *
+ * @author  Joao Berardo
+ * @version 1.0
+ * @since   2017-05-27
+*/
+public class CountPowerOf2 {
+	/**
+	 * This is the main method.
+	 * @param args Unused.
+	 * @return Nothing.
+	 */
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int i = 1;
+		int power = 0;
+		
+		System.out.print("Please enter a number, 0 to quit: ");
+		int n = input.nextInt();
+
+		for (i = 1; power > Math.pow(2,  i); i++) {
+			power = n * n;
+		}
+		
+		while (n * n > Math.pow(2, i)) {
+			i++;
+		}
+		
+		System.out.println("2 raised to " + i + " is the first power of two greater than " + n + " squared");
+	}
+}

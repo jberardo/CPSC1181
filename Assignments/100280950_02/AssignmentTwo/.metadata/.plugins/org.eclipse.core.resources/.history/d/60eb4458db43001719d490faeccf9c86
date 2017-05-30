@@ -1,0 +1,34 @@
+/**
+ * Employee class.
+ * name String
+ * salary Double
+ * 
+ * @author jab
+ *
+ */
+public class Employee {
+	private String name;
+	private double salary;
+	
+	/**
+	 * Class constructor.
+	 * @param employeeName Name of the employee.
+	 * @param currentSalary
+	 */
+	public Employee(String employeeName, double currentSalary) {
+		name = employeeName;
+		salary = currentSalary;
+	}
+	
+	public String getName() {
+		return "";
+	}
+	
+	public double getSalary() {
+		return 0;
+	}
+	
+	public void raiseSalary(double byPercent) {
+		
+	}
+}

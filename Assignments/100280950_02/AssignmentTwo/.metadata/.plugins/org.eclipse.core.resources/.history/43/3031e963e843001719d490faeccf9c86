@@ -1,0 +1,15 @@
+
+public class BugTester {
+
+	public static void main(String[] args) {
+		Bug bug = new Bug(10);
+		System.out.println("Initial Position: " + bug.getPosition());
+		
+		bug.move(); // Now the position is 11
+		System.out.println("Move: " + bug.getPosition());
+		bug.turn();
+		System.out.println("Turn: " + bug.getPosition());
+		bug.move(); // Now the position is 10
+		System.out.println("Move: " + bug.getPosition());
+	}
+}

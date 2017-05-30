@@ -1,0 +1,35 @@
+/**
+ * Program to test the Letter class.
+ *
+ * 
+ * @author  Joao Berardo
+ * @version 1.0
+ * @since   2017-05-28
+ */
+public class LetterPrinter {
+	/**
+	 * This is the main method.
+	 * Used to test the Letter class.
+	 * @param args Unused.
+	 * @return Nothing.
+	 */
+	public static void main(String[] args) {
+		Letter letter = new Letter ("Joao", "Marcelo");
+		letter.addLine("Line 1 test");
+		letter.addLine("Line 2 test");
+		letter.addLine("Line 3 test");
+		letter.addLine("Line 4 test");
+		
+		String from, to, text;
+		from = letter.getFrom();
+		to = letter.getTo();
+		text = letter.getText();
+		
+		System.out.println("Dear " + to);
+		System.out.println();
+		System.out.println(text);
+		System.out.println("Sincerely,");
+		System.out.println();
+		System.out.println(from);
+	}
+}

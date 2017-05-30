@@ -1,0 +1,40 @@
+/**
+ * Employee class.
+ * name String
+ * salary Double
+ * 
+ * @author Joao Berardo
+ * @version 1.0
+ * @since 2017-05-28
+ */
+public class Letter {
+	private String from;
+	private String to;
+	private String text;
+	
+	/**
+	 * Class constructor.
+	 * @param employeeName Name of the employee.
+	 * @param currentSalary Employee current salary.
+	 */
+	public Letter(String from, String to) {
+		this.from = from;
+		this.to = to;
+	}
+	
+	/**
+	 * Returns the current employee's name.
+	 * @return Employee's name.
+	 */
+	public void addLine(String line) {
+		text += line;
+	}
+	
+	/**
+	 * Returns the current employee's name.
+	 * @return Employee's name.
+	 */
+	public String getText() {
+		return "";
+	}
+}

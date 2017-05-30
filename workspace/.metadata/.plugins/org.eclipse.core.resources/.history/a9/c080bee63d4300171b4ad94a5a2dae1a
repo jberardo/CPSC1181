@@ -1,0 +1,61 @@
+package question13;
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Ellipse2D;
+
+import javax.swing.JFrame;
+import javax.swing.JComponent;
+
+/**
+* Program that prompts a user for 2 integers and prints the smaller one.
+*
+* @author  Joao Berardo
+* @version 1.0
+* @since   2017-05-26
+*/
+public class CircleGridRunner {
+	public static void draw(Graphics g) {
+		
+	}
+	
+	/**
+	 * This is the main method.
+	 * @param args Unused.
+	 * @return Nothing.
+	 */
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();
+		
+		final int FRAME_WIDTH = 400;
+		final int FRAME_HEIGHT = 400;
+		
+		frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JComponent component = new JComponent() {
+			public void paintComponent(Graphics g) {
+				Graphics2D g2 = (Graphics2D) g;
+				
+				int x = 0;
+				int y = 0;
+				int radius = 50;
+				
+				for (int row = 1; row <= 6; row++) {
+					for (int col = 1; col <= 4; col++) {
+				      // Create elipse
+				      Ellipse2D.Double circle = new Ellipse2D.Double(x, y * col, radius, radius);
+				      
+				      // Draw circles
+				      g2.draw(circle);
+				      
+				      x += radius;
+					}
+				}
+			}
+		};
+		
+		frame.add(component);
+		frame.setVisible(true);
+	}
+}

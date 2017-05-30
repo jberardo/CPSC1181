@@ -1,0 +1,11 @@
+
+public class BugTester {
+
+	public static void main(String[] args) {
+		Bug bug = new Bug(10);
+		bugsy.move(); // Now the position is 11
+		bugsy.turn();
+		bugsy.move(); // Now the position is 10
+
+	}
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+		<item value="bitbucket.org"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="jberardo &lt;joca.berardo@gmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="jberardo &lt;joca.berardo@gmail.com&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.reflog.RefSelectionDialog.dialogBounds">
+		<item value="613" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="484" key="DIALOG_HEIGHT"/>
+		<item value="655" key="DIALOG_X_ORIGIN"/>
+		<item value="168" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item value="652" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="453" key="DIALOG_HEIGHT"/>
+		<item value="635" key="DIALOG_X_ORIGIN"/>
+		<item value="188" key="DIALOG_Y_ORIGIN"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="/home/jab/Langara/CPSC1181/.git">
+			<item value="false"/>
+			<item value="jberardo &lt;joca.berardo@gmail.com&gt;"/>
+			<item value="lab03"/>
+			<item value="jberardo &lt;joca.berardo@gmail.com&gt;"/>
+			<item value="5a1c3b29ce3cb2ffadbf9783f73ded60b0580dc8"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

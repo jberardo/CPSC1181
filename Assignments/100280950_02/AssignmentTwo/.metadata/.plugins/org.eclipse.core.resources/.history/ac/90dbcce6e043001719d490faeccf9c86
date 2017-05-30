@@ -1,0 +1,20 @@
+
+public class Bug {
+	private int currentPosition;
+	
+	public Bug(int initialPosition) {
+		curren = initialPosition;
+	}
+	
+	public void turn() {
+		
+	}
+	
+	public void move() {
+		
+	}
+	
+	public int getPosition() {
+		return currentPosition;
+	}
+}

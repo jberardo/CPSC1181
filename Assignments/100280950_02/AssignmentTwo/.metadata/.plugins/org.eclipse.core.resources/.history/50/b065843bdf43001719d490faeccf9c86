@@ -1,0 +1,9 @@
+public class EmployeeTester {
+	public static void main(String[] args) {
+		Employee emp = new Employee("a", 10);
+		System.out.println(emp.getName());
+		System.out.println(emp.getSalary());
+		emp.raiseSalary(10);
+		System.out.println(emp.getSalary());
+	}
+}

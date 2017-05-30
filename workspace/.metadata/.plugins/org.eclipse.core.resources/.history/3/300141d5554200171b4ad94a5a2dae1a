@@ -1,0 +1,94 @@
+package question06;
+
+import java.util.Scanner;
+
+/**
+ *  Rock, Paper and Scissors game.
+ *  Two player game. Each player has to choose simultaneously
+ *  either paper, rock or scissors.
+ *  
+ *  Rules of the game:
+ *    Rock beats scissors
+ *    Paper beats rock
+ *    Scissors beats paper
+ *    Any other combination: tie
+ *  
+ * @author  Joao Berardo
+ * @version 1.0
+ * @since   2017-05-26
+ */
+public class RockPaperScissors {
+	/**
+	 * Main method.Program initial execution.
+	 * @param args Not used.
+	 * @return void This method returns void.
+	 */
+	public static void main(String[] args) {
+		// variables
+		Scanner input = new Scanner(System.in);
+		
+		// prompt user for a choice and assign to variable player1
+		// input is converted to lower case for comparison between the answers
+		System.out.println("Player 1: Choose rock, scissors, or paper:");
+		String player1 = input.next().toLowerCase();
+
+		// check is input is valid
+		if (!checkInput(player1)) {
+			System.out.println("Wrong choice. Try again!");
+			// exit the program with error code 0
+			System.exit(0);
+		}
+
+		// prompt user for a choice and assign to variable player1
+		// input is converted to lower case for comparison between the answers
+		System.out.println("Player 2: Choose rock, scissors, or paper:");
+		String player2 = input.next().toLowerCase();
+		
+		// check is input is valid
+		if (!checkInput(player2)) {
+			System.out.println("Wrong choice. Try again!");
+			// exit the program with error code 0
+			System.exit(0);
+		}
+		
+		String winner = getWinner(player1, player2);
+		System.out.println(winner);
+	}
+
+	private static boolean checkInput(String input) {
+		switch(input) {
+			case "rock":
+			case "paper":
+			case "scissors":
+				return true;
+			default:
+				return false;
+		}
+	}
+	
+	private static String getWinner(String player1, String player2) {
+		if (player1.equals(player2)) {
+			return "It's a tie!";
+		}
+		
+		if (player1.equals("rock") && player2.equals("scissors")) {
+			return "Player 1 wins.";
+		} else if (player2.equals("rock") && player1.equals("scissors")) {
+			return "Player 2 wins.";
+		}
+
+		if (player1.equals("paper") && player2.equals("rock")) {
+			return "Player 1 wins.";
+		} else if (player2.equals("paper") && player1.equals("rock")) {
+			return "Player 2 wins.";
+		}
+		
+		if (player1.equals("scissors") && player2.equals("paper")) {
+			return "Player 1 wins.";
+		} else if (player2.equals("scissors") && player1.equals("paper")) {
+			return "Player 2 wins.";
+		}		
+	
+		return "It's a tie!";
+	}
+}

@@ -1,0 +1,3 @@
+public class EmployeeTester {
+	public static void main(String[] args) {
+		Employee emp = new Employee("a", 10);

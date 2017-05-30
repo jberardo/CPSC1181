@@ -1,0 +1,8 @@
+
+public class Bug {
+	private int initialPosition;
+	
+	public Bug(int initialPosition) {
+		
+	}
+}

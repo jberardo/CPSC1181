@@ -1,0 +1,29 @@
+import java.awt.List;
+
+public class Student {
+	private String name;
+	private int totalScore;
+	private double averageScore;
+	private int numberOfquizzes;
+	
+	public Student() {
+		
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void addQuiz(int score) {
+		numberOfquizzes++;
+		totalScore += score;
+	}
+	
+	public int getTotalScore() {
+		return totalScore;
+	}
+	
+	public int getAverageScore() {
+		return averageScore;
+	}
+}

@@ -1,0 +1,44 @@
+
+public class StudentTester {
+
+	public static void main(String[] args) {
+		Student joao = new Student("Joao");
+		Student student2 = new Student("Student 2");
+		Student student3 = new Student("Student 3");
+		
+		joao.addQuiz(5);
+		joao.addQuiz(7);
+		joao.addQuiz(9);
+		joao.addQuiz(8);
+		joao.addQuiz(6);
+		
+		student2.addQuiz(7);
+		student2.addQuiz(6);
+		student2.addQuiz(7);
+		student2.addQuiz(8);
+		student2.addQuiz(6);
+		
+		student3.addQuiz(5);
+		student3.addQuiz(6);
+		student3.addQuiz(6);
+		student3.addQuiz(7);
+		student3.addQuiz(7);
+		
+		printStudents(joao.getName(), joao.getNumberOfQuizzes(), 
+						joao.getAverageScore(), joao.getTotalScore());
+		
+		printStudents(student2.getName(), student2.getNumberOfQuizzes(),
+						student2.getAverageScore(), student2.getTotalScore());
+		
+		printStudents(student3.getName(), student3.getNumberOfQuizzes(),
+						student3.getAverageScore(), student3.getTotalScore());
+	}
+	
+	private static void printStudents(String studentName, int numberOfQuizzes, double averageScore, int totalScore) {
+		System.out.println("Student name: " + studentName);
+		System.out.println("Number of quizzes: " + numberOfQuizzes);
+		System.out.println("Average Score: " + averageScore);
+		System.out.println("Total Score: " + totalScore);
+		System.out.println();
+	}
+}

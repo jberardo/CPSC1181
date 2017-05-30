@@ -1,0 +1,8 @@
+package question07;
+
+public class Sudoku {
+
+	public static void main(String[] args) {
+
+	}
+}

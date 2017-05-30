@@ -1,0 +1,56 @@
+/**
+ * Student class.
+ * This class models a student.
+ * A student has a name and a total quiz score. 
+ * This class has methods to provide the following:
+ * 		Total Score: Sum of all student's scores.
+ * 		Average Score: Average of all student's quizzes.
+ * 		Number of Quizzes: The total number of quizzes attempted by the student.
+ * 
+ * @author Joao Berardo
+ * @version 1.0
+ * @since 2017-05-28
+ */
+public class Student {
+	// properties
+	private String name;
+	private int totalScore;
+	private int numberOfquizzes;
+	
+	/**
+	 * Class constructor.
+	 * @param newName Name of the student.
+	 */
+	public Student(String newName) {
+		name = newName;
+	}
+
+	/**
+	 * Returns student's name.
+	 * @return Student's name.
+	 */
+	public String getName() {
+		return name;
+	}
+	
+	/**
+	 * Returns student's name.
+	 * @return Nothing.
+	 */
+	public void addQuiz(int score) {
+		numberOfquizzes++;
+		totalScore += score;
+	}
+	
+	public int getTotalScore() {
+		return totalScore;
+	}
+	
+	public double getAverageScore() {
+		return totalScore / numberOfquizzes;
+	}
+	
+	public int getNumberOfQuizzes() {
+		return numberOfquizzes;
+	}
+}

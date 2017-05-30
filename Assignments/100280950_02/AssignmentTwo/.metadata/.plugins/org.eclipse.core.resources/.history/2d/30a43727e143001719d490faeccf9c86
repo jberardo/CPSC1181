@@ -1,0 +1,8 @@
+
+public class BugTester {
+
+	public static void main(String[] args) {
+		Bug bug = new Bug(10);
+
+	}
+}

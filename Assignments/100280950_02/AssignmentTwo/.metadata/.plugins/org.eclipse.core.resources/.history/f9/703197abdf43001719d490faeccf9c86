@@ -1,0 +1,26 @@
+/**
+ * Program that calculates the present value of an annuity.
+ *
+ * Annuity:
+ *   an account that yields a fixed payment every
+ *   year until it is depleted
+ *   
+ * Present Value:
+ *   amount that you would need to invest at a given
+ *   interest rate so that the payments can be made
+ * 
+ * @author  Joao Berardo
+ * @version 1.0
+ * @since   2017-05-26
+ */
+public class LetterPrinter {
+	/**
+	 * This is the main method.
+	 * @param args Unused.
+	 * @return Nothing.
+	 */
+	public static void main(String[] args) {
+
+	}
+
+}
