@@ -1,74 +1,80 @@
 package question01;
 
+import java.util.Arrays;
+
 /**
-* Program to show some commonly used arithmetic expressions.
-*
-* @author  Joao Berardo
-* @version 1.0
-* @since   2017-05-29
+ * This is a simple program that shows some basic search operations on arrays
+ *
+ * @author  Joao Berardo
+ * @version 1.0
+ * @since   2017-05-29
 */
-public class ArraySearch {
+public class ArraySearch
+{
 	/**
-	 * This is the main method.
-	 * @param args Unused.
-	 * @return Nothing.
-	 */
-	public static void main(String[] args) {
-		/*
-		a) Create an array x of doubles with an initializer list that contains the following values: 8, 4, 5, 21, 7, 9, 18, 2, and 100.
-		b) Use an enhanced for loop to compute and print the sum of all the elements of x.
-		c) Repeat part b, but use a standard for loop instead of an enhanced for loop
-		d) Compute and print the minimum value in x. Your program should find this value by examining each element of the array.
-		e) Search the array and retrieve the numbers which are the factors of every other number, the readout should mimic the
-			following. Each number is a factor of itself, so do not omit them.
-		8.0: 8.0 4.0 2.0
-		4.0: 4.0 2.0
-		 */
-		
-		// a)
+	 * Main method
+	 * @param args Unused
+	*/
+	public static void main(String[] args)
+  {
+		// Create an array with 9 elements
 		double[] nums = { 8, 4, 5, 21, 7, 9, 18, 2, 100 };
-		
-		// b)
+
+		// Compute and prints the sum off all elements in the array (enhanced loop)
 		double sum = 0.0;
-		
-		for (int i = 0; i < nums.length; i++) {
+
+		for (int i = 0; i < nums.length; i++)
+		{
 			sum += nums[i];
 		}
-		
-		System.out.println(sum);
-		
-		// c)
+
+		System.out.println("Sum of all elements(enhanced): " + sum);
+
+		// Compute and prints the sum off all elements in the array (normal loop)
 		sum = 0.0;
-		
-		for (int i = 0; i < 9; i++) {
+
+		for (int i = 0; i < 9; i++)
+		{
 			sum += nums[i];
 		}
-		
-		System.out.println(sum);
-		
-		// d)
+
+		System.out.println("Sum of all elements(simple): " + sum);
+
+		// set min to maximum value of double, so some number can be less than that
 		double min = Double.MAX_VALUE;
-		
-		for (int i = 0; i < nums.length; i++) {
+
+		// Compute and print the minimum value in the array
+		// should test each element of the array
+		for (int i = 0; i < nums.length; i++)
+		{
 			if (nums[i] < min)
 				min = nums[i];
 		}
-		
-		System.out.println(min);
-		
-		// e)
+
+		System.out.println("Minimum value: " + min);
+
+		// Search the array and retrieve the numbers which are the factors of every other number
 		String output = "";
-		
-		for (int i = 0; i < nums.length; i++) {
-			//output += nums[i] + ": " + nums[i];
+
+		// sort the array so we can get a nicer display
+		// lazy mode =)
+		Arrays.sort(nums);
+
+    // check all numbers and add only those who are factor of another number
+		for (int i = 0; i < nums.length; i++)
+		{
 			output += nums[i] + ":";
-			for (int j = 0; j < nums.length; j++) {
+			for (int j = 0; j < nums.length; j++)
+			{
 				if (nums[i] % nums[j] == 0)
 					output += " " + nums[j];
 			}
 			output += "\n";
 		}
-		
+
+		// Print output
+		System.out.println();
+		System.out.println("----- Factors -----");
 		System.out.println(output);
 	}
 }

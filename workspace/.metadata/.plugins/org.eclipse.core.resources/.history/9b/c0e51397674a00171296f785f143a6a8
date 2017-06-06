@@ -1,0 +1,8 @@
+1.1)
+e) It is the same value as in part d. In Java, an array start with index 0, so we have to subtract the last index by 1.
+For example:
+  int[] array = new int[5]; -> create an array with 5 items. index start from 0 and ends in 4.
+So, the last item's index is the number of items minus 1: 5 - 1 = 4 (index).
+
+Open doors: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100.
+All open doors are squared numbers.

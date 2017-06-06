@@ -1,0 +1,61 @@
+package question06;
+
+import java.util.Scanner;
+
+/**
+* Program to show some commonly used arithmetic expressions.
+*
+* @author  Joao Berardo
+* @version 1.0
+* @since   2017-05-29
+*/
+public class Histogram {
+	/**
+	 * This is the main method.
+	 * @param args Unused.
+	 * @return Nothing.
+	 */
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int totalNumbers = 0;
+		int randomNumbers = 0;
+		
+		System.out.println("Enter the number of random numbers to generate: ");
+		totalNumbers = input.nextInt();
+		
+		int[] result = new int[randomNumbers];
+		initializeArray(randomNumbers, result);
+		
+		//printResult(randomNumbers, result);
+		
+		System.out.println("Enter the number of possible values for each random draw: ");
+		randomNumbers = input.nextInt();
+		
+		generateRandomNumbers(totalNumbers, randomNumbers, result);
+		
+		//printResult(randomNumbers, result);
+	}
+
+	private static void printResult(int randomNumbers, int[] result) {
+		for (int i = 0; i < randomNumbers; i++) {
+			//System.out.println(result[i]);
+		}		
+	}
+	
+	private static void initializeArray(int randomNumbers, int[] result) {
+		for (int i = 0; i < randomNumbers; i++) {
+			result[i] = 0;
+		}
+	}
+	
+	private static void generateRandomNumbers(int totalNumbers, int randomNumbers, int[] result) {
+		for (int i = 0; i < totalNumbers; i ++) {
+			for (int j = 0; j < randomNumbers; j++) {
+				double randomNumber =  Math.random() * randomNumbers;
+				if ((int) randomNumber == j) {
+					//result[j]++;
+				}
+			}
+		}		
+	}
+}

@@ -1,8 +1,0 @@
-package question05;
-
-public class Peevish {
-
-	public static void main(String[] args) {
-
-	}
-}

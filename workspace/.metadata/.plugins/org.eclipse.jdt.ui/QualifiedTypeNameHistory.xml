@@ -22,5 +22,13 @@
 <fullyQualifiedTypeName name="question09.Door"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="javax.print.attribute.standard.PrinterName"/>
+<fullyQualifiedTypeName name="javax.print.attribute.PrintRequestAttribute"/>
+<fullyQualifiedTypeName name="javax.print.attribute.standard.PrinterResolution"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,8 @@
+
+public class Game {
+
+	public static void main(String[] args) {
+		String config1 = "123456789234567891345678912456789123567891234678912345789123456891234567912345678";
+		Sudoku sudoku = new Sudoku(config1);
+	}
+}
