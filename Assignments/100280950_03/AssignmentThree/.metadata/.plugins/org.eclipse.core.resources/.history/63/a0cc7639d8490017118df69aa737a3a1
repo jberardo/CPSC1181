@@ -1,0 +1,10 @@
+
+public class FormatPhoneNumberTester {
+
+	public static void main(String[] args) {
+		String number = "5555551223";
+		String  = "";
+		
+		FormatPhoneNumber formattedNumber = new FormatPhoneNumber(number); 
+	}
+}

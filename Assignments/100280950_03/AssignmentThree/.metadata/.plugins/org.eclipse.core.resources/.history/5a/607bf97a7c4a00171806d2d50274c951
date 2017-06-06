@@ -1,0 +1,68 @@
+/**
+  Program to test the MonthNames class
+
+  @author Joao Berardo
+  @version 1.0
+  @since June, 04 2017
+*/
+public class TestMonthNames
+{
+	/**
+	  Main method
+	  @param args Not used
+	*/
+	public static void main(String[] args)
+	{
+		// create some objects to test
+		MonthNames names = new MonthNames();
+		MonthNames names2 = new MonthNames("March");
+		MonthNames names3 = new MonthNames(4);
+		String monthName = "";
+		
+		// set number to 11 (november)
+		names.setMonthNumber(11);
+		// check if out method works
+		monthName = names.getMonthName();
+		// should return "november"
+		System.out.println("----- Constructor with no arguments -----");
+		System.out.println("Output: " + monthName);
+		System.out.println("Expected: November");
+		
+		// skip line
+		System.out.println();
+		
+		// set month to july (7)
+		names2.setMonthName("July");
+		// check methods
+		String name2 = names2.getMonthName();
+		int num2 = names2.getMonthNumber();
+		
+		// print output
+		System.out.println("----- Constructor with argument @name -----");
+		System.out.println("Output: " + name2);
+		System.out.println("Expected: July");
+
+		// skip line
+		System.out.println();
+		
+		System.out.println("Output: " + num2);
+		System.out.println("Expected: 7");
+		
+		System.out.println("----- Constructor with argument @number -----");
+		System.out.println("Output: " + names3.getMonthName());
+		System.out.println("Expected: April");
+		System.out.println("Output: " + names3.getMonthNumber());
+		System.out.println("Expected: 4");
+		
+		// skip line
+		System.out.println();
+		
+		names3.setMonthName("August");
+		System.out.println("Output: " + names3.getMonthName());
+		System.out.println("Expected: August");
+		
+		System.out.println("Output: " + names3.getMonthNumber());
+		System.out.println("Expected: 8");
+		
+	}
+}

@@ -1,0 +1,67 @@
+/**
+  Program to test the Balloon class
+
+  @author Joao Berardo
+  @version 1.0
+  @since June, 04 2017
+*/
+public class BalloonTester {
+	/**
+	  Main method
+	  @param args Not used
+	*/
+	public static void main(String[] args)
+	{
+
+		double volume = 0.0;
+		double surfaceArea = 0.0;
+		double radius = 0.0;
+
+		//constructs a balloon, adds 100 cm 3 of air, tests the three methods		
+		Balloon balloon = new Balloon();
+		
+		balloon.addAir(100);
+
+		volume = balloon.getVolume();
+		surfaceArea = balloon.getSurfaceArea();
+		radius = balloon.getRadius();
+		
+		// print results
+		System.out.println("\t\t----- First 100 cm3 of air -----\n");
+		System.out.println("\t\tAir amount\tVolume\tSurface Area\tRadius");
+		System.out.println("Output\t\t" + balloon.getAirAmount() + "\t\t" + volume + "\t" + surfaceArea + "\t" + radius);
+		System.out.println("Expected\t100\t\t523\t120\t10580\t12");
+		System.out.println();
+		//printResults(volume, surfaceArea, radius);
+
+		
+		// adds another 100 cm 3 of air, and tests the accessor methods again.
+		balloon.addAir(100);
+		// print results
+		System.out.println("Air amount\t" + balloon.getAirAmount());
+		System.out.println("Expected\t100" );
+		System.out.println("Volume\t\t" + balloon.getVolume());
+		System.out.println("Expected\tX" );
+		System.out.println("Surface Area\t" + balloon.getSurfaceArea());
+		System.out.println("Expected\tX" );
+		System.out.println("Radius\t\t" + balloon.getRadius());
+		System.out.println("Expected\tX" );
+		
+	}
+
+	/* (private method, so normal comment and not javadoc)
+	 * Print tests in console
+	 * @param volume Balloon's volume
+	 * @param surfaceArea Ballon's surface area
+	 * @param radius Balloon's radius
+	 */
+/*	private static void printResults(double volume, double surfaceArea, double radius) {
+		// print output
+
+		System.out.println(surfaceArea);
+		System.out.println("Expected: " );
+		System.out.println(radius);
+		System.out.println("Expected: " );
+	}
+*/
+}

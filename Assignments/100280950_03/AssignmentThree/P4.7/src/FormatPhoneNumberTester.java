@@ -1,0 +1,28 @@
+/**
+  Program to test the FormatPhoneNumber class<br>
+  We pass a simple string and see if the output is correct<br>
+  Input: "1234567890"<br>
+  Output: "(123) 456-7890"
+
+  @author Joao Berardo
+  @version 1.0
+  @since June 04, 2017
+*/
+public class FormatPhoneNumberTester {
+	/**
+	  Main method
+	  @param args Not used
+	*/
+	public static void main(String[] args) {
+		// create a string with 10 digits (phone number)
+		String number = "1234567890";
+
+		// create an object
+		FormatPhoneNumber formattedNumber = new FormatPhoneNumber(number);
+		// format the phone number		
+		number =  formattedNumber.formatNumber();
+		// print output and expected value
+		System.out.println("Formatted number: " + number);
+		System.out.println("Expected: (123) 456-7890");
+	}
+}

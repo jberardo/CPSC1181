@@ -1,0 +1,61 @@
+/**
+  Class to represent a Baloon
+
+  @author Joao Berardo
+  @version 1.0
+  @since June, 04 2017
+*/
+public class Balloon
+{
+	// instance variables
+	private double volume;
+	private double surfaceArea;
+	private double radius;
+	private double airAmount;
+	
+	/**
+	  Constructor 
+	*/
+	public Balloon() {
+		volume = 0.0;
+		surfaceArea = 0.0;
+		radius = 0.0;
+		airAmount = 0.0;
+	}
+	
+	/**
+	  Fills the balloon with the given amount of air
+	  @param amount
+	*/
+	public void addAir(double amount) {
+		airAmount += amount;
+		
+		volume = airAmount * 3;
+		surfaceArea = airAmount * 2;
+		radius = airAmount;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public double getVolume() { //gets the current volume
+		return volume;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public double getSurfaceArea() { // gets the current surface area
+		return surfaceArea;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public double getRadius() { // gets the current radius
+		return radius;
+	}
+}

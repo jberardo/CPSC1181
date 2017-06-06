@@ -1,0 +1,36 @@
+/**
+ * Formats a string containing 10 numbers into a phone number
+ * Format: (000) 555-5555
+ * 
+ * @author Joao Berardo
+ * @version 1.0
+ * @since June 04, 2017
+ *
+ */
+public class FormatPhoneNumber {
+	// attributes
+	private String rawNumber = "";
+	
+	/**
+	 * Constructor
+	 * @param number String containing 10 numbers to be formatted
+	 */
+	public FormatPhoneNumber(String number) {
+		rawNumber = number;
+	}
+	
+	public String formatNumber() {
+		// Area code: substring of first 3 chars and add ()
+		String areaCode = "(" + rawNumber.substring(0, 2) + ") ";
+
+		// Formatted number: 
+		// area code + (subs next 3 chars) + hyphen + (subs last 4 characters)
+		String firstThree = rawNumber.substring(4, 6);
+		String hyphen = " - ";
+		String lastFour = rawNumber.substring(6, 10);
+		
+		String number = areaCode + firstThree + hyphen + lastFour;
+		
+		return number;
+	}
+}
