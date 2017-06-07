@@ -1,7 +1,8 @@
 /**
   Class to convert month name/number<br>
   You can either create an object with the month name or number<br>
-  After the object creation, just call the methods getMonthName() and getMonthNumber()
+  After the object creation, just call the methods getMonthName() and getMonthNumber()<br>
+  To change the month name or number, use the methods setMonthName(String name) and setMonthNunber(int num)
 
   @author Joao Berardo
   @version 1.0

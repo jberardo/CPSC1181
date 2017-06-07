@@ -3,7 +3,7 @@
 	<section name="javadoc">
 		<item value="public" key="access"/>
 		<item value="false" key="noindex"/>
-		<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_03/AssignmentThree/E4.21/javadoc.xml" key="antpath"/>
+		<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_03/AssignmentThree/P4.7/javadoc.xml" key="antpath"/>
 		<item value="false" key="nodeprecatedlist"/>
 		<item value="true" key="use"/>
 		<item value="true" key="author"/>
@@ -17,7 +17,7 @@
 		<item value="true" key="splitindex"/>
 		<item value="true" key="fromStandard"/>
 		<item value="false" key="notree"/>
-		<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_03/AssignmentThree/E4.21/docs" key="destdir"/>
+		<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_03/AssignmentThree/P4.7/doc" key="destdir"/>
 		<item value="false" key="openinbrowser"/>
 		<section name="projects">
 			<section name="E4.19">

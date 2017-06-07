@@ -1,7 +1,7 @@
 /**
   Class to represent a Baloon<br>
   A balloon can be filled adding some air<br>
-  We can retrieve the balloons' volume, surface area and radius
+  We can retrieve the balloon's volume, surface area and radius
 
   @author Joao Berardo
   @version 1.0
@@ -23,7 +23,6 @@ public class Balloon
 		volume = 0.0;
 		surfaceArea = 0.0;
 		radius = 0.0;
-		airAmount = 0.0;
 	}
 	
 	/**
@@ -32,10 +31,9 @@ public class Balloon
 	*/
 	public void addAir(double amount)
 	{
-		airAmount += amount;
-		volume = airAmount * 3;
-		surfaceArea = airAmount * 2;
-		radius = airAmount * 1.5;
+		volume += amount;
+		calculateRadius();
+		calculateSurfaceArea();
 	}
 	
 	/**
@@ -75,21 +73,20 @@ public class Balloon
 	}
 	
 
-	// calculate the balloon's total volume
-	private void calculateVolume()
-	{
-		
-	}
-	
 	// calculate the balloon's surface area
+	// Formula for surface area:
+	// 4 * (pi * sqr(radius))
 	private void calculateSurfaceArea()
 	{
-		
+		this.surfaceArea = 4.0 * (Math.PI * Math.pow(this.radius, 2.0));
 	}
 	
 	// calculate the balloon's radius
+	// Formula for radius:
+	// ( 3 * (volume / (4 * pi))) / (1 / 3)
 	private void calculateRadius()
 	{
-		
+		this.radius = Math.pow(3.0 * (this.volume / (4.0 * Math.PI)), (1.0 / 3.0));
+
 	}
 }

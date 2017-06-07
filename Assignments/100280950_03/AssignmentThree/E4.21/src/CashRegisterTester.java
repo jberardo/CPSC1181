@@ -26,7 +26,8 @@ public class CashRegisterTester
 		
 		// print output
 		System.out.println("----- Using method giveChange() -----");
-		System.out.println("Output: " + change);
+		// print only 2 decimal places
+		System.out.println("Output: " + String.format("%.2f", change));
 		System.out.println("Expected: 11.25\n");
 
 		// test creating another object
@@ -39,9 +40,12 @@ public class CashRegisterTester
 		register.enterDollars(20);
 		register.enter­Quarters(2);
 		
+		change = register.giveChange();
+		
 		// output
 		System.out.println("----- Using new methods created -----");
-		System.out.println("Output: " + register.giveChange());
+		// print only 2 decimal places
+		System.out.println("Output: " + String.format( "%.2f", change));
 		System.out.println("Expected: 0.13");
 	}
 }

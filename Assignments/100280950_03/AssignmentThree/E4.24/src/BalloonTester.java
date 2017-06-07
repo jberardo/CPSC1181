@@ -16,23 +16,21 @@ public class BalloonTester {
 		double volume = 0.0;
 		double surfaceArea = 0.0;
 		double radius = 0.0;
-		double airAmount = 0.0;
 
 		//constructs a balloon, adds 100 cm 3 of air, tests the three methods		
 		Balloon balloon = new Balloon();
 		
 		balloon.addAir(100);
 
-		airAmount = balloon.getAirAmount();
 		volume = balloon.getVolume();
 		surfaceArea = balloon.getSurfaceArea();
 		radius = balloon.getRadius();
 		
 		// print results
 		System.out.println("\t\t----- First 100 cm3 of air -----\n");
-		System.out.println("\t\tAir amount\tVolume\tSurface Area\tRadius");
-		System.out.println("Output\t\t" + airAmount + "\t\t" + volume + "\t" + surfaceArea + "\t\t" + radius);
-		System.out.println("Expected\t100.0\t\t523.0\t120.0\t\t1058.0");
+		System.out.println("\t\tVolume\t\tSurface Area\tRadius");
+		System.out.println("Output\t\t" +  String.format("%.2f", volume) + " cm3\t" + String.format("%.2f", surfaceArea) + " cm2\t" + String.format("%.2f", radius) + " cm");
+		System.out.println("Expected\t100.00 cm3\t104.19 cm2\t2.88 cm");
 		System.out.println();
 		//printResults(volume, surfaceArea, radius);
 
@@ -40,16 +38,15 @@ public class BalloonTester {
 		// adds another 100 cm 3 of air, and tests the accessor methods again.
 		balloon.addAir(100);
 
-		airAmount = balloon.getAirAmount();
 		volume = balloon.getVolume();
 		surfaceArea = balloon.getSurfaceArea();
 		radius = balloon.getRadius();
 		
 		// print results
-		System.out.println("\t\t----- Added more 100 cm3 of air -----\n");
-		System.out.println("\t\tAir amount\tVolume\tSurface Area\tRadius");
-		System.out.println("Output\t\t" + airAmount + "\t\t" + volume + "\t" + surfaceArea + "\t\t" + radius);
-		System.out.println("Expected\t200.0\t\t52.0\t120.0\t\t2058.0");
+		System.out.println("\t\t----- First 100 cm3 of air -----\n");
+		System.out.println("\t\tVolume\t\tSurface Area\tRadius");
+		System.out.println("Output\t\t" +  String.format("%.2f", volume) + " cm3\t" + String.format("%.2f", surfaceArea) + " cm2\t" + String.format("%.2f", radius) + " cm");
+		System.out.println("Expected\t200.00 cm3\t165.39 cm2\t3.63 cm");
 		System.out.println();
 	}
 }
