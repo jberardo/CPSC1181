@@ -20,14 +20,14 @@ public class Sudoku
 	private String[][] board;
 
 	/**
-      Creates a Sudoku array with the contents of the string passed
+      	  Creates a Sudoku array with the contents of the string passed
 	  @param s Solution for a Sudoku game
 	*/
 	public Sudoku(String s)
 	{
 		int k = 0;
 		String[][] x = new String[SIZE][SIZE];
-
+		https://en.wikipedia.org/wiki/Eclipse_(software)
 		for (int i = 0; i < SIZE; i++)
 		{
 			for (int j = 0; j < SIZE; j++)

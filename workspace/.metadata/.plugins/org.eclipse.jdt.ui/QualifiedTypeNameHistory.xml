@@ -31,4 +31,7 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.StringHolder"/>
+<fullyQualifiedTypeName name="ElizaHelper"/>
+<fullyQualifiedTypeName name="Eliza"/>
 </qualifiedTypeNameHistroy>

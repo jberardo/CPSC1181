@@ -1,0 +1,20 @@
+/**
+ * <h3>Roman Numbers Class</h3>
+ * <br/>
+ * 
+ * This class converts a positive integer into the Roman number system
+ *
+ * Rules:
+ * 	Positive number
+ * 	Numbers up to 3,999
+ * 	Thousands, hundreds, tens, and ones are expressed separately
+ * 	The numbers 1 to 9 are expressed as: I, II, III, IV, V, VI, VII, VIII, IX
+ * 
+ * @author Joao Berardo
+ * @since June, 09 2017
+ * @version 1.0
+ *
+ */
+public class RomanNumbers {
+	
+}

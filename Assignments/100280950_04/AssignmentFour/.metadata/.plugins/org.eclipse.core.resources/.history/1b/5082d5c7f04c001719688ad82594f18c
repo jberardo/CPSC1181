@@ -1,0 +1,17 @@
+/**
+ * <h3>Roman Numbers Class</h3>
+ * <br/>
+ * 
+ * This class converts a positive integer into the Roman number system
+ *
+ * Rules:
+ * 
+ * 
+ * @author Joao Berardo
+ * @since June, 09 2017
+ * @version 1.0
+ *
+ */
+public class RomanNumbers {
+	
+}

@@ -1,0 +1,47 @@
+/**
+ * Eliza
+ * 
+ * @author Joao Berardo
+ * @version 1.0
+ * @since June, 08 2017
+ *
+ */
+public class Eliza
+{
+	// instance variables
+	String phrase;
+	String answer;
+
+	/**
+	 * Creates a psychoterapist called Eliza
+	 */
+	public Eliza()
+	{
+		this.phrase = "";
+		this.answer = "";
+	}
+	
+	/**
+	 * Greets the patient
+	 */
+	public void greet()
+	{
+	}
+	
+	/**
+	 * Retrieves the user's answer
+	 * @param userAnswer answer entered by the user
+	 */
+	public void getAnswer(String userAnswer)
+	{
+		
+	}
+	
+	/**
+	 * 
+	 */
+	public void speak()
+	{
+		
+	}
+}

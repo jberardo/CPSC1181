@@ -1,0 +1,19 @@
+
+public class ElizaHelper
+{
+	public ElizaHelper(String word, String phrase)
+	{
+		this.search(word, phrase);
+	}
+	
+	
+	public void search(String word, String phrase)
+	{
+		this.replace(word, "a");
+	}
+	
+	private void replace(String word, String to)
+	{
+		
+	}
+}

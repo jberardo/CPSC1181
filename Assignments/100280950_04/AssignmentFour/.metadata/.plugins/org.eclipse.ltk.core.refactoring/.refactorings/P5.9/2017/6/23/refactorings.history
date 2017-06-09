@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;RomanNumbers&apos; to &apos;RomanNumber&apos;&#x0A;- Original project: &apos;P5.9&apos;&#x0A;- Original element: &apos;RomanNumbers&apos;&#x0A;- Renamed element: &apos;RomanNumber&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RomanNumbers&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{RomanNumbers.java[RomanNumbers" matchStrategy="1" name="RomanNumber" qualified="false" references="true" similarDeclarations="false" stamp="1496999098269" textual="false" version="1.0"/>
+</session>
