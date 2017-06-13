@@ -1,0 +1,7 @@
+  The overuse of static methods is the mark of
+poor object oriented design. Explain how you can
+compute the values of the circle and the sphere
+in a more object oriented fashion.
+
+  Then provide the object oriented solution
+  Hint: you will need to create two objects.

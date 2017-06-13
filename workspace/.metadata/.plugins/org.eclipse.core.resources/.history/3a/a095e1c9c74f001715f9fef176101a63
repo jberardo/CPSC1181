@@ -1,0 +1,90 @@
+import java.time.format.TextStyle;
+import java.util.Scanner;
+
+/**
+ * Program to test the psychotherapist Eliza!
+ * 
+ * @author Joao Berardo
+ * @version 1.0
+ * @since June, 11 2017
+ *
+ */
+public class ElizaTester
+{
+	/**
+	 * Main method of the program
+	 * @param args not used
+	 */
+	public static void main(String[] args)
+	{
+		// test eliza with custom user input
+		this.testEliza();
+		
+		Eliza bot = new Eliza();
+		Scanner input = new Scanner(System.in);
+		String answer = "";
+
+		// first time eliza speaks is a greeting
+		// after that it is the response phrase
+		// greet the user
+		bot.speak();
+		
+		// loop until user type any word containing "bye" inside
+		while (true)
+		{
+			// user prompt
+			System.out.print(" - ");
+			// user's input
+			answer = input.nextLine();
+
+			// if input contains "bye", display goodbye and quit program
+			if (answer.toLowerCase().contains("bye"))
+			{
+				// close input
+				input.close();
+				
+				// print output and exit
+				System.out.println("\nGoodbye.");
+				System.exit(0);
+			}
+
+			// get Eliza's question/answer
+			bot.getAnswer(answer);
+			
+			// eliza's phrase (question/answers/etc)
+			bot.speak();
+		}
+	}
+	
+	//
+	private static void testEliza()
+	{
+		Eliza eliza = new Eliza();
+		
+		eliza.speak();
+		
+		eliza.getAnswer("I'm depressed.");
+		System.out.println("Expected: " + "I am sorry to hear you are depressed.");
+		
+		eliza.getAnswer("My girlfriend is mad at me.");
+		System.out.println("Expected: " + "Your girlfriend is mad at you.");
+		
+		eliza.getAnswer("That's right. She always says I talk too much");
+		System.out.println("Expected: " + "Can you think of a specific example?");
+		
+		eliza.getAnswer("I can't think of any right now. I'm sorry.");
+		System.out.println("Expected: " + "Please don't apologize.");
+
+		eliza.getAnswer("Anyway, I think my girlfriend is seeing someone else.");
+		System.out.println("Expected: " + "Do you really think so?");
+		
+		eliza.getAnswer("Yes, I do.");
+		System.out.println("Expected: " + "Why do you think so?");
+
+		eliza.getAnswer("I can't go into details.");
+		System.out.println("Expected: " + "Random answer.");
+
+		eliza.getAnswer("I've got to run. Bye.");
+		System.out.println("Expected: " + "Goodbye.");
+	}
+}

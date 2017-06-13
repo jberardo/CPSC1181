@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
 /**
- * 
+ * <h3>RomanNumberTester</h3>
+ * Program to test RomanNumber class<br/>
+ * We test the year 1978<br/>
+ * The output should be: "MCMLXXVIII"
  * 
  * @author Joao Berardo
  * @since June, 09 2017
@@ -11,15 +14,25 @@ import java.util.Scanner;
 public class RomanNumbersTester {
 	/**
 	 * Main method of the program
-	 * @param args Not used
+	 * @param args not used
 	 */
 	public static void main(String[] args) {
+		// used to user input
 		Scanner input = new Scanner(System.in);
+		// number to be converted to Roman Number System
 		int number = 0;
 		
-		System.out.print("Please enter a positive integer: ");
+		// roman object
+		// used to convert numbers
+		RomanNumber roman = new RomanNumber();
 		
-		if (input.hasNext())
+		// prompt user
+		System.out.print("Please enter a positive integer: ");
+
+		// check if user input is integer
+		// if it is, assign to variable
+		// if not, print message and exit program
+		if (input.hasNextInt())
 		{
 			number = input.nextInt();			
 		}
@@ -29,18 +42,25 @@ public class RomanNumbersTester {
 			System.exit(1);
 		}
 
-		if (number < 0 || number > 3999)
+		// try to convert decimal number from user to roman number
+		// I used try here because the RomanNumber class throws an exception
+		// I check the user input for values between 1 and 3999 inside the class
+		try
 		{
-			System.out.println("Invalid input. Try again.");
-			System.exit(1);
+			roman.convertNumber(number);			
 		}
-		
-		RomanNumber roman = new RomanNumber(number);
-		
+		catch (Exception e)
+		{
+			System.out.println(e.getMessage());
+			System.exit(1);			
+		}
+
+		// display program's output and expected value for decimal number
 		System.out.println("Output: " + roman.getDecimalNumber());
 		System.out.println("Expected: 1978\n");
 
-    System.out.println("Output: " + roman.getRomanNumner());
+		// display program's output and expected value for roman number
+		System.out.println("Output: " + roman.getRomanNumner());
 		System.out.println("Expected: MCMLXXVIII");
 	}
 }

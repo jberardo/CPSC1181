@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+/**
+ * Program to test the psychotherapist Eliza!
+ * 
+ * @author Joao Berardo
+ * @version 1.0
+ * @since June, 11 2017
+ *
+ */
+public class ElizaTester {
+	/**
+	 * Main method of the program
+	 * @param args not used
+	 */
+	public static void main(String[] args) {
+		Eliza bot = new Eliza();
+		Scanner input = new Scanner(System.in);
+		String answer = "";
+
+		// first time eliza speaks is a greeting
+		// after that it is the response phrase
+		// greet the user
+		bot.speak();
+		
+		// loop until user type any word containing "bye" inside
+		while (true)
+		{
+			// user prompt
+			System.out.print(" - ");
+			// user's input
+			answer = input.nextLine();
+
+			// if input contains "bye", display goodbye and quit program
+			if (answer.toLowerCase().contains("bye"))
+			{
+				// close input
+				input.close();
+				
+				// print output and exit
+				System.out.println("\nGoodbye.");
+				System.exit(0);
+			}
+
+			// get Eliza's question/answer
+			bot.getAnswer(answer);
+			
+			// eliza's phrase (question/answers/etc)
+			bot.speak();
+		}
+	}
+}

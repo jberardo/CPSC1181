@@ -1,0 +1,18 @@
+P6.2
+
+Mean and standard deviation
+
+Write a program that reads a set of floating-point data values.
+Choose an appropriate mechanism for prompting for the end of the data set.
+When all values have been read, print out the count of the values, the aver­age, and the standard deviation.
+The average of a data set {x 1 , . . ., x n } is x = ∑ x i n , where ∑ x i = x 1 + ... + x n is the sum of the input values.
+The standard deviation is:
+(sum(x^2) - (1/n * sum(x)^2)) / n - 1
+
+You can compute this quantity by keeping track of the count, the sum, and the sum of squares as you process the input values.
+
+Your program should use a class DataSet. That class should have a method:
+public void add(double value)
+
+and the methods:
+getAverage and getStandardDeviation

@@ -1,0 +1,9 @@
+  “A class should represent a single concept. All interface features
+should be closely related to the single concept that the class represents.
+Such a public interface is said to be cohesive”(Horstmann 381). 
+
+  Using the Horstmann definition, consider the java.awt.Toolkit class in
+the Java API.
+  
+  Is its public interface cohesive? Explain why or why not.
+  

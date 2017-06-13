@@ -1,0 +1,50 @@
+/**
+ * 
+ * @author Joao Berardo
+ * @version 1.0
+ * @since June, 10 2017
+ *
+ */
+public class DataSet
+{
+	private int count;
+	private double sum;
+	private double sumOfSquares;
+	private double sumSquares;
+	
+	public DataSet()
+	{
+		count = 0;
+		sum = 0;
+		sumOfSquares = 0;
+		
+	}
+	
+	public int getCount()
+	{
+		return this.count;
+	}
+	
+	public double getSum()
+	{
+		return this.sum;
+	}
+	
+	public void add(double value)
+	{
+		sum += value;
+		count ++;
+		this.sumOfSquares += Math.pow(value, 2);
+	}
+
+	public double getAverage()
+	{
+		return this.sum / this.count;
+	}
+	
+	public double getStandardDeviation()
+	{
+		// (sum(x^2) - (1/n * sum(x)^2)) / n - 1
+		return (this.sumOfSquares - ((1.0 / this.count) * Math.pow(this.sum, 2)) / (this.count - 1.0));
+	}
+}

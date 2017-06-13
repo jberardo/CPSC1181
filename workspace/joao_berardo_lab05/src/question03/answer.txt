@@ -1,0 +1,10 @@
+  When designing an object, you must consider the inherent dependencies.
+  
+  Study the Java API’s documentation in order to determine the dependencies
+between the following classes:
+
+    String
+    StringTokenizer
+    PrintStream
+    Random
+    

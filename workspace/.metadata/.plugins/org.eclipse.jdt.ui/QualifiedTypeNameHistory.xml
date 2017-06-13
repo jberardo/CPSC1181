@@ -34,4 +34,8 @@
 <fullyQualifiedTypeName name="org.omg.CORBA.StringHolder"/>
 <fullyQualifiedTypeName name="ElizaHelper"/>
 <fullyQualifiedTypeName name="Eliza"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.time.format.TextStyle"/>
 </qualifiedTypeNameHistroy>

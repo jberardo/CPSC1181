@@ -1,0 +1,11 @@
+  When you use classes from the Java library, you may
+not have not really considered the amount of code that
+is executed behind the scenes.
+
+  This is because for the most part, that code executes
+silently. The following class has one method with a
+side effect.
+
+  Describe the side effect, and explain why it is not
+desirable and what you could do to remedy it.
+

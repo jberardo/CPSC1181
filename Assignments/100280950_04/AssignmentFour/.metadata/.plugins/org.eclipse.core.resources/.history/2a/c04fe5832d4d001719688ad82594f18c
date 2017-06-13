@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+/**
+ * 
+ * 
+ * @author Joao Berardo
+ * @since June, 09 2017
+ * @version 1.0
+ *
+ */
+public class RomanNumbersTester {
+	/**
+	 * Main method of the program
+	 * @param args Not used
+	 */
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int number = 0;
+		RomanNumber roman = new RomanNumber();
+		
+		System.out.print("Please enter a positive integer: ");
+		
+		if (input.hasNextInt())
+		{
+			number = input.nextInt();			
+		}
+		else
+		{
+			System.out.println("Invalid input. Try again.");
+			System.exit(1);
+		}
+
+		try
+		{
+			roman.convertNumber();			
+		}
+		catch (Exception e)
+		{
+			System.out.println(e.getMessage());
+			System.exit(1);			
+		}
+
+		
+		System.out.println("Output: " + roman.getDecimalNumber());
+		System.out.println("Expected: 1978\n");
+
+		System.out.println("Output: " + roman.getRomanNumner());
+		System.out.println("Expected: MCMLXXVIII");
+	}
+}

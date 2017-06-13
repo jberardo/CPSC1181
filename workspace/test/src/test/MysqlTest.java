@@ -17,13 +17,13 @@ public class MysqlTest {
 	 
 	public static void main(String[] argv) {
 		try {
-			log("-------- Simple Crunchify Tutorial on how to make JDBC connection to MySQL DB locally on macOS ------------");
+			log("-------- Initializing ------------");
 			makeJDBCConnection();
 	 
-			log("\n---------- Adding company 'Crunchify LLC' to DB ----------");
-			addDataToDB("Crunchify, LLC.", "NYC, US", 5, "https://crunchify.com");
-			addDataToDB("Google Inc.", "Mountain View, CA, US", 50000, "https://google.com");
-			addDataToDB("Apple Inc.", "Cupertino, CA, US", 30000, "http://apple.com");
+			log("\n---------- Adding data to DB ----------");
+			addDataToDB("jab", "todo 1");
+			addDataToDB("jab", "todo 3");
+			addDataToDB("jab", "todo 4");
 	 
 			log("\n---------- Let's get Data from DB ----------");
 			getDataFromDB();
@@ -48,7 +48,7 @@ public class MysqlTest {
 	 
 		try {
 			// DriverManager: The basic service for managing a set of JDBC drivers.
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/crunchify", "root", "root");
+			conn = DriverManager.getConnection("jdbc:mysql://10.0.10.11:3306/joca_test", "jab", "k@j0c@!!");
 			if (conn != null) {
 				log("Connection Successful! Enjoy. Now it's time to push data");
 			} else {
@@ -61,20 +61,19 @@ public class MysqlTest {
 		}
 	}
 	 
-	private static void addDataToDB(String companyName, String address, int totalEmployee, String webSite) {
+	private static void addDataToDB(String userName, String todos) {
 	 
 		try {
-			String insertQueryStatement = "INSERT  INTO  Employee  VALUES  (?,?,?,?)";
+			String insertQueryStatement = "INSERT  INTO  todo (user, todo)  VALUES  (?,?)";
 	 
+			// prepare insert SQL statement
 			prepareStat = conn.prepareStatement(insertQueryStatement);
-			prepareStat.setString(1, companyName);
-			prepareStat.setString(2, address);
-			prepareStat.setInt(3, totalEmployee);
-			prepareStat.setString(4, webSite);
+			prepareStat.setString(1, userName);
+			prepareStat.setString(2, todos);
  
 			// execute insert SQL statement
 			prepareStat.executeUpdate();
-			log(companyName + " added successfully");
+			log(todos + " added successfully");
 		} catch (
 		SQLException e) {
 			e.printStackTrace();
@@ -85,7 +84,7 @@ public class MysqlTest {
 	 
 		try {
 			// MySQL Select Query Tutorial
-			String getQueryStatement = "SELECT * FROM employee";
+			String getQueryStatement = "SELECT * FROM todo";
 	 
 			prepareStat = conn.prepareStatement(getQueryStatement);
 	 
@@ -94,13 +93,11 @@ public class MysqlTest {
 	 
 			// Let's iterate through the java ResultSet
 			while (rs.next()) {
-				String name = rs.getString("Name");
-				String address = rs.getString("Address");
-				int employeeCount = rs.getInt("EmployeeCount");
-				String website = rs.getString("Website");
+				String userName = rs.getString("user");
+				String todos = rs.getString("todo");
 	 
 				// Simply Print the results
-				System.out.format("%s, %s, %s, %s\n", name, address, employeeCount, website);
+				System.out.format("%s, %s\n", userName, todos);
 			}
 		} catch (
 		SQLException e) {

@@ -1,0 +1,18 @@
+  Every time you invoke a method, be it from the API
+or from your own code, you must consider the
+preconditions and the postconditions.
+
+  In very simple terms, pre and post conditions can be
+thought of as an agreement between the user and the
+function. Essentially, if the preconditions are met by
+the user, then the postconditions will be satisfied by
+the method.
+
+  As an example consider the preconditions of opening a
+file in Java. The preconditions are that the exists()
+and canRead() methods both return true. If they do not,
+then the file will not be opened.
+
+  What are the preconditions of the nextLine method of
+the Scanner class? What happens when you violate one
+of those preconditions?

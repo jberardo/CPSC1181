@@ -1,0 +1,85 @@
+import java.util.Scanner;
+
+/**
+ * Program to test the psychotherapist Eliza!
+ * 
+ * @author Joao Berardo
+ * @version 1.0
+ * @since June, 11 2017
+ *
+ */
+public class ElizaTester
+{
+	/**
+	 * Main method of the program
+	 * @param args not used
+	 */
+	public static void main(String[] args)
+	{
+		Eliza bot = new Eliza();
+		Scanner input = new Scanner(System.in);
+		String answer = "";
+
+		// first time eliza speaks is a greeting
+		// after that it is the response phrase
+		// greet the user
+		bot.speak();
+		
+		// loop until user type any word containing "bye" inside
+		while (true)
+		{
+			// user prompt
+			System.out.print(" - ");
+			// user's input
+			answer = input.nextLine();
+
+			// if input contains "bye", display goodbye and quit program
+			if (answer.toLowerCase().contains("bye"))
+			{
+				// close input
+				input.close();
+				
+				// print output and exit
+				System.out.println("\nGoodbye.");
+				System.exit(0);
+			}
+
+			// get Eliza's question/answer
+			bot.getAnswer(answer);
+			
+			// eliza's phrase (question/answers/etc)
+			bot.speak();
+		}
+	}
+	
+	//
+	private void testEliza()
+	{
+		Eliza eliza = new Eliza();
+		
+		eliza.speak();
+		
+		
+		eliza.getAnswer("I'm depressed.");
+		// I am sorry to hear you are depressed.
+		eliza.getAnswer("My girlfriend is mad at me.");
+		// YOur girlfriend is mad at you.
+		eliza.getAnswer("That's right. She always says I talk too much");
+		eliza.getAnswer("I can't think of any right now. I'm sorry.");
+		eliza.getAnswer("Anyway, I think my girlfriend is seeing someone else.");
+		eliza.getAnswer("Yes, I do.");
+		eliza.getAnswer("I can't go into details.");
+		eliza.getAnswer("I've got to run. Bye.");
+"Can you think of a specific example?");
+"Is that the real reason?");
+"Please don't apologize.");
+"You don't seem very certain.");
+"Do you really think so?");
+"We were discussing you, not me.");
+"Why do you think so?");
+"Why not?");
+"I am sorry to hear you are "); // rest of user input after "i am"
+"I am sorry to hear you are "); // rest of user input after "i'm"
+"Your "); // rest of user input after "my" (replace "you" with "me")
+	}
+}

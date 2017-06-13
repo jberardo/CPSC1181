@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+/**
+ *	<h3>DataSetTester</h3>
+ *	Program to test DataSet class<br/>
+ *  Input: 1, 3, 5, 3, 7, 4, 10, 2, 3, 1
+ *  Expected output:
+ *  	Count: 10
+ *  	Sum: 39.0
+ *  	Average: 3.9
+ *  	Standard Deviation: 2.8067
+ * 
+ * @author Joao Berardo
+ * @version 1.0
+ * @since June, 12 2017
+ *
+ */
+public class DataSetTester {
+	/**
+	 * Main method
+	 * @param args not used
+	 */
+	public static void main(String[] args) {
+		// used to get user input
+		Scanner input = new Scanner(System.in);
+		// DataSet object
+		DataSet data = new DataSet();
+		
+		// add some values
+		data.add(1);
+		data.add(3);
+		data.add(5);
+		data.add(3);
+		data.add(7);
+		data.add(4);
+		data.add(10);
+		data.add(2);
+		data.add(3);
+		data.add(1);
+		
+		// output results and expected results
+		System.out.println("Count: " + data.getCount() + ", Expected: 10");
+		System.out.println("Sum: " + data.getSum() + ", Expected: 39.0");
+		System.out.println("Average: " + data.getAverage() + ", Expected: 3.9");
+		System.out.printf("Standard Deviation: %2.4f, Expected: 2.8067", data.getStandardDeviation());
+	}
+}

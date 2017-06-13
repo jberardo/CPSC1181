@@ -1,6 +1,0 @@
-
-public class Eliza {
-	// instance variables
-	String phrase;
-	String answer;
-}

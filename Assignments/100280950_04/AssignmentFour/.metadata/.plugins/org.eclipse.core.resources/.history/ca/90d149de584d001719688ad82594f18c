@@ -1,0 +1,16 @@
+
+import java.util.Scanner;
+
+public class DataSetTester {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		DataSet data = new DataSet();
+		
+		data.add(10);
+		data.add(20);
+		data.add(20);
+		
+		System.out.println("Count: " + data.count);
+	}
+}
