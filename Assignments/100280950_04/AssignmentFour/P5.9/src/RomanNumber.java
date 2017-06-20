@@ -2,24 +2,24 @@
  * <h3>Roman Numbers Class</h3>
  * <br/>
  * 
- * This class converts a positive integer to Roman number system
+ * This class converts a positive integer to Roman number system<br/><br/>
  *
- * Rules:
- * 	Number must be between 1 and 3,999
- * 	Thousands, hundreds, tens, and ones are expressed separately
- * 	The numbers 1 to 9 are expressed as: I, II, III, IV, V, VI, VII, VIII, IX
- * 	I preceding a V or X is subtracted from the value
- * 	Never have more than three I’s in a row
- * 	Tens and hundreds are done the same way (different letters)
+ * Rules:<br/>
+ * 	Number must be between 1 and 3,999<br/>
+ * 	Thousands, hundreds, tens, and ones are expressed separately<br/>
+ * 	The numbers 1 to 9 are expressed as: I, II, III, IV, V, VI, VII, VIII, IX<br/>
+ * 	Letter I preceding a V or X is subtracted from the value<br/>
+ * 	Never have more than three I's in a row<br/>
+ * 	Tens and hundreds are done the same way (different letters)<br/><br/>
  * 
- * Roman number system digits:
- * I	1
- * V	5
- * X	10
- * L	50
- * C	100
- * D	500
- * M	1,000
+ * Roman number system digits:<br/>
+ * I	1<br/>
+ * V	5<br/>
+ * X	10<br/>
+ * L	50<br/>
+ * C	100<br/>
+ * D	500<br/>
+ * M	1,000<br/>
  * 
  * @author Joao Berardo
  * @since June, 09 2017
@@ -34,7 +34,8 @@ public class RomanNumber
 
 	/**
 	 * Creates a Roman Number</br>
-	 * Default values are set to empty and/or zero
+	 * Default values are set to zero and empty<br/>
+	 * for Decimal Number and Roman Number
 	 */
 	public RomanNumber()
 	{
@@ -114,7 +115,7 @@ public class RomanNumber
 			
 			if (temp >= 600)
 			{
-				for (int i = 0; i < 2; i++)
+				for (int i = 0; i < (temp / 100) - 5; i++)
 				{
 					this.romanNumber += "C";
 				}
@@ -140,7 +141,7 @@ public class RomanNumber
 		
 		if (temp > 90)
 		{
-			this.romanNumber += "LC";
+			this.romanNumber += "XC";
 		}
 		else if (temp >= 50)
 		{
@@ -148,7 +149,7 @@ public class RomanNumber
 			
 			if (temp >= 60)
 			{
-				for (int i = 0; i < 2; i++)
+				for (int i = 0; i < (temp / 10) - 5; i++)
 				{
 					this.romanNumber += "X";
 				}

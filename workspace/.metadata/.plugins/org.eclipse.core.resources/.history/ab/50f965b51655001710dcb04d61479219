@@ -1,0 +1,30 @@
+package question09;
+
+import java.util.Scanner;
+
+/**
+ * Program to test Geometry class
+ * @author Joao Berardo
+ * @since June 17, 2017
+ * @version 1.0
+ *
+ */
+public class GeometryTester {
+	/**
+	 * Main method
+	 * @param args not used
+	 */
+	public static void main(String[] args) {
+		// radius of circle and sphere
+		double radius = 5.0;
+
+		// circle output
+		System.out.println("Radius: " + radius);
+		System.out.println("Circumferece: " + Geometry.getCircumference(radius));
+		
+		// sphere output
+		System.out.println("Area: " + Geometry.getArea(radius));
+		System.out.println("Surface Area: " + Geometry.getSurfaceArea(radius));
+		System.out.println("Volume: " + Geometry.getVolume(radius));
+	}
+}

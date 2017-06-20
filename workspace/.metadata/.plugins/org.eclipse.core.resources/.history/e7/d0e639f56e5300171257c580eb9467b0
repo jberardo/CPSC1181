@@ -1,0 +1,49 @@
+package question11;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**
+ * 
+ * @author Joao Berardo
+ * @since June 17, 2017
+ * @version 1.0
+ *
+ */
+public class ComboLockTester {
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//
+		Logger.getGlobal().setLevel(Level.OFF);
+		ComboLock myLock;
+
+		// true
+		myLock = new ComboLock (5,35,15);
+		myLock.turnCounterClockwise(5);
+		myLock.turnClockwise(10);
+		myLock.turnCounterClockwise(20);
+		System.out.println(myLock.open());
+		
+		// false
+		myLock = new ComboLock (5,35,15);
+		myLock.turnCounterClockwise(4);
+		myLock.turnCounterClockwise(1);
+		myLock.turnClockwise(11);
+		myLock.turnCounterClockwise(20);
+		System.out.println(myLock.open());
+
+		// true
+		myLock = new ComboLock (5,35,15);
+		myLock.turnCounterClockwise(45);
+		myLock.turnClockwise(9);
+		myLock.turnCounterClockwise(5);
+		myLock.turnClockwise(6);
+		myLock.turnCounterClockwise(19);
+		myLock.turnClockwise(17);
+		myLock.turnCounterClockwise(18);
+		System.out.println(myLock.open());
+	}
+}

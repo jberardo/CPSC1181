@@ -1,0 +1,17 @@
+/**
+ * 
+ * @author Joao Berardo
+ * @since 17, June 2017
+ * @version 1.0
+ *
+ */
+public class RunSequence {
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Die die = new Die();
+
+	}
+}

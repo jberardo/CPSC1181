@@ -1,0 +1,5 @@
+Classes: StockRoom, Employee, Item
+Operations: check in/out, reserve, notify, report, track
+Attributes: fine, date, item list, payment
+
+UML diagram is attached with name "Lab5.png"

@@ -1,0 +1,78 @@
+/**
+ * 
+ * @author Joao Berardo
+ * @cversion 1.0
+ * @since June 13, 2017
+ *
+ */
+public class Table {
+	private final int MAX_BARS_HEIGTH = 20;
+	
+	private int[][] values;
+	private int numRows;
+	private int numCols;
+		
+	public Table(int rows, int columns)
+	{
+		values = new int[rows][columns];
+		this.numRows = rows;
+		this.numCols = columns;
+	}
+	
+	public void set(int i, int j, int n)
+	{
+		values[i][j] = n;
+	}
+
+	// returns the sum of the i'th row (horizontal true)
+	// or column (horizontal false)
+	public double sum(int i, boolean horizontal)
+	{
+		double total = 0;
+		
+		if (horizontal)
+		{
+			// sum of rows
+			for (int j  = 0; j < values.length; j++)
+			{
+				total += this.values[i][j];
+				//System.out.println(this.values[i][j]);
+			}
+		}
+		else
+		{
+			// sum of columns
+			for (int row = 0; row < values.length; row++)
+			{
+				total += this.values[row][i];
+				//System.out.println(this.values[row][i]);
+			}
+			
+		}
+		return total;
+	}
+	
+	public void printResult()
+	{
+		for (int row = 0; row < this.values.length; row++)
+		{
+			double rowSum = this.sum(row, true);
+			
+			System.out.print("[" + rowSum + "] ");
+			
+			rowSum = rowSum % MAX_BARS_HEIGTH;
+			System.out.print("[" + rowSum + "] ");
+			
+			for (int col = 0; col < rowSum; col++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+	
+	private double getMaxBar()
+	{
+		
+	}
+}

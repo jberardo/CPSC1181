@@ -1,0 +1,26 @@
+    A company allows its "employees" to "check out" certain "items", such as handheld computers
+and music players, to gain personal experience with them.
+
+  Popular items can be "reserved" on a "first come/first" served basis. 
+A reservation "list" is kept for each item. There is a "fine" for overdue items.
+
+  Your development team’s task is to write a software program that allows the "stockroom
+clerk" to "check out" "items" and "check them back in", "reserve items", "notify employees" when a
+reserved item has been "returned", produce "reports of overdue items", and "track payment of
+fines"
+
+What classes would you choose to implement this program?
+
+employees
+stockroom clerk
+check out
+check in
+item (FCFS)
+item list
+fine
+reserve
+notify
+report
+track payment
+
+User, Item, StockRoom, Employee (inherits from User)

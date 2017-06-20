@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;RunSequence&apos; to &apos;RunChecker&apos;&#x0A;- Original project: &apos;P7.1&apos;&#x0A;- Original element: &apos;RunSequence&apos;&#x0A;- Renamed element: &apos;RunChecker&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RunSequence&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{RunSequence.java[RunSequence" matchStrategy="1" name="RunChecker" qualified="false" references="true" similarDeclarations="false" stamp="1497945610019" textual="false" version="1.0"/>
+</session>

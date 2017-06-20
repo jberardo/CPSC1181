@@ -181,3 +181,13 @@ Command-line arguments:  -data /home/jab/Langara/CPSC1181/Assignments/100280950_
 
 !ENTRY com.genuitec.eclipse.patches 2 0 2017-06-12 01:26:35.665
 !MESSAGE Patches instrumentation extension com.genuitec.eclipse.patches.class-weaver1 () has not to weaved class org.eclipse.swt.widgets.ProgressBar.
+!SESSION 2017-06-13 17:43:20.157 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY com.genuitec.eclipse.patches 2 0 2017-06-13 17:43:22.412
+!MESSAGE Patches instrumentation extension com.genuitec.eclipse.patches.class-weaver1 () has not to weaved class org.eclipse.swt.widgets.ProgressBar.

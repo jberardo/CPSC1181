@@ -1,0 +1,9 @@
+package question11;
+
+public class Debuger {
+
+	public static void Log(String msg)
+	{
+		
+	}
+}

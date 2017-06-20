@@ -1,0 +1,19 @@
+/**
+ * Program to output a run in parenthesis
+ * Run: sequence of adjacent repeated values
+ * 
+ * @author Joao Berardo
+ * @since 17, June 2017
+ * @version 1.0
+ *
+ */
+public class RunChecker {
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Die die = new Die();
+
+	}
+}

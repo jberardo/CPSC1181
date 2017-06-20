@@ -1,0 +1,12 @@
+agreement between the user and the function
+
+if the preconditions are met by the user, then the
+postconditions will be satisfied by the method.
+
+Example: preconditions of opening a file in Java.
+The preconditions are that the exists() and canRead()
+methods both return true. If they do not, then the file will not be opened.
+
+preconditions of the nextLine method of the Scanner class?
+What happens when you violate one of those preconditions?
+

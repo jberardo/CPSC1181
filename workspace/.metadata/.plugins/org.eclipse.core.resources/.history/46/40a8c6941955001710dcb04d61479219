@@ -1,0 +1,75 @@
+package question10;
+
+import java.util.Scanner;
+
+/**
+ * Program to test the Geometry class<br/>
+ * The program prompts user for radius<br/>
+ * This radius is used to calculate:<br/>
+ *   Circle area and circumference
+ *   Sphere surface area and volume
+ * 
+ * @author Joao Berardo
+ * @since June, 18 2017
+ * @version 1.0
+ *
+ */
+public class GeometryTester {
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int radius;
+		
+		System.out.print("Please enter radius: ");
+		
+		radius = input.nextInt();
+
+		Geometry geometry = null;
+		try {
+			geometry = new Geometry(radius);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println(e.getMessage());
+		}
+	
+		if (geometry != null)
+		{
+			System.out.println("---------- Circle ----------\n");
+			System.out.printf("Area\t\t%.2f\n", geometry.getCircleArea());
+			System.out.printf("Circumference\t%.2f\n", geometry.getCircleCircumference());
+			
+			System.out.println("\n\n---------- Sphere ----------\n");
+			System.out.printf("Surface Area\t%.2f\n", geometry.getSphereSurfaceArea());
+			System.out.printf("Volume\t\t%.2f\n", geometry.getSphereVolume());
+
+			System.out.println("\n\n");
+		}
+		
+		try {
+			geometry = new Geometry(1);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		if (geometry != null)
+		{
+			System.out.println("---------- Circle ----------\n");
+			System.out.printf("Area\t\t%.2f\n", geometry.getCircleArea());
+			System.out.printf("Expected\t3.14\n");
+			System.out.printf("Circumference\t%.2f\n", geometry.getCircleCircumference());
+			System.out.printf("Expected\t6.28\n");			
+
+			System.out.println("\n\n---------- Sphere ----------\n");
+			System.out.printf("Surface Area\t%.2f\n", geometry.getSphereSurfaceArea());
+			System.out.printf("Expected\t12.57\n");
+			System.out.printf("Volume\t\t%.2f\n", geometry.getSphereVolume());
+			System.out.printf("Expected\t4.19\n");
+		}
+		
+		input.close();
+	}
+}

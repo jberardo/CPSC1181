@@ -1,0 +1,19 @@
+CashRegister
+    recordPurchase
+    enterPayment
+    giveChange
+    getPurchaseAmount
+
+Appropriate precondition and postcondition for
+the recordPurchase method of the CashRegister class,
+
+/**
+Records the purchase price of an item.
+@param amount the price of the purchased item
+*/
+public void recordPurchase(double amount)
+{
+  purchase = purchase + amount;
+}
+pre: amount >= 0
+post: getPurchaseAmount >= 0

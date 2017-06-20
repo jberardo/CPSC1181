@@ -1,0 +1,87 @@
+/**
+ * <h3>DataSet</h3>
+ * Receives a set of numbers via user input</br>
+ * 	user can add numbers using the add() method
+ * 
+ * The output is the total number of values, aver­age, and standard deviation
+ * 
+ * @author Joao Berardo
+ * @version 1.0
+ * @since June, 10 2017
+ *
+ */
+public class DataSet
+{
+	// instance variables
+	private int count;
+	private double sum;
+	private double sumOfSquares;
+	
+	/**
+	 * Constructor</br>
+	 * Creats an object with default values of zero
+	 */
+	public DataSet()
+	{
+		count = 0;
+		sum = 0;
+		sumOfSquares = 0;
+		
+	}
+	
+	/**
+	 * Receives a number inputed by a user<br>
+	 * then adds to total and increments the count
+	 * @param x number to be added
+	 */
+	public void add(double value)
+	{	
+		sum += value;
+		count++;
+		this.sumOfSquares += Math.pow(value, 2);
+	}
+	
+	/**
+	 * Returns the total number of values passed to the object</br>
+	 * It is incremented every time a user calls the add() method
+	 * @return total numbers added
+	 */
+	public int getCount()
+	{
+		return this.count;
+	}
+	
+	/**
+	 * Returns the sum of all numbers the user entered
+	 * @return sum from added numbers
+	 */
+	public double getSum()
+	{
+		return this.sum;
+	}
+	
+	/**
+	 * 
+	 * @return average from added numbers
+	 */
+	public double getAverage()
+	{
+		return this.sum / this.count;
+	}
+	
+	/**
+	 * 
+	 * @return standard deviation from added numbers
+	 */
+	public double getStandardDeviation()
+	{
+		// (sum(x^2) - (1/n * sum(x)^2)) / n - 1
+		double stdDev = Math.sqrt(((this.sumOfSquares - 
+				((1.0/this.count) * (Math.pow(this.sum, 2.0)))) / 
+				(this.count - 1.0)));
+		
+		return stdDev;
+		
+		//return Math.sqrt((this.sumOfSquares - ((1.0 / this.count) * Math.pow(this.sum, 2)) / (this.count - 1.0)));
+	}
+}

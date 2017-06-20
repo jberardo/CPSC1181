@@ -35,6 +35,7 @@
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_lab05.zip"/>
 			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_labEliza.zip"/>
 			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_lab04.zip"/>
 			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_lab03.zip"/>

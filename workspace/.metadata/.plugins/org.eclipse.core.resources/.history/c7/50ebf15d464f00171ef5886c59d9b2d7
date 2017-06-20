@@ -1,7 +1,0 @@
-  Suppose a CashRegister class has the following methods:
-
-    recordPurchase
-    enterPayment
-    giveChange
-    getPurchaseAmount
-

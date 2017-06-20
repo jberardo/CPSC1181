@@ -1,0 +1,90 @@
+/**
+ * 
+ * @author Joao Berardo
+ * @cversion 1.0
+ * @since June 13, 2017
+ *
+ */
+public class Table {
+	private final int MAX_BARS_HEIGTH = 20;
+	
+	private int[][] values;
+	private int numRows;
+	private int numCols;
+	private String direction;
+		
+	public Table(int rows, int columns)
+	{
+		values = new int[rows][columns];
+		this.numRows = rows;
+		this.numCols = columns;
+	}
+	
+	public void set(int i, int j, int n)
+	{
+		values[i][j] = n;
+	}
+
+	// returns the sum of the i'th row (horizontal true)
+	// or column (horizontal false)
+	public double sum(int i, boolean horizontal)
+	{
+		double total = 0;
+		
+		if (horizontal)
+		{
+			// sum of rows
+			for (int j  = 0; j < values.length; j++)
+			{
+				total += this.values[i][j];
+			}
+		}
+		else
+		{
+			// sum of columns
+			for (int row = 0; row < values.length; row++)
+			{
+				total += this.values[row][i];
+			}
+			
+		}
+		return total;
+	}
+	
+	public void printResult()
+	{
+		double maxBarValue = this.getMaxBar();
+		
+		for (int col = 0; col < this.numCols; col++)
+		{
+			double rowSum = this.sum(col, true);
+			
+			System.out.print("[" + rowSum + "] ");
+			
+			rowSum = rowSum / maxBarValue * 20;
+			
+			for (int row = 0; row < rowSum; row++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+	
+	private double getMaxBar()
+	{
+		double maxNum = 0;
+		
+		for (int i = 0; i < values.length; i++)
+		{
+			double rowSum = this.sum(i, true);
+			
+			if (rowSum > maxNum)
+			{
+				maxNum = rowSum;
+			}
+		}
+		
+		return maxNum;
+	}
+}

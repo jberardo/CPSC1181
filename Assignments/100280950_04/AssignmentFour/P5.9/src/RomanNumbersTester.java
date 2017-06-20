@@ -54,13 +54,35 @@ public class RomanNumbersTester {
 			System.out.println(e.getMessage());
 			System.exit(1);			
 		}
-
+		
+		printResult(roman.getDecimalNumber(), roman.getRomanNumner());
+	}
+	public static void printResult(int decimal, String roman)
+	{
+		System.out.println("----- User Output -----");
+		
 		// display program's output and expected value for decimal number
-		System.out.println("Output: " + roman.getDecimalNumber());
+		System.out.println("Decimal number: " + decimal);
+		// display program's output and expected value for roman number
+		System.out.println("Roman number: " + roman);
+		
+		System.out.println();
+		
+		// create an object to test with our value (1978)
+		RomanNumber r = new RomanNumber();
+		try {
+			r.convertNumber(1978);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("----- Test Output -----");
+		// display program's output and expected value for decimal number
+		System.out.println("Output: " + r.getDecimalNumber());
 		System.out.println("Expected: 1978\n");
 
 		// display program's output and expected value for roman number
-		System.out.println("Output: " + roman.getRomanNumner());
+		System.out.println("Output: " + r.getRomanNumner());
 		System.out.println("Expected: MCMLXXVIII");
 	}
 }

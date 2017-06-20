@@ -1,0 +1,18 @@
+/**
+  Constructs a coin object
+  (Precondition: aValue >= 0)
+   
+  @param aValue coin value
+*/
+public Coin(double aValue)
+{
+  if (aValue <= 0)
+  {
+      throw new Exception("Value cannot be negative.");
+  }
+  
+  ... rest of the code...
+}
+  
+Logical objects used to create coins:
+  Purse, VendingMachine, CashRegister and so on.

@@ -1,0 +1,15 @@
+/**
+  Records the purchase price of an item.
+  (Precondition: amount >=0)
+  (Postcondition: getPurchaseAmount >= 0)
+  @param amount the price of the purchased item
+*/
+public void recordPurchase(double amount)
+{
+  if (amount <= 0)
+  {
+    throw new Exception("Amount cannot be negative.");
+  }
+  
+  purchase = purchase + amount;
+}

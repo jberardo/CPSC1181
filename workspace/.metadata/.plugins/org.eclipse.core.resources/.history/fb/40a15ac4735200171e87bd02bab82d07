@@ -1,0 +1,20 @@
+package question11;
+
+public class Debuger {
+	boolean status;
+	
+	public Debuger()
+	{
+		status = false;
+	}
+	
+	public boolean isValid()
+	{
+		return this.isValid;
+	}
+	
+	public static void Log(String msg)
+	{
+		System.out.println(msg);
+	}
+}

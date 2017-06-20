@@ -1,0 +1,10 @@
+  Accessor methods can be thought of as a probe to investigate the state of an object.
+No matter how many times you observe an object, its state will not change.
+
+  Conversely, mutator methods say nothing about the object.
+Instead, they allow you to modify a property of a given object.
+
+  Using the Java API’s documentation, examine the Rectangular Shape class.
+
+  Which methods are accessors? Which are mutators?
+  

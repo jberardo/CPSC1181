@@ -1,6 +1,12 @@
 /**
  * <h3>DataSet</h3>
- * Class
+ * Receives a set of numbers via user input</br>
+ * and the user can add numbers using the add() method</br></br>
+ * 
+ * The output is: </br>
+ * 	 - Total number of values (count)</br>
+ *   - Average</br>
+ *   - Standard deviation</br>
  * 
  * @author Joao Berardo
  * @version 1.0
@@ -15,7 +21,8 @@ public class DataSet
 	private double sumOfSquares;
 	
 	/**
-	 * 
+	 * Constructor</br>
+	 * Creats an object with default values of zero
 	 */
 	public DataSet()
 	{
@@ -26,19 +33,21 @@ public class DataSet
 	}
 	
 	/**
-	 * 
-	 * @param x
+	 * Receives a number inputed by a user<br>
+	 * then adds to total and increments the count
+	 * @param value number to be added
 	 */
-	public void add(double x)
+	public void add(double value)
 	{	
-		sum += x;
+		sum += value;
 		count++;
-		this.sumOfSquares += Math.pow(x, 2);
+		this.sumOfSquares += Math.pow(value, 2);
 	}
 	
 	/**
-	 * 
-	 * @return
+	 * Returns the total number of values passed to the object</br>
+	 * It is incremented every time a user calls the add() method
+	 * @return total numbers added
 	 */
 	public int getCount()
 	{
@@ -46,8 +55,8 @@ public class DataSet
 	}
 	
 	/**
-	 * 
-	 * @return
+	 * Returns the sum of all numbers the user entered
+	 * @return sum from added numbers
 	 */
 	public double getSum()
 	{
@@ -55,8 +64,8 @@ public class DataSet
 	}
 	
 	/**
-	 * 
-	 * @return
+	 * Returns the average of all numbers the user entered
+	 * @return average from added numbers
 	 */
 	public double getAverage()
 	{
@@ -64,21 +73,16 @@ public class DataSet
 	}
 	
 	/**
-	 * 
-	 * @return
+	 * Returns the standadr deviation of all numbers the user entered
+	 * @return standard deviation from added numbers
 	 */
 	public double getStandardDeviation()
 	{
 		// (sum(x^2) - (1/n * sum(x)^2)) / n - 1
-		double one = this.sumOfSquares;
-		double two = 1.0/this.count;
-		double three = Math.pow(this.sum, 2.0);
-		double four = this.count - 1.0;
-		
-		double stdDev = Math.sqrt(((one -(two * three)) / four));
+		double stdDev = Math.sqrt(((this.sumOfSquares - 
+				((1.0/this.count) * (Math.pow(this.sum, 2.0)))) / 
+				(this.count - 1.0)));
 		
 		return stdDev;
-		
-		//return Math.sqrt((this.sumOfSquares - ((1.0 / this.count) * Math.pow(this.sum, 2)) / (this.count - 1.0)));
 	}
 }

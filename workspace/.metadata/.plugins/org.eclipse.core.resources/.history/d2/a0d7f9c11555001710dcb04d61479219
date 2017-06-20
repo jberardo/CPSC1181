@@ -1,0 +1,21 @@
+  Suppose a CashRegister class has the following methods:
+
+    recordPurchase
+    enterPayment
+    giveChange
+    getPurchaseAmount
+
+  Provide an appropriate precondition and postcondition
+for the recordPurchase method of the CashRegister class,
+which is defined as follows:
+
+/**
+Records the purchase price of an item.
+@param amount the price of the purchased item
+*/
+public void recordPurchase(double amount)
+{
+  purchase = purchase + amount;
+}
+pre: amount >= 0
+post: getPurchaseAmount >= 0

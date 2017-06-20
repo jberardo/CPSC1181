@@ -1,0 +1,101 @@
+import java.util.Random;
+
+/**
+ * Program to implement and test the Table class
+ * 
+ * @author Joao Berardo
+ * @since June 17, 2017
+ * @version 1.0
+ *
+ */
+public class TableTester {
+	/**
+	 * Main class
+	 * @param args not used
+	 */
+	public static void main(String[] args) {
+		final int NUM_ROWS = 5;
+		final int NUM_COLS = 5;
+		
+		boolean isHorizontal = false;
+		
+		Table table = new Table(NUM_ROWS, NUM_COLS, isHorizontal);
+		Random randomNumber = new Random();
+		int rand = 0;
+		
+		for (int row = 0; row < NUM_ROWS; row++)
+		{
+			for (int col = 0; col < NUM_COLS; col++)
+			{
+				rand = randomNumber.nextInt(100);
+				table.set(row, col, rand);
+			}
+		}
+		
+		printResult();
+	}
+	
+	/**
+	 * 
+	 */
+	public static void printResult()
+	{
+		double maxBarValue = getMaxBar();
+		
+		
+		if (isHorizontal)
+		{
+			for (int row = 0; row < NUM_ROWS; row++)
+			{
+				double rowSum = this.sum(row, true);
+				
+				rowSum = rowSum / maxBarValue * 20;
+				
+				for (int col = 0; col < rowSum; col++)
+				{
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+		}
+		else
+		{
+			for (int i = MAX_BARS_HEIGHT - 1; i >= 0 ; i--)
+			{
+				for (int col = 0; col < numCols; col++)
+				{
+					double colSum = this.sum(col, false);
+					colSum = colSum / maxBarValue * 20;
+					
+					if (colSum >= i)
+					{
+						System.out.print("*");
+					}
+					else
+					{
+						System.out.print(" ");
+					}
+				}
+				System.out.println();
+			}
+		}
+	}
+	
+	//
+	private double getMaxBar()
+	{
+		double maxNum = 0;
+		
+		for (int i = 0; i < values.length; i++)
+		{
+			double rowSum = this.sum(i, true);
+			
+			if (rowSum > maxNum)
+			{
+				maxNum = rowSum;
+			}
+		}
+		
+		return maxNum;
+	}
+}

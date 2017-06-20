@@ -1,0 +1,7 @@
+package question11;
+
+public class Direction {
+	private String clockWise = "left";
+	private String counterClockWise = "right";
+
+}

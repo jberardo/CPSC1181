@@ -1,0 +1,13 @@
+A static method has no implicit parameters. Sometimes,
+we use static methods because all the method parameters
+are primitive types (such as int, char, etc.). Primitive
+types are not objects, so they cannot be implicit
+parameters of a method.
+
+  Write four static methods that compute the
+    circumference of a circle with a given radius r
+    area of a circle with a given radius r
+    surface area of a sphere with radius r
+    volume of a sphere with radius r
+
+  Place the four static methods into a class Geometry

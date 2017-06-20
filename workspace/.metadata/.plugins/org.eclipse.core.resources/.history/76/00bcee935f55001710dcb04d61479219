@@ -1,0 +1,7 @@
+preconditions of the nextLine method of the Scanner class?
+What happens when you violate one of those preconditions?
+if no line was found
+if this scanner is closed
+
+ If the precondition if violated, the class may not work properly.
+ In the nextLine method of the Scanner class, if a precondition is violated, it throws an exception.  

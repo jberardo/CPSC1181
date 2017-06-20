@@ -1,0 +1,126 @@
+  “A class should represent a single concept. All interface features
+should be closely related to the single concept that the class represents.
+Such a public interface is said to be cohesive”(Horstmann 381). 
+
+  Using the Horstmann definition, consider the java.awt.Toolkit class in
+the Java API.
+  
+  Is its public interface cohesive? Explain why or why not.
+Despite the fact that this class is big and have a lot of methods, it appears to be cohesive.
+As the description says:
+" This class is the abstract superclass of all actual implementations of the Abstract Window Toolkit"
+and
+"Most applications should not call any of the methods in this class directly"
+I can assume that this class, as the name says, is a ToolKit for GUI applications.
+Its methods are implementing operations and waiting for events 
+
+Description:
+This class is the abstract superclass of all actual implementations of the Abstract Window Toolkit.
+Subclasses of the Toolkit class are used to bind the various components to particular native toolkit implementations.
+
+Many GUI events may be delivered to user asynchronously, if the opposite is not specified explicitly.
+As well as many GUI operations may be performed asynchronously.
+This fact means that if the state of a component is set, and then the state immediately queried,
+the returned value may not yet reflect the requested change. This behavior includes, but is not limited to:
+
+    Scrolling to a specified position.
+    For example, calling ScrollPane.setScrollPosition and then getScrollPosition may return an incorrect
+    value if the original request has not yet been processed.
+
+    Moving the focus from one component to another.
+    For more information, see Timing Focus Transfers, a section in The Swing Tutorial.
+
+    Making a top-level container visible.
+    Calling setVisible(true) on a Window, Frame or Dialog may occur asynchronously.
+
+    Setting the size or location of a top-level container.
+    Calls to setSize, setBounds or setLocation on a Window, Frame or Dialog are forwarded to the
+    underlying window management system and may be ignored or modified. See Window for more information. 
+
+Most applications should not call any of the methods in this class directly. The methods defined by Toolkit
+are the "glue" that joins the platform-independent classes in the java.awt package with their counterparts
+in java.awt.peer. Some methods defined by Toolkit query the native operating system directly.
+
+Public interfaces
+createDesktopPeer
+createButton
+createTextField  
+createLabel
+createList
+createCheckbox
+createScrollbar
+createScrollPane
+createTextArea
+createChoice
+createFrame
+createCanvas
+createPanel
+createWindow
+createDialog
+createMenuBar
+createMenu
+createPopupMenu
+createMenuItem
+createFileDialog
+createCheckboxMenuItem
+getMouseInfoPeer
+createComponent
+getFontPeer
+loadSystemColors
+setDynamicLayout
+isDynamicLayoutSet
+isDynamicLayoutActive
+getScreenSize
+getScreenResolution
+getScreenInsets
+getColorModel
+getFontList
+getFontMetrics
+sync
+getDefaultToolkit
+getImage
+createImage
+prepareImage
+checkImage
+getPrintJob
+getPrintJob
+beep
+getSystemClipboard
+getSystemSelection
+getMenuShortcutKeyMask
+getLockingKeyState
+setLockingKeyState
+getNativeContainer
+createCustomCursor
+getBestCursorSize
+getMaximumCursorColors
+isFrameStateSupported
+getProperty
+getSystemEventQueue
+getSystemEventQueueImpl
+createDragSourceContextPeer
+createDragGestureRecognizer
+getDesktopProperty
+lazilyLoadDesktopProperty
+initializeDesktopProperties
+addPropertyChangeListener
+removePropertyChangeListener
+getPropertyChangeListeners
+isAlwaysOnTopSupported
+isModalityTypeSupported
+isModalExclusionTypeSupported
+addAWTEventListener
+removeAWTEventListener
+getAWTEventListeners
+mapInputMethodHighlight
+areExtraMouseButtonsEnabled
+
+
+
+
+
+
+
+
+
+

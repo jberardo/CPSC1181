@@ -1,0 +1,45 @@
+package question09;
+
+public class Circle {
+	private final double PI = Math.PI;
+	private int radius;
+	private double circumference;
+	private double area;
+	
+	public Circle()
+	{
+		this.radius = 0;
+		this.circumference = 0.0;
+		this.area = 0.0;
+	}
+	
+	public Circle(int newRadius)
+	{
+		this.radius = newRadius;
+		this.calculateArea();
+		this.calculateCircumference();
+	}
+	
+	public double getCircumference()
+	{
+		return this.circumference;
+	}
+	
+	public double getArea()
+	{
+		return this.area;
+	}
+	//  circumference of a circle with a given radius r
+	// c = 2 * pi * r
+	private void calculateCircumference()
+	{
+		this.circumference = 2 * PI * this.radius;
+	}
+	
+	//  area of a circle with a given radius r
+	// a = pi * r^2
+	private void calculateArea()
+	{
+		this.area = PI * Math.pow(radius, 2);
+	}
+}

@@ -1,0 +1,51 @@
+package question09;
+
+/**
+ * Geometry class
+ * 
+ * @author Joao Berardo
+ * @since June, 16 2017
+ * @version 1.0
+ *
+ */
+public class Geometry {
+
+	private final double PI = Math.PI;
+
+	private Circle circle;
+	private Sphere sphere;
+	private int radius;
+	
+	public Geometry()
+	{
+		circle = null;
+		sphere = null;
+		radius = 0;
+	}
+	
+	public Geometry(int newRadius)
+	{
+		this.radius = newRadius;
+	}
+	
+	public double getCircleCircumference()
+	{
+		return circle.getCircumference();;
+	}
+	
+	public double getCircleArea()
+	{
+		return 0.0;
+	}
+	
+	public double getSphereSurfaceArea()
+	{
+		return 0.0;
+	}
+	
+	public double getSphereVolume()
+	{
+		return 0.0;
+	}
+	
+}

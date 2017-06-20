@@ -1,0 +1,26 @@
+/**
+ * Program to output a run in parenthesis </br>
+ * Run: sequence of adjacent repeated values <br/>
+ * Twenty random numbers are generated simulating a die toss</br>
+ * The output should be all the numbers with the runs in ()<br/>
+ * 
+ * @author Joao Berardo
+ * @since 17, June 2017
+ * @version 1.0
+ *
+ */
+public class RunChecker {
+	/**
+	 * Main method 
+	 * @param args not used
+	 */
+	public static void main(String[] args) {
+		Die die = new Die();
+		int num = 0;
+		
+		for (int i = 0; i < 20; i ++)
+		{
+			
+		}
+	}
+}
