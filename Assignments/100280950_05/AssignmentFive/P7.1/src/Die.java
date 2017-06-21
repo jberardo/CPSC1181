@@ -3,7 +3,7 @@
  * Values range between 1 and 6 <br/>
  * 
  * @author Joao Berardo
- * @since
+ * @since June 19, 2017
  * @version 1.0
  *
  */
@@ -15,7 +15,7 @@ class Die
 	private int dieValue;
 
    /**
-    * Constructor: Sets the initial die value to 1 
+    * Sets the initial die value to 1 
     */
 	public Die()
 	{
@@ -23,7 +23,7 @@ class Die
 	}
 
    /**
-    * Constructor: Sets the initial die to value parameter 
+    * Sets the initial die to value parameter 
     */
 	public Die(int value)
 	{
@@ -58,54 +58,3 @@ class Die
 		return dieValue;
 	}
 }
-
-//public class Dice
-//{
-//
-//   //-----------------------------------------------------------------
-//   //  Creates two Die objects and rolls them several times.
-//   //-----------------------------------------------------------------
-//   public static void main (String[] args)
-//   {
-//      Die die1, die2, die3;
-//      int sum;
-//
-//      die1 = new Die();
-//      die2 = new Die();
-//
-//      die1.roll();
-//      die2.roll();
-//      System.out.println ("Die One: " + die1 + ", Die Two: " + die2);
-//
-//// The previous two method calls are sloppy programming practice,
-//// as the method returns an int which is not "received"
-//// Better to do  this:
-//
-//      int x = die1.roll();
-//
-//// Or
-//
-//      System.out.println("Die 1 " + die1.roll());
-//
-//      die2.setFaceValue(4);
-//      System.out.println ("Die One: " + die1 + ", Die Two: " + die2);
-//
-//      sum = die1.getFaceValue() + die2.getFaceValue();
-//      System.out.println ("Sum: " + sum);
-//
-//      sum = die1.roll() + die2.roll();
-//      System.out.println ("Die One: " + die1 + ", Die Two: " + die2);
-//      System.out.println ("New sum: " + sum);
-//
-//      die3 = new Die(4);
-//      System.out.println("Die Three : " + die3.getFaceValue());
-//  
-//      die3 = die2;
-//      System.out.println("Die Three : " + die3.getFaceValue());
-//
-//// What happens if we change faceValue to public
-//// and then do die3.faceValue = 2; System.out.println("Die Two : " + die2.getFaceValue());
-//
-//
-//   }
-//}

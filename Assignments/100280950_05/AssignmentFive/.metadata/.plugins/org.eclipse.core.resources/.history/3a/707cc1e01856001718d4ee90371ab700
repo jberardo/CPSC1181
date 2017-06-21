@@ -1,0 +1,140 @@
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ * Program to implement and test the Table class
+ * 
+ * @author Joao Berardo
+ * @since June 18, 2017
+ * @version 1.0
+ *
+ */
+public class TableTester {
+	// maximum height of the output (lines)
+	final static int MAX_BARS_HEIGHT = 40;
+	// number of rows
+	final static int NUM_ROWS = 5;
+	// number of columns
+	final static int NUM_COLS = 5;
+	
+	static Scanner input;
+	static String[] countries;
+	
+	/**
+	 * Main class
+	 * @param args not used
+	 */
+	public static void main(String[] args) {
+		input = new Scanner(System.in);
+		
+		// true = sum of rows / false = sum of cols
+		boolean isHorizontal = true;
+		
+		//create a table object
+		Table table = new Table(NUM_ROWS, NUM_COLS, isHorizontal);
+		// used to generate random numbers
+		Random randomNumber = new Random();
+		// store current random number
+		int rand = 0;
+		countries = new String[NUM_ROWS];
+		String line = "";
+		
+		System.out.println("Please enter " + NUM_ROWS + " countries: ");
+		
+		int count = 0;
+		
+		line = input.nextLine()();
+		{
+			countries[count] = input.next();
+			count++;
+			System.out.print(count + " ");
+		}
+		System.out.println("test");
+		// loop through table and populate with random numbers
+		for (int row = 0; row < NUM_ROWS; row++)
+		{
+			for (int col = 0; col < NUM_COLS; col++)
+			{
+				rand = randomNumber.nextInt(10);
+				table.set(row, col, rand);
+			}
+		}
+		
+		// print output on console
+		printResult(table);
+	}
+	
+	// print output
+	private static void printResult(Table t)
+	{
+		// current row/column maximum value
+		double maxBarValue = 0.0;
+		
+		// sum of rows
+		if (t.isHorizontal())
+		{
+			// for each row
+			for (int row = 0; row < NUM_ROWS; row++)
+			{
+				System.out.print(countries[row] = "- ");
+
+				// retrieve the current row maximum value
+				maxBarValue = t.getMaxBar(row);
+				// sum of all values of the current row
+				double rowSum = t.sum(row, true);
+				
+				// adjust proportionally
+				rowSum = rowSum / maxBarValue * MAX_BARS_HEIGHT;
+				
+				// print current row
+				for (int col = 0; col < rowSum; col++)
+				{
+					System.out.print("*");
+				}
+				// skip line between columns
+				System.out.println();
+			}
+		}
+		// sum of columns
+		else
+		{
+			// sum of all values of the current column
+			double colSum = 0.0;
+			// formatted output to be printed
+			String output = "";
+			
+			// loop until maximum bars height (20 in this test)
+			// so, we print 20 lines with '*' proportionally adjusted
+			for (int i = MAX_BARS_HEIGHT; i >= 0 ; i--)
+			{
+				// for each column
+				for (int col = 0; col < NUM_COLS; col++)
+				{
+					// retrieve the current column maximum value
+					maxBarValue = t.getMaxBar(col);
+					// sum of all values of the current column
+					colSum = t.sum(col, false);
+
+					// adjust proportionally
+					colSum = colSum / maxBarValue * MAX_BARS_HEIGHT;
+					
+					// append '*' if current column sum if smaller than the current line number
+					if (colSum > i)
+					{
+						output += "*  ";
+					}
+					// append space otherwise
+					else
+					{
+						output += "   ";
+					}
+				}
+				// skip line
+				output += "\n";
+			}
+			
+			// print output
+			System.out.println(output);
+		}
+	}
+}

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="false" key="updateSimilarElements"/>
+		<item value="1" key="updateSimilarElementsMatchStrategy"/>
+		<item value="false" key="updateTextualMatches"/>
+	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="2" key="layout"/>
 		<item value="true" key="group_libraries"/>
@@ -14,11 +19,81 @@
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 	</section>
+	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
+		<item value="543" key="DIALOG_WIDTH"/>
+		<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="754" key="DIALOG_HEIGHT"/>
+		<item value="947" key="DIALOG_X_ORIGIN"/>
+		<item value="27" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item value="600" key="width"/>
+		<item value="400" key="height"/>
+	</section>
+	<section name="javadoc">
+		<item value="public" key="access"/>
+		<item value="false" key="noindex"/>
+		<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_05/AssignmentFive/P7.5/javadoc.xml" key="antpath"/>
+		<item value="false" key="nodeprecatedlist"/>
+		<item value="true" key="use"/>
+		<item value="true" key="author"/>
+		<item value="false" key="nodeprecated"/>
+		<item value="false" key="nonavbar"/>
+		<item value="" key="docletpath"/>
+		<item value="/usr/lib/jvm/java-8-openjdk-amd64/bin/javadoc" key="javadoc_command_history"/>
+		<item value="1.8" key="source"/>
+		<item value="true" key="version"/>
+		<item value="" key="docletname"/>
+		<item value="true" key="splitindex"/>
+		<item value="true" key="fromStandard"/>
+		<item value="false" key="notree"/>
+		<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_05/AssignmentFive/P7.5/doc" key="destdir"/>
+		<item value="false" key="openinbrowser"/>
+		<section name="projects">
+			<section name="E7.19">
+				<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_05/AssignmentFive/E7.19/javadoc.xml" key="antpath"/>
+				<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_05/AssignmentFive/E7.19/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="P7.5">
+				<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_05/AssignmentFive/P7.5/javadoc.xml" key="antpath"/>
+				<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_05/AssignmentFive/P7.5/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="E7.21">
+				<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_05/AssignmentFive/E7.21/javadoc.xml" key="antpath"/>
+				<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_05/AssignmentFive/E7.21/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="P7.1">
+				<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_05/AssignmentFive/P7.1/javadoc.xml" key="antpath"/>
+				<item value="/home/jab/Langara/CPSC1181/Assignments/100280950_05/AssignmentFive/P7.1/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+		</section>
+	</section>
+	<section name="SourceActionDialog.methods">
+		<item value="false" key="SynchronizedModifier"/>
+		<item value="false" key="Comments"/>
+		<item value="1" key="VisibilityModifier"/>
+		<item value="false" key="FinalModifier"/>
+	</section>
 	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="JavadocWizardDialog">
+		<item value="600" key="DIALOG_WIDTH"/>
+		<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="614" key="DIALOG_HEIGHT"/>
+		<item value="660" key="DIALOG_X_ORIGIN"/>
+		<item value="87" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="completion_proposal_size">
 		<item value="232" key="size.y"/>
 		<item value="345" key="size.x"/>
+	</section>
+	<section name="AddGetterSetterDialog">
+		<item value="false" key="SortOrdering"/>
+		<item value="false" key="RemoveFinal"/>
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>
