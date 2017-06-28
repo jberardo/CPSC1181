@@ -1,0 +1,7 @@
+#Tue Jun 27 08:06:31 PDT 2017
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+org.eclipse.help.ui.localSearch.workingSet=Default
+org.hibernate.eclipse.help.HibernateWiki.master=true
+expression=junit
+org.jboss.tools.developer.search.master=true

@@ -1,0 +1,31 @@
+package test;
+
+/**
+A tax return of a taxpayer in 2008.
+*/
+public class TaxReturn
+{
+public static final int SINGLE = 1;
+public static final int MARRIED = 2;
+private
+private
+private
+private
+static
+static
+static
+static
+final
+final
+final
+final
+double
+double
+double
+double
+RATE1 = 0.10;
+RATE2 = 0.25;
+RATE1_SINGLE_LIMIT = 32000;
+RATE1_MARRIED_LIMIT = 64000;
+private double income;
+private int status;

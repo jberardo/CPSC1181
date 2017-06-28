@@ -1,0 +1,15 @@
+package test;
+
+import java.util.Scanner;
+/**
+ * This program computes the average and maximum of a set
+ * of input values.
+ * 
+ * @author Joao Berardo
+ * @since June, 27 2017
+ * @version 1.0
+*/
+public class DataAnalyzer
+{
+
+}

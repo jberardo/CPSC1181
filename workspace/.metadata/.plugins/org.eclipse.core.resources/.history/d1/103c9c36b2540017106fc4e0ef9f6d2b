@@ -1,3 +1,0 @@
-This class is big and have a lot of methods, and it appears not to be cohesive.
-It has a lot of methods and does too many things. It could be splitted in smaller classes.
-Its methods are implementing operations and waiting for events related to the Window and Desktop graphical parts of the application.

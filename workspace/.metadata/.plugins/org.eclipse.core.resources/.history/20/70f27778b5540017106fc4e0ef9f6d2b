@@ -1,2 +1,0 @@
-We could use two classes, one for Circle and one for Sphere.
-In those classes, we have accessor methods to retrieve the values computed by each class.

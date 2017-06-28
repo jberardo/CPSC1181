@@ -21,9 +21,9 @@ public class MysqlTest {
 			makeJDBCConnection();
 	 
 			log("\n---------- Adding data to DB ----------");
-			addDataToDB("jab", "todo 1");
-			addDataToDB("jab", "todo 3");
-			addDataToDB("jab", "todo 4");
+			addDataToDB("jab", "todO");
+			addDataToDB("jab", "tod");
+			addDataToDB("jab", "t");
 	 
 			log("\n---------- Let's get Data from DB ----------");
 			getDataFromDB();

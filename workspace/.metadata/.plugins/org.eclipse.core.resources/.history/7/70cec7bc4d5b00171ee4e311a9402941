@@ -1,0 +1,18 @@
+package question01;
+
+public class CardTester
+{
+	private Card c1;
+	private Card c2;
+	private Billfold bf;
+	
+	public void main(String[] args)
+	{
+		c1 = new IDCard("Jane Doe", "13456");
+		c2 = new DriverLicense("John Doe", 2001);
+		bf = new Billfold();
+		bf.addCard(c1);
+		bf.addCard(c2);
+		bf.formatCards();
+	}
+}

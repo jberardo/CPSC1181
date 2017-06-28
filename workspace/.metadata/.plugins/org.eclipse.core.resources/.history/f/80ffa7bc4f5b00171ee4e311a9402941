@@ -1,0 +1,16 @@
+package question01;
+
+public class IDCard extends Card {
+	private String idNumber;
+	
+	public IDCard(String newName, String newId)
+	{
+		super(newName);		
+		this.idNumber = newId;
+	}
+	
+	public String format()
+	{
+		return "IDCard [Name=" + this.getName " _+ ",IdNumber=" + this.idNumber + "]";
+	}
+}

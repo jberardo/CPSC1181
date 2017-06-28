@@ -1,0 +1,33 @@
+package test;
+
+import java.util.ArrayList;
+
+/**
+ * This program tests the ArrayList class.
+ * 
+ * @author Joao Berardo
+ * @since June, 27 2017
+ * @version 1.0
+*/
+public class ArrayListTester
+{
+	public static void main(String[] args)
+	{
+	ArrayList<BankAccountOld> accounts = new ArrayList<BankAccountOld>();
+	accounts.add(new BankAccountOld(1001));
+	accounts.add(new BankAccountOld(1015));
+	accounts.add(new BankAccountOld(1729));
+	accounts.add(1, new BankAccountOld(1008));
+	accounts.remove(0);
+	System.out.println("Size: " + accounts.size());
+	System.out.println("Expected: 3");
+	BankAccountOld first = accounts.get(0);
+	System.out.println("First account number: "
+	+ first.getAccountNumber());
+	System.out.println("Expected: 1008");
+	BankAccountOld last = accounts.get(accounts.size() - 1);
+	System.out.println("Last account number: "
+	+ last.getAccountNumber());
+	System.out.println("Expected: 1729");
+	}
+}

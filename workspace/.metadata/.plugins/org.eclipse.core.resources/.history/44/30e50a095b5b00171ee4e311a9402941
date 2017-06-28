@@ -1,0 +1,9 @@
+package question02;
+
+public class AClass {
+	private int aprivate;
+	protected int aprotected;
+	public int apublic;
+	int apackage;
+	static int noAObjects = 0;
+}

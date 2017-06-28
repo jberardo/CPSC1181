@@ -1,6 +1,0 @@
-The side effect is in the method:
-  public void add(Coin aCoin)
-
-It sends a message to the println method in System.out object. It should only add the coin's value to its total.
-It is generally a good idea to separate the input/output from this class.
-The output should be printed outside the class, using an accessor method to retrieve the total value.

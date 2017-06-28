@@ -1,0 +1,10 @@
+package question01;
+
+public class IDCard extends Card {
+	private int idNumber;
+	
+	public IDCard()
+	{
+		
+	}
+}

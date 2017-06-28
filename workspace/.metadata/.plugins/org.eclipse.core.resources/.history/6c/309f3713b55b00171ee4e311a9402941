@@ -1,0 +1,10 @@
+package test;
+
+import javax.swing.JComponent;
+
+public class RectangleComponent extends JComponent {
+	public void paintComponent(Graphics g)
+	{
+		//Drawing instructions go here
+	}
+}

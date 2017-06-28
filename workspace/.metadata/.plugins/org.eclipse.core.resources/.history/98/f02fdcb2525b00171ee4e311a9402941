@@ -1,0 +1,18 @@
+package question01;
+
+import java.util.Date;
+
+public class DriverLicense extends Card {
+	private int expirationYear;
+	
+	public DriverLicense(String newName, int year)
+	{
+		super(newName);
+		this.expirationYear = year;
+	}
+	
+	public String format()
+	{
+		return return "IDCard [Name=" + this.getName()  + ",IdNumber=" + this.idNumber + "]";
+	}
+}

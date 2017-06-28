@@ -1,0 +1,24 @@
+
+public class BankAccount {
+
+	private double amount;
+	
+	public BankAccount()
+	{
+		this.amount = 0;
+	}
+	
+	public void deposit(double value) {
+		amount += value;
+	}
+
+	public void withdraw(double value) {
+		this.amount -= value;
+	}
+
+	public double getBalance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

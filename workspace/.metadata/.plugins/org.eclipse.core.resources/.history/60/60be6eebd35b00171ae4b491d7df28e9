@@ -1,0 +1,10 @@
+package test;
+
+import java.util.Random;
+
+/**
+ * This class models a die that, when cast, lands on a random face.
+*/
+public class Die {
+
+}

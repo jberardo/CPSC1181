@@ -1,0 +1,44 @@
+package dateserver;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class DateServer {
+	public static void main(String[] args) throws InterruptedException
+	{
+	ServerSocket serverSocket = null;
+	Socket client = null;
+	try {
+	    serverSocket = new ServerSocket(6013);
+	    while (true) {
+	        client = serverSocket.accept();
+	        OutputStream outputStream = client.getOutputStream();
+	        InputStream inputStream = client.getInputStream();
+
+	        System.out.println("" + outputStream + "-" + inputStream);
+
+	        BufferedReader bufferedReader = new BufferedReader(
+	                new InputStreamReader(inputStream));
+
+	        String line = null;
+	        while ((line = bufferedReader.readLine()) != null) {
+	            System.out
+	                    .println("Message recieved from client ::" + line);
+	        }
+
+	        PrintWriter printWriter = new PrintWriter(outputStream, true);
+
+	        printWriter.println(new java.util.Date().toString());
+
+	        client.close();
+	    }
+	} catch (IOException exception) {
+	    exception.printStackTrace();
+	    System.err.println(exception);
+	}
+	    }
+}

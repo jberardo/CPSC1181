@@ -1,0 +1,13 @@
+package test;
+
+/**
+ * This program simulates casting a die ten times.
+ * 
+ * @author Joao Berardo
+ * @since June, 27 2017
+ * @version 1.0
+*/
+public class DieSimulator
+{
+
+}

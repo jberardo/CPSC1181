@@ -1,3 +1,0 @@
-This class is big and have a lot of methods, and it appears not to be cohesive.
-I can assume that this class, as the name says, is a ToolKit for GUI applications.
-Its methods are implementing operations and waiting for events related to the Window and Desktop graphical parts of the application.

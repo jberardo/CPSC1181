@@ -1,0 +1,13 @@
+package question01;
+
+public class CardTester
+{
+	Card c1;
+	Card c2 = new DriverLicense("John Doe", 2001);
+	Billfold bf = new Billfold();
+	
+	public void main(String[] args)
+	{
+		c1 = new IDCard("Jane Doe", "13456");
+	}
+}

@@ -1,0 +1,15 @@
+package invoince;
+
+import java.io.File
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+/**
+Tests a database installation by creating and querying
+a sample table. Call this program as
+java -classpath driver_class_path;. TestDB propertiesFile
+*/
+public class TestDB {
+
+}

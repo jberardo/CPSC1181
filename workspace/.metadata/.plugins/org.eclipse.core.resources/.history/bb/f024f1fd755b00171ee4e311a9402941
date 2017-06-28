@@ -1,0 +1,11 @@
+package dateserver;
+
+public class DateClient {
+
+	public static void main(String[] args) hrows UnknownHostException,
+    IOException, InterruptedException {
+		// TODO Auto-generated method stub
+
+	}
+
+}

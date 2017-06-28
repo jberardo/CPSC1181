@@ -1,9 +1,0 @@
-package question09;
-
-public class Sphere {
-//  surface area of a sphere with radius r
-//  volume of a sphere with radius r
-	private double surfaceArea;
-	private double volume;
-
-}

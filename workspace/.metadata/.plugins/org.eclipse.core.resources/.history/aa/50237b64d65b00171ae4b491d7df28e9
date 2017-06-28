@@ -1,0 +1,14 @@
+package test;
+
+import java.util.ArrayList;
+
+/**
+ * This program tests the ArrayList class.
+ * 
+ * @author Joao Berardo
+ * @since June, 27 2017
+ * @version 1.0
+*/
+public class ArrayListTester {
+
+}

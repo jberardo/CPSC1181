@@ -1,0 +1,14 @@
+package test;
+
+/**
+ * A class to monitor the growth of an investment that
+ * accumulates interest at a fixed annual rate.
+ * 
+ * @author Joao Berardo
+ * @since June 27, 2017
+ * @version 1.0
+*/
+public class Investment
+{
+
+}

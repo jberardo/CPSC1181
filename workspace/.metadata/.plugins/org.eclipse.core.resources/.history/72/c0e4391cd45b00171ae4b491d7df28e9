@@ -1,0 +1,8 @@
+package test;
+
+/**
+This program simulates casting a die ten times.
+*/
+public class DieSimulator {
+
+}

@@ -1,0 +1,9 @@
+package test;
+
+public class Tests {
+
+	public static void main(String[] args) {
+		double diameter = 4;
+		double circumference = 3.14 * diameter;
+	}
+}

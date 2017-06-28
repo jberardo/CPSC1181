@@ -1,0 +1,16 @@
+package test;
+
+/**
+ * This class describes triangle objects that can be displayed
+ * as shapes like this:
+ * []
+ * [][]
+ * [][][]
+ * 
+ * @author Joao Berardo
+ * @since June 27, 2017
+ * @version 1.0
+*/
+public class Triangle {
+
+}

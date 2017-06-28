@@ -1,0 +1,29 @@
+package test;
+
+/**
+ * A cash register totals up sales and computes change due.
+ * 
+ * @author Joao Berardo
+ * @since June 27, 2017
+ * @version 1.0
+*/
+public class CashRegister {
+	public static final double
+	public static final double
+	public static final double
+	public static final double
+	QUARTER_VALUE = 0.25;
+	DIME_VALUE = 0.1;
+	NICKEL_VALUE = 0.05;
+	PENNY_VALUE = 0.01;
+	private double purchase;
+	private double payment;
+	/**
+	Constructs a cash register with no money in it.
+	*/
+	public CashRegister()
+	{
+	purchase = 0;
+	payment = 0;
+	}
+}

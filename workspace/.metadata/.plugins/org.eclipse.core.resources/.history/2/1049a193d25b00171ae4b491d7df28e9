@@ -1,0 +1,12 @@
+package test;
+
+/**
+ * Computes information about a set of data values.
+ * 
+ * @author Joao Berardo
+ * @since June 27, 2017
+ * @verion 1.0
+*/
+public class DataSet {
+
+}

@@ -1,0 +1,6 @@
+package question01;
+
+public class CallingCard {
+	private String cardNumber;
+	private String PIN;
+}

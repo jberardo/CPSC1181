@@ -1,0 +1,11 @@
+package question01;
+
+public class CallingCard {
+	private String cardNumber;
+	private String PIN;
+	
+	public CallingCard(String newName, String newCardNumber, String newPIN)
+	{
+		super(newName);
+	}
+}

@@ -1,0 +1,44 @@
+package question01;
+
+public class Billfold {
+	Card card1;
+	Card card2;
+	
+	public Billfold()
+	{
+		
+	}
+	
+	public void addCard(Card card)
+	{
+		if (card1 == null)
+		{
+			card1 = new Card();
+		}
+		else if (card2 == null)
+		{
+			card2 = new Card();
+		}
+	}
+	
+	public String formatCards()
+	{
+		String output = "[";
+		
+		if (card1 != null)
+		{
+			output += card1.format();
+		}
+		
+		if (card1 != null && card2 != null)
+		{
+			
+		}
+		
+		if (card2 != null)
+		{
+			output += card2.format();
+		}		
+		return "[" + card1.format() + "|" + card2.format() + "]";
+	}
+}

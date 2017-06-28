@@ -1,0 +1,17 @@
+package invoince;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.Statement;
+import java.sql.SQLException;
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+/**
+Executes all SQL statements from a file or the console.
+*/
+public class ExecSQL {
+
+}

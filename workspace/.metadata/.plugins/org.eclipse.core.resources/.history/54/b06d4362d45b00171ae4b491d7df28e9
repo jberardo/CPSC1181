@@ -1,0 +1,10 @@
+package test;
+
+import java.util.Random;
+
+/**
+This class simulates a needle in the Buffon needle experiment.
+*/
+public class Needle {
+
+}

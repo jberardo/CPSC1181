@@ -1,0 +1,18 @@
+package test;
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+import javax.swing.JComponent;
+
+public class RectangleComponent extends JComponent {
+	public void paintComponent(Graphics g)
+	{
+		//Drawing instructions go here
+		// Recover Graphics2D
+		Graphics2D g2 = (Graphics2D) g;
+		
+		Rectangle box = new Rectangle(100, 100, 400, 400);
+		g2.draw(box);
+	}
+}

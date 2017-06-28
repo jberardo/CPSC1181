@@ -1,0 +1,169 @@
+!SESSION 2017-06-24 17:54:39.932 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY com.genuitec.eclipse.patches 2 0 2017-06-24 17:54:41.895
+!MESSAGE Patches instrumentation extension com.genuitec.eclipse.patches.class-weaver1 () has not to weaved class org.eclipse.swt.widgets.ProgressBar.
+
+!ENTRY org.eclipse.ui 2 0 2017-06-24 17:54:45.085
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-06-24 17:54:45.085
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-06-24 17:54:45.934
+!MESSAGE Darkest Dark theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-06-24 17:54:46.274
+!MESSAGE Darkest Dark has archived current color configurations to alternate preferences - will be restored when switching out of Darkest Dark theme
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2017-06-24 17:54:46.823
+!MESSAGE <null>
+!STACK 0
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1437)
+	at java.util.HashMap$ValueIterator.next(HashMap.java:1466)
+	at org.eclipse.core.commands.CommandManager.addExecutionListener(CommandManager.java:307)
+	at com.genuitec.eclipse.monitor.AbstractCommandsMetricsProvider.startMonitoring(AbstractCommandsMetricsProvider.java:63)
+	at com.genuitec.eclipse.monitor.internal.collector.MetricsCollector.startMonitoring(MetricsCollector.java:76)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.startMonitoring(ClientMetricsCollector.java:83)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.startMonitoring(MetricsManager.java:167)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.initialize(MetricsManager.java:148)
+	at com.genuitec.eclipse.monitor.internal.MonitorPlugin$1.run(MonitorPlugin.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-06-24 18:06:21.207
+!MESSAGE Darkest Dark detected colors from an earlier Eclipse Color Theme install that are being cleaned up to avoid workspace pollution
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2017-06-24 18:06:45.507
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2017-06-24 18:06:45.507
+!MESSAGE session context was:(profile=_home_jab_Apps_eclipse_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,com.gradleware.tooling.client,0.19.0.v20170412105839
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,com.gradleware.tooling.model,0.19.0.v20170412105839
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,com.gradleware.tooling.utils,0.19.0.v20170412105839
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.buildship.branding,2.0.2.v20170420-0909
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.buildship.core,2.0.2.v20170420-0909
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.buildship.stsmigration,2.0.2.v20170420-0909
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.buildship.ui,2.0.2.v20170420-0909
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.apidocs,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.apidocs.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.calls,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.calls.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.chain.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.completion.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.constructors,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.constructors.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.coordinates,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.coordinates.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.injection,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.jayes,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.jayes.io,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.jdt,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.models,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.models.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.mylyn.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.net,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.overrides,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.overrides.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.snipmatch,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.snipmatch.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.subwords.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.types.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.utils,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.507
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.recommenders.utils.rcp,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.508
+!MESSAGE No repository found containing: osgi.bundle,org.gradle.toolingapi,3.5.0.v20170412105839
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.508
+!MESSAGE No repository found containing: osgi.bundle,org.apache.maven.resolver.api,1.0.3.v20170405-0725
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.508
+!MESSAGE No repository found containing: osgi.bundle,org.apache.maven.resolver.connector.basic,1.0.3.v20170405-0725
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.508
+!MESSAGE No repository found containing: osgi.bundle,org.apache.maven.resolver.impl,1.0.3.v20170405-0725
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.508
+!MESSAGE No repository found containing: osgi.bundle,org.apache.maven.resolver.spi,1.0.3.v20170405-0725
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.508
+!MESSAGE No repository found containing: osgi.bundle,org.apache.maven.resolver.transport.file,1.0.3.v20170405-0725
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.508
+!MESSAGE No repository found containing: osgi.bundle,org.apache.maven.resolver.transport.http,1.0.3.v20170405-0725
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.508
+!MESSAGE No repository found containing: osgi.bundle,org.apache.maven.resolver.util,1.0.3.v20170405-0725
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.508
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.buildship,2.0.2.v20170420-0909
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.508
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.recommenders.mylyn.rcp.feature,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.508
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.recommenders.rcp.feature,2.4.9.v20170613-1301
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:06:45.508
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.recommenders.snipmatch.rcp.feature,2.4.9.v20170613-1301
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2017-06-24 18:07:30.841
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2017-06-24 18:07:30.842
+!MESSAGE session context was:(profile=_home_jab_Apps_eclipse_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:07:30.842
+!MESSAGE No repository found containing: osgi.bundle,com.gradleware.tooling.client,0.19.0.v20170412105839
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:07:30.842
+!MESSAGE No repository found containing: osgi.bundle,com.gradleware.tooling.model,0.19.0.v20170412105839
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:07:30.842
+!MESSAGE No repository found containing: osgi.bundle,com.gradleware.tooling.utils,0.19.0.v20170412105839
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:07:30.842
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.buildship.branding,2.0.2.v20170420-0909
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:07:30.842
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.buildship.core,2.0.2.v20170420-0909
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:07:30.842
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.buildship.stsmigration,2.0.2.v20170420-0909
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:07:30.842
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.buildship.ui,2.0.2.v20170420-0909
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:07:30.842
+!MESSAGE No repository found containing: osgi.bundle,org.gradle.toolingapi,3.5.0.v20170412105839
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-06-24 18:07:30.842
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.buildship,2.0.2.v20170420-0909
+!SESSION 2017-06-24 23:31:13.537 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY com.genuitec.eclipse.patches 2 0 2017-06-24 23:31:17.402
+!MESSAGE Patches instrumentation extension com.genuitec.eclipse.patches.class-weaver1 () has not to weaved class org.eclipse.swt.widgets.ProgressBar.

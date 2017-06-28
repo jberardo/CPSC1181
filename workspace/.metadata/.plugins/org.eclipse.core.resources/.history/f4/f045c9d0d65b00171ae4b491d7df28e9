@@ -1,0 +1,13 @@
+package test;
+
+/**
+ * A bank account has a balance that can be changed by
+ * deposits and withdrawals.
+ * 
+ * @author Joao Berardo
+ * @since June, 27 2017
+ * @version 1.01;
+*/
+public class BankAccount {
+
+}

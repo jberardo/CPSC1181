@@ -1,0 +1,14 @@
+package test;
+
+import java.util.Random;
+
+/**
+ * This class simulates a needle in the Buffon needle experiment.
+ * 
+ * @author Joao Berardo
+ * @since June, 27 2017
+ * @version 1.0
+*/
+public class Needle {
+
+}

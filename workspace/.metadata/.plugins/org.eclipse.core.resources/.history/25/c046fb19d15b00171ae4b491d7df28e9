@@ -1,0 +1,9 @@
+package test;
+
+/**
+ * This program computes how long it takes for an investment
+ * to double.
+*/
+public class InvestmentRunner {
+
+}

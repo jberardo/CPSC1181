@@ -1,0 +1,16 @@
+package test;
+
+public class Tests {
+
+	public static void main(String[] args) {
+		double diameter = 5;
+		
+//		// MAGIC NUMBER! USE CONSTANTS FOR PI
+//		double circumference = 3.14 * diameter;
+//		System.out.println(circumference);
+		
+		double a = 5.9;            
+		System.out.println(Math.round(a));
+		System.out.println((long)a);
+	}
+}

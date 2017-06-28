@@ -1,0 +1,7 @@
+package question01;
+
+public class CardTester
+{
+	Card c1 = new IDCard("Jane Doe", "13456");
+	Card c2 = new DriverLicense("John Doe", 2001);
+}

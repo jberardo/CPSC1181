@@ -1,0 +1,12 @@
+package test;
+
+/**
+ * A class to test the BankAccount class.
+ * 
+ * @author Joao Berardo
+ * @since June 7, 2027
+ * @version 1.0
+*/
+public class BankAccountTester {
+
+}

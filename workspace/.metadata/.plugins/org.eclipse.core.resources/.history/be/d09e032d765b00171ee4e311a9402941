@@ -1,0 +1,28 @@
+package dateserver;
+
+public class DateClient {
+
+	public static void main(String[] args) throws UnknownHostException,
+    IOException, InterruptedException {
+
+		Socket sock = new Socket("127.0.0.1", 6013);
+	    OutputStream outputStream = sock.getOutputStream();
+	    InputStream inputStream = sock.getInputStream();
+
+	    System.out.println("" + outputStream + "-" + inputStream);
+
+	    PrintWriter printWriter = new PrintWriter(outputStream, true);
+	    printWriter.println("Hi Server");
+
+	    outputStream.close();
+
+	    System.out.println(sock.isConnected());
+
+	    BufferedReader bufferedReader = new BufferedReader(
+	            new InputStreamReader(inputStream));
+	    String line;
+	    while ((line = bufferedReader.readLine()) != null) { // Exception 
+	        System.out.println(line);
+	    }
+	}
+}

@@ -1,0 +1,12 @@
+package question01;
+
+import java.util.Date;
+
+public class DriverLicense {
+	private int expirationYear;
+	
+	public DriverLicense(String newName, int expiration)
+	{
+		
+	}
+}

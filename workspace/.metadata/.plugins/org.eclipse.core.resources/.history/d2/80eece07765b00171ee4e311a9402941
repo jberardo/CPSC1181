@@ -1,0 +1,9 @@
+package dateserver;
+
+public class DateClient {
+
+	public static void main(String[] args) throws UnknownHostException,
+    IOException, InterruptedException {
+
+	}
+}

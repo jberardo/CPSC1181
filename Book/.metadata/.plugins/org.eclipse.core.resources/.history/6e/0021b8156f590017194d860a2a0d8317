@@ -1,0 +1,22 @@
+package invoince;
+
+import
+import
+import
+import
+import
+import
+import
+import
+java.sql.Connection;
+java.sql.ResultSet;
+java.sql.ResultSetMetaData;
+java.sql.Statement;
+java.sql.SQLException;
+java.io.File;
+java.io.IOException;
+java.util.Scanner;
+
+public class ExecSQL {
+
+}

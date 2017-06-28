@@ -1,0 +1,18 @@
+package question01;
+
+public class CallingCard extends Card {
+	private String cardNumber;
+	private String pin;
+	
+	public CallingCard(String newName, String newCardNumber, String newPIN)
+	{
+		super(newName);
+		this.cardNumber = newCardNumber;
+		this.pin = newPIN;
+	}
+	
+	public String format()
+	{
+		return "CallingCard [Name=" + this.getName()  + ",CardNumber=" + this.cardNumber + ",PIN=" + this.pin + "]";
+	}
+}
