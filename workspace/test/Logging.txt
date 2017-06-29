@@ -1,8 +1,9 @@
-Jun 27, 2017 11:41:16 PM logz.UseLogger doSomeThingAndLog
-SEVERE: Info Log
-Jun 27, 2017 11:41:16 PM logz.UseLogger doSomeThingAndLog
-SEVERE: Info Log
-Jun 27, 2017 11:41:16 PM logz.UseLogger doSomeThingAndLog
-WARNING: Info Log
-Jun 27, 2017 11:41:16 PM logz.UseLogger doSomeThingAndLog
+
+Jun 28, 2017 10:11:30 PM logz.UseLogger doSomeThingAndLog
+SEVERE: Severe Log
+Jun 28, 2017 10:11:30 PM logz.UseLogger doSomeThingAndLog
+SEVERE: Severe Log
+Jun 28, 2017 10:11:30 PM logz.UseLogger doSomeThingAndLog
+WARNING: Warning Log
+Jun 28, 2017 10:11:30 PM logz.UseLogger doSomeThingAndLog
 INFO: Info Log
