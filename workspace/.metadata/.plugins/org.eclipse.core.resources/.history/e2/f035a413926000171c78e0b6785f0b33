@@ -1,0 +1,10 @@
+package question03;
+
+/**
+ * 
+ * @author jab
+ *
+ */
+public interface Speakable {
+	public void speak();
+}

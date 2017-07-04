@@ -28,18 +28,36 @@ public class ASubClass extends AClass {
 
   public int addem()
   {
-    // System.out.println(bobj.bprivate);
-    // System.out.println(bobj.bprotected);
-    // System.out.println(bobj.bpublic);
-    // System.out.println(bobj.bpackage);
-    // System.out.println(cobj.cprivate);
-    // System.out.println(cobj.cprotected);
-    // System.out.println(cobj.cpublic);
-    // System.out.println(cobj.cpackage);
-    // System.out.println(aprivate);
-    // System.out.println(aprotected);
-    // System.out.println(apublic);
-    // System.out.println(apackage);
-    return asprivate + asprotected + aspublic + aspackage + aprotected + apublic + apackage;
+	  // can't access private variables of other classes
+	  // System.out.println(bobj.bprivate);
+    
+	  
+	  System.out.println(bobj.bprotected);
+    
+	  System.out.println(bobj.bpublic);
+
+	  System.out.println(bobj.bpackage);
+    
+	  // can't access private variables of other classes
+	  // System.out.println(cobj.cprivate);
+	  
+	  // can't access protected variables of other classes
+	  // System.out.println(cobj.cprotected);
+    
+	  System.out.println(cobj.cpublic);
+    
+	  // to access this variable, this class should inherit from CClass.
+	  // System.out.println(cobj.cpackage);
+    
+	  // can't access private variables of other classes
+	  // System.out.println(aprivate);
+    
+	  System.out.println(aprotected);
+    
+	  System.out.println(apublic);
+    
+	  System.out.println(apackage);
+    
+	  return asprivate + asprotected + aspublic + aspackage + aprotected + apublic + apackage;
   }
 }

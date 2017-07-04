@@ -1,0 +1,100 @@
+package question01;
+
+import java.util.Objects;
+
+/**
+ * Create a person's card with information, containing the person's name
+ * Other clsses inherits from this class to implement specific details
+ * 
+ * @author Joao Berardo
+ * @since 1.0, July, 01 2017
+ *
+ */
+public class Card
+{
+	// card holder's name
+	private String name;
+
+	/**
+	 * Creates a new card with empty name
+	 */
+	public Card()
+	{
+		name = "";
+	}
+	
+	/**
+	 * Creates a new card with given name
+	 * @param newName
+	 */
+	public Card(String newName)
+	{
+		this.name = newName;
+	}
+	
+	/**
+	 * Retrieves card holder's name
+	 * @return
+	 */
+	public String getName()
+	{
+		return this.name;
+	}
+	
+	/**
+	 * Sets card holder's name
+	 * @param name
+	 */
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
+	/**
+	 * Check if card is expired
+	 * @return
+	 */
+	public boolean isExpired()
+	{
+		return false;
+	}
+	
+	/**
+	 * Format card for printing
+	 * @return formatted string
+	 */
+	public String format()
+	{
+		return "Card holder: " + this.name;
+	}
+	
+	/**
+	 * Format and return detailed information
+	 * @returns card details
+	 */
+	public String toString()
+	{
+		return "Card [Name=" + this.name + "]";
+	}
+	
+	/**
+	 * Check if two objects are the same
+	 * @param o object to be compared
+	 */
+    public boolean equals(Object o)
+    {
+        if (this == o)
+        {
+        	return true;
+        }
+        
+        if (o == null || getClass() != o.getClass())
+        {
+        	return false;
+        }
+        
+        Card card = (Card) o;
+        
+        return Objects.equals(this.name, card.name);
+    }
+}

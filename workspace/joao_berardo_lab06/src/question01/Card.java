@@ -3,17 +3,20 @@ package question01;
 import java.util.Objects;
 
 /**
+ * Create a person's card with information, containing the person's name
+ * Other classes inherit from this one to implement specific details
  * 
- * @author jab
+ * @author Joao Berardo
+ * @since 1.0, July, 01 2017
  *
  */
 public class Card
 {
-	//
+	// card holder's name
 	private String name;
 
 	/**
-	 * 
+	 * Creates a new card with empty name
 	 */
 	public Card()
 	{
@@ -21,7 +24,7 @@ public class Card
 	}
 	
 	/**
-	 * 
+	 * Creates a new card with given name
 	 * @param newName
 	 */
 	public Card(String newName)
@@ -30,7 +33,7 @@ public class Card
 	}
 	
 	/**
-	 * 
+	 * Retrieves card holder's name
 	 * @return
 	 */
 	public String getName()
@@ -39,7 +42,7 @@ public class Card
 	}
 	
 	/**
-	 * 
+	 * Sets card holder's name
 	 * @param name
 	 */
 	public void setName(String name)
@@ -48,7 +51,7 @@ public class Card
 	}
 	
 	/**
-	 * 
+	 * Check if card is expired
 	 * @return
 	 */
 	public boolean isExpired()
@@ -57,8 +60,8 @@ public class Card
 	}
 	
 	/**
-	 * 
-	 * @return
+	 * Format card for printing
+	 * @return formatted string
 	 */
 	public String format()
 	{
@@ -66,13 +69,18 @@ public class Card
 	}
 	
 	/**
-	 * 
+	 * Format and return detailed information
+	 * @returns card details
 	 */
 	public String toString()
 	{
 		return "Card [Name=" + this.name + "]";
 	}
 	
+	/**
+	 * Check if two objects are the same
+	 * @param o object to be compared
+	 */
     public boolean equals(Object o)
     {
         if (this == o)

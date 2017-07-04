@@ -1,0 +1,2 @@
+Package variables are accessible only by classes in the same package.
+Protected access variables are accessible by all classes in the same package and by subclasses of other packages.

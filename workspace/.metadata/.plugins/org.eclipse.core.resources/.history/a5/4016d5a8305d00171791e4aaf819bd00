@@ -1,0 +1,22 @@
+package logz;
+
+public class OtherTest
+{
+	private String msg;
+	
+	public OtherTest()
+	{
+		MyLogger.log("OtherTest constructor");
+		msg = "";
+	}
+
+	public String getMsg() {
+		MyLogger.log("Inside getMsg");
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		MyLogger.log("Inside setMsg");
+		this.msg = msg;
+	}
+}

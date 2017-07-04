@@ -1,0 +1,5 @@
+1.6) Explain why the output of your BillfoldTester program demonstrates polymorphism.
+
+1.8) The ID card and the phone card don’t expire. What should you do to reflect this fact in your implementation?
+If they don't expire, they should not have a property for expiration date.
+The expiration date should be implemented only by the DriverLicense class.

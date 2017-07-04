@@ -1,14 +1,26 @@
 package question01;
 
+/**
+ * 
+ * @author Joao Berardo
+ * @since 1.0, July, 01 2017
+ */
 public class Billfold {
 	Card card1;
 	Card card2;
 	
+	/**
+	 * Create an empty Bill Fold
+	 */
 	public Billfold()
 	{
 		
 	}
 	
+	/**
+	 * Add a card to Bill Fold
+	 * @param card card to be added
+	 */
 	public void addCard(Card card)
 	{
 		if (card1 == null)
@@ -21,6 +33,10 @@ public class Billfold {
 		}
 	}
 	
+	/**
+	 * Retrieves the number of expired cards
+	 * @return number of expired cards
+	 */
 	public int getExpiredCardCount()
 	{
 		int count = 0;
@@ -38,6 +54,10 @@ public class Billfold {
 		return count;
 	}
 	
+	/**
+	 * Formats all existing cards
+	 * @return cards formatted for printing
+	 */
 	public String formatCards()
 	{
 		String output = "[";
@@ -62,8 +82,26 @@ public class Billfold {
 		return output;
 	}
 	
+	/**
+	 * Format and return detailed information on both cards
+	 * @returns card details
+	 */
 	public String toString()
 	{
-		return card1.toString()  + "\n" + card2.toString();
+		String output = "";
+		
+		if (card1 != null)
+		{
+			output += card1.toString();
+		}
+		
+		output += "\n";
+		
+		if (card2 != null)
+		{
+			output += card2.toString();
+		}
+		
+		return output;
 	}
 }

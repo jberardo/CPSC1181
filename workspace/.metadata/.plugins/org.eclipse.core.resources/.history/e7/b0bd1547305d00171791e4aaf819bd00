@@ -1,0 +1,11 @@
+package logz;
+
+public class OtherTest
+{
+	private String msg;
+	
+	public OtherClass()
+	{
+		
+	}
+}

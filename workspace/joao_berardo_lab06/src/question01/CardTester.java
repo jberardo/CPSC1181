@@ -1,11 +1,21 @@
 package question01;
 
+/**
+ * Test some card methods
+ * 
+ * @author Joao Berardo
+ * @since 1.0, July, 01 2017
+ *
+ */
 public class CardTester
 {
-
+	/**
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args)
 	{
-		System.out.println("Testing Bilfold");
+		System.out.println("Testing Billfold");
 		testBillfold();
 		
 		System.out.println();
@@ -14,6 +24,7 @@ public class CardTester
 		testEquality();
 	}
 	
+	//
 	private static void testBillfold()
 	{
 		Card c1;

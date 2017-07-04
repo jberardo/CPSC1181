@@ -1,0 +1,3 @@
+Explain how package access variables differ from protected access variables.
+Package variables are accessible only by classes in the same package.
+Protected access variables are accessible by all classes in the same package and within subclasses in other packages.

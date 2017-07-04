@@ -1,0 +1,37 @@
+package question03;
+
+/**
+ * 
+ * @author Joao Berardo
+ * @since 1.0, June, 01 2017
+ *
+ */
+public class Dog implements Speakable {
+	private String name;
+
+	/**
+	 * 
+	 * @param name
+	 */
+	public Dog(String name)
+	{
+		this.name = name;
+	}
+	
+	/**
+	 * Makes dog speak
+	 */
+	public void speak()
+	{
+		System.out.println("Woof! Woof!");
+	}
+	
+	/**
+	 * Display details of the dog
+	 * @return dog's details
+	 */
+	public String toString()
+	{
+		return "Dog: " + name;
+	}
+}

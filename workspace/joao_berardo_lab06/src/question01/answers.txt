@@ -1,0 +1,5 @@
+1.6) We added two different classes that derives from the same Card class.
+From the output we can see that both objects have different output invoking the same method (formatCards() and toString()).
+Those methods were overridden by the child classes, so that they can have their own output.
+
+1.8) The super class has a method isExpired set always to false, and all the classes that have expiration date should orverride this method.

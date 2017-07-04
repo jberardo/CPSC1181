@@ -1,0 +1,104 @@
+package question01;
+
+/**
+ * 
+ * @author Joao Berardo
+ * @since 1.0, June, 01 2017
+ */
+public class Billfold {
+	Card card1;
+	Card card2;
+	
+	/**
+	 * Create an empty Bill Fold
+	 */
+	public Billfold()
+	{
+		
+	}
+	
+	/**
+	 * Add a card to Bill Fold
+	 * @param card card to be added
+	 */
+	public void addCard(Card card)
+	{
+		if (card1 == null)
+		{
+			card1 = card;
+		}
+		else if (card2 == null)
+		{
+			card2 = card;
+		}
+	}
+	
+	/**
+	 * Retrieves the number of expired cards
+	 * @return number of expired cards
+	 */
+	public int getExpiredCardCount()
+	{
+		int count = 0;
+		
+		if (card1.isExpired())
+		{
+			count++;
+		}
+		
+		if (card2.isExpired())
+		{
+			count++;
+		}
+		
+		return count;
+	}
+	
+	/**
+	 * Formats all existing cards
+	 * @return cards formatted for printing
+	 */
+	public String formatCards()
+	{
+		String output = "[";
+		
+		if (card1 != null)
+		{
+			output += card1.format();
+		}
+		
+		if (card1 != null && card2 != null)
+		{
+			output+= "|";
+		}
+		
+		if (card2 != null)
+		{
+			output += card2.format();
+		}
+		
+		output += "]";
+		
+		return output;
+	}
+	
+	/**
+	 * Format and return detailed information on both cards
+	 * @returns card details
+	 */
+	public String toString()
+	{
+		String output = "";
+		
+		if (card1 != null)
+		{
+			output += card1.toString();
+		}
+		
+		if (card2 != null)
+		{
+			output += card2.toString();
+		}
+		return card1.toString()  + "\n" + card2.toString();
+	}
+}

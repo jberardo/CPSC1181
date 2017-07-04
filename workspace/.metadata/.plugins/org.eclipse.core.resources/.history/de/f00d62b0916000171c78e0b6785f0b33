@@ -1,0 +1,36 @@
+package question03;
+
+/**
+ * 
+ * @author Joao Berardo
+ * @since 1.0, June, 01 2017
+ *
+ */
+public class Cat implements Speakable {
+	private String name;
+
+	/**
+	 * 
+	 * @param name
+	 */
+	public Cat(String name)
+	{
+		this.name = name;
+	}
+
+	/**
+	 * 
+	 */
+	public void speak()
+	{
+		System.out.println("Meow! Meow!");
+	}
+
+	/**
+	 * 
+	 */
+	public String toString()
+	{
+		return "Cat: " + name;
+	}
+}

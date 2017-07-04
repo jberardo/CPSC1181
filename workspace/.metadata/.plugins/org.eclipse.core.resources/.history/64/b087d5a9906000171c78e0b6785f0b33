@@ -1,0 +1,2 @@
+Explain how package access variables differ from protected access variables.
+A member with no access modifier is only accessible within classes in the same package. A protected member is accessible within all classes in the same package and within subclasses in other packages.

@@ -47,4 +47,5 @@
 <fullyQualifiedTypeName name="java.util.logging.Logger"/>
 <fullyQualifiedTypeName name="java.util.logging.Handler"/>
 <fullyQualifiedTypeName name="java.util.logging.ConsoleHandler"/>
+<fullyQualifiedTypeName name="logz.MyLogger"/>
 </qualifiedTypeNameHistroy>

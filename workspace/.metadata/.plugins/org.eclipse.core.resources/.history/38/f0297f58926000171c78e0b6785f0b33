@@ -1,0 +1,11 @@
+package question03;
+
+/**
+ * 
+ * @author Joao Berardo
+ * @since 1.0, July, 01 2017 
+ *
+ */
+public interface Speakable {
+	public void speak();
+}
