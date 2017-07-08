@@ -1,0 +1,7 @@
+package question02;
+
+import java.awt.Rectangle;
+
+public interface Geometry {
+	double getArea();
+}

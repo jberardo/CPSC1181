@@ -9,6 +9,7 @@ package question01;
 */
 public class BankAccount implements Comparable<BankAccount>
 {
+	// account balance
 	private double balance;
 	
 	/**
@@ -63,16 +64,16 @@ public class BankAccount implements Comparable<BankAccount>
 	 *  and 0 if both bank accounts have the same balance
 	*/
 	@Override
-	public int compareTo(BankAccount bankAccount)
+	public int compareTo(BankAccount account)
 	{
 		// this bank account's balance is less then the account we are comparing to
-		if (balance < bankAccount.balance)
+		if (balance > account.balance)
 		{
 			return 1;
 		}
 		
 		// this bank account's balance is greater then the account we are comparing to
-		if (balance > bankAccount.balance)
+		if (balance < account.balance)
 		{
 			return -1;
 		}

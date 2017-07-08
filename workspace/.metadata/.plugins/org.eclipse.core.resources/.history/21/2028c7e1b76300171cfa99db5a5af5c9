@@ -1,0 +1,29 @@
+package question02;
+
+import java.awt.Rectangle;
+
+/**
+ * 
+ * 
+ * @author Joao Berardo
+ * @since 1.0, July, 08 2017
+ *
+ */
+public class MyRectangle extends Rectangle implements Geometry
+{
+	private double area;
+
+	public MyRectangle(int x, int y, int width, int height)
+	{
+		super(x, y, width, height);
+		this.area = getWidth() * getHeight();
+	}
+	
+	/**
+	 * 
+	 */
+	@Override
+	public double getArea() {
+		return this.area;
+	}
+}

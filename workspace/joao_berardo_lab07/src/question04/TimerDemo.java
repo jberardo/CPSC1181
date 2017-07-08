@@ -1,25 +1,42 @@
 package question04;
 
 import java.util.Date;
-import java.util.Scanner;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
+/**
+ * 
+ * 
+ * @author Joao Berardo
+ * @since 1.0, July, 09 2017
+ */
 public class TimerDemo
 {
+	//
 	static ActionListener listener;
 	static ActionListener listener2;
 	static Timer t;
 	Timer t2;
 	
+	/**
+	 * Main method
+	 * @param args not used
+	 */
 	public static void main(String[] args)
 	{
+		/**
+		 * 
+		 * 
+		 * @author Joao Berardo
+		 * @since 1.0, July, 09 2017
+		 */
 		class CurrentTimePrinter implements ActionListener
 		{
-
+			/**
+			 * 
+			 */
 			@Override
 			public void actionPerformed(ActionEvent e)
 			{
@@ -30,8 +47,17 @@ public class TimerDemo
 			}
 		}
 		
+		/**
+		 * 
+		 * 
+		 * @author Joao Berardo
+		 * @since 1.0, July, 09 2017
+		 */
 		class TimerToggler implements ActionListener
 		{
+			/**
+			 * 
+			 */
 			@Override
 			public void actionPerformed(ActionEvent event)
 			{
@@ -51,9 +77,11 @@ public class TimerDemo
 			}
 		}
 
+		//
 		listener = new CurrentTimePrinter();
 		listener2 = new TimerToggler();
 
+		//
 		while (true)
 		{
 			JOptionPane.showMessageDialog(null, "Quit?");

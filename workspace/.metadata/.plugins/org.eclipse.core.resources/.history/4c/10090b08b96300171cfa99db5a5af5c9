@@ -1,0 +1,43 @@
+package question02;
+
+import java.awt.Rectangle;
+
+/**
+ * Class that extends the Rectangle class<br/>
+ * and also implements the Geometry interface.</br>
+ * 
+ * This class has the purpose to extend the Rectangle functionality<br/>
+ * by implementing the getArea() method of the Geometry interface.
+ * 
+ * Geometry let us implement getArea() method.<br/>
+ * 
+ * @author Joao Berardo
+ * @since 1.0, July, 08 2017
+ *
+ */
+public class MyRectangle extends Rectangle implements Geometry
+{
+	//
+	private double area;
+
+	/**
+	 * 
+	 * @param x
+	 * @param y
+	 * @param width
+	 * @param height
+	 */
+	public MyRectangle(int x, int y, int width, int height)
+	{
+		super(x, y, width, height);
+		this.area = getWidth() * getHeight();
+	}
+	
+	/**
+	 * 
+	 */
+	@Override
+	public double getArea() {
+		return this.area;
+	}
+}

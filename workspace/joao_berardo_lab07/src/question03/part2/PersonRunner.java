@@ -1,19 +1,36 @@
 package question03.part2;
 
-public class PersonRunner {
+/**
+ *
+ * 
+ * @author Joao Berardo
+ * @since 1.0, July, 09 2017
+ */
+public class PersonRunner
+{
+	/**
+	 * Main method
+	 * @param args not used
+	 */
 	public static void main(String[] args)
 	{
+		//
 		Person aperson = new Person("John Doe", 36);
+		
+		//
 		aperson.tellAll();
+		
+		//
 		aperson.rememberAnEvent("I was born in 1980.");
 		aperson.rememberAnEvent("I finished school in 2003.");
 		aperson.tellAll();
-		// add an amnesia test here
-		aperson.amnesia();
-		System.out.println("After amnesia: ");
-		aperson.tellAll();
 		
-		aperson.rememberAnEvent("Test");
+		// 
+		aperson.amnesia();
+		aperson.tellAll();
+
+		// 
+		aperson.rememberAnEvent("Test mem");
 		aperson.tellAll();
 	}
 }

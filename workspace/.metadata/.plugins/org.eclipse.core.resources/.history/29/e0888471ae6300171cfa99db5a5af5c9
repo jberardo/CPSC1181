@@ -1,0 +1,7 @@
+1.1) To implement the Comparable interface, we need to implement the following method:
+  - int compareTo(Object otherObject);
+
+1.4) The outcome is the bank account list sorted descending.
+The implementation depends on what the user wants to see.
+I think the best approach is to give the user an option to sort ascending or descending.
+We can implement that in the compareTo method switching the return values depending on the user's option.  

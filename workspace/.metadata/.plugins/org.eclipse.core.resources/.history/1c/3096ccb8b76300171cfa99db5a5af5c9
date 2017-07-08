@@ -1,0 +1,16 @@
+package question02;
+
+import java.awt.Rectangle;
+
+public class MyRectangle extends Rectangle implements Geometry {
+
+	public MyRectangle(int x, int y, int width, int height)
+	{
+		super(x, y, width, height);
+	}
+	
+	@Override
+	public double getArea() {
+		return getWidth() * getHeight();
+	}
+}

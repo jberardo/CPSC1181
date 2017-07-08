@@ -22,8 +22,8 @@ public class SortDemo {
 		// Print out the sorted list
 		for (int i = 0; i < list.size(); i++)
 		{
-		Rectangle r = list.get(i);
-		System.out.println(r.getWidth() + " " + r.getHeight());
+			Rectangle r = list.get(i);
+			System.out.println(r.getWidth() + " " + r.getHeight());
 		}
 	}
 }

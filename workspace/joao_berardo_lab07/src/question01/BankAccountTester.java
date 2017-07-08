@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * A class to test the BankAccount class.
+ * Program to test the BankAccount class.<br/>
+ * Five bank accounts are created and inserted into an array list.<br/>
+ * Each bank account has a balance and we sort them and display them in order.</br>
  * 
  * @author Joao Berardo
  * @since 1.0, July, 04 2017
@@ -36,10 +38,15 @@ public class BankAccountTester
 		Collections.sort(list);
 		
 		// Print out the sorted list
+		System.out.println("---------- Balances ----------");
 		for (int i = 0; i < list.size(); i++)
 		{
 			BankAccount b = list.get(i);
-			System.out.println(b.getBalance());
+			System.out.printf("[%d]: %6.2f\n", i, b.getBalance());
 		}
+		
+		// expected results from test
+		System.out.println("\n---------- Expected ----------");
+		System.out.println("[0]:  50.00\n[1]: 100.00\n[2]: 180.00\n[3]: 250.00\n[4]: 900.00");
 	}
 }

@@ -1,16 +1,18 @@
 package question02;
 
 import java.util.Comparator;
-import java.awt.Rectangle;
 
 /**
- * 
+ * Compares two triangles by their area.<br/>
+ * This class implements the Comparator Interface<br/>
+ * overriding the @compare(Rectangle r1, Rectangle r2) method so we can compare<br/>
+ * two triangles to see which one has the largest area.<br/>
  * 
  * @author Joao Berardo
  * @since 1.0, July, 04 2017
  *
  */
-public class RectangleComparator implements Comparator<Rectangle>
+public class RectangleComparator implements Comparator<MyRectangle>
 {
 
 	/**
@@ -22,24 +24,19 @@ public class RectangleComparator implements Comparator<Rectangle>
 	 * smaller than the area of the second rectangle or 0 if the two
 	 * rectangles have the same area
 	*/
-	public int compare(Rectangle r1, Rectangle r2)
+	public int compare(MyRectangle r1, MyRectangle r2)
 	{
-		if (this.getArea(r1) < this.getArea(r2))
+		//if (this.getArea(r1) < this.getArea(r2))
+		if (r1.getArea() < r2.getArea())
 		{
 			return -1;
 		}
 		
-		if (this.getArea(r1) > this.getArea(r2))
+		if (r1.getArea() > r2.getArea())
 		{
 			return 1;
 		}
 		
 		return 0;
 	}
-	
-	private double getArea(Rectangle r)
-	{
-		return r.getWidth() * r.getHeight();
-	}
-
 }
