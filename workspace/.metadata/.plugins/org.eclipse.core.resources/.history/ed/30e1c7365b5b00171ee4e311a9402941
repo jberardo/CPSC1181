@@ -1,5 +1,0 @@
-package question02;
-
-public class ASubClass extends AClass {
-
-}

@@ -1,7 +1,0 @@
-package test;
-
-import javax.swing.JFrame;
-
-public class RectangleViewer {
-	JFrame j = new JFrame();
-}

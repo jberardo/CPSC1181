@@ -1,0 +1,62 @@
+import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
+
+/**
+ * 
+ * @author Joao Berardo
+ * @since 1.0 July, 07 2017
+ *
+ */
+public class Clock
+{
+	private ZoneId zoneIdDefault;
+	
+	/**
+	 * 
+	 */
+	public Clock()
+	{
+		zoneIdDefault = ZoneId.systemDefault();
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public String getHours()
+	{
+		ZonedDateTime now = ZonedDateTime.now((zoneIdDefault));
+
+		return java.time.Instant.now().toString().substring(11, 13);
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public String getMinutes()
+	{
+		return java.time.Instant.now().toString().substring(14, 16);
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public String getTime()
+	{
+		return getHours() + ":" + getMinutes();
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public ZoneId getZoneIdDefault() {
+		return zoneIdDefault;
+	}
+}

@@ -1,0 +1,8 @@
+package question04;
+
+import java.awt.event.ActionListener;
+
+public class CurrentTimePrinter implements ActionListener
+{
+	
+}

@@ -1,0 +1,77 @@
+package question03.part2;
+
+import java.util.*;
+
+public class Person {
+	private String name;
+	private int age;
+	private Memory mem;
+
+	public Person(String name, int age)
+	{
+		this.name = name;
+		this.age = age;
+		mem = new Memory();
+	}
+
+	public String toString()
+	{
+		return "Name: " + name + '\n' +	"Age: " + age + '\n';
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public int getAge()
+	{
+		return age;
+	}
+	
+	public void tellAll()
+	{
+		mem.dumpMemory();
+	}
+	
+	public void rememberAnEvent(String s)
+	{
+		mem.addLifeData(s);
+	}
+	
+	public void amnesia()
+	{
+		mem.clearMemory();
+	}
+	
+	// Start of inner class Memory
+	private class Memory
+	{
+		ArrayList<String> lifeData;
+
+		private Memory()
+		{
+			lifeData = new ArrayList<String>();
+			lifeData.add("Name: " + name);
+			lifeData.add("Age: " + age);
+		}
+		
+		public void addLifeData(String datum)
+		{
+			lifeData.add(datum);
+		}
+		
+		public void dumpMemory()
+		{
+			for (String s: lifeData)
+			{
+				System.out.println(s);
+			}
+		}
+		
+		public void clearMemory()
+		{
+				lifeData.clear();
+		}
+	}
+}

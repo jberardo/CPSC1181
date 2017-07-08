@@ -1,0 +1,8 @@
+package question02;
+
+import java.util.Comparator;
+import java.awt.Rectangle;
+
+public class RectangleComparator implements Comparator<Rectangle> {
+
+}

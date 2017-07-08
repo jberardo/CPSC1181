@@ -1,0 +1,12 @@
+import java.util.Date;
+
+public class Appointment
+{
+	private String description;
+	private Date date;
+	
+	public Appointment()
+	{
+		
+	}
+}

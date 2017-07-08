@@ -1,0 +1,33 @@
+package question03.part2;
+
+import java.util.ArrayList;
+
+public class Memory
+{
+	ArrayList<String> lifeData;
+
+	private Memory()
+	{
+		lifeData = new ArrayList<String>();
+		lifeData.add("Name: " + name);
+		lifeData.add("Age: " + age);
+	}
+	
+	public void addLifeData(String datum)
+	{
+		lifeData.add(datum);
+	}
+	
+	public void dumpMemory()
+	{
+		for (String s: lifeData)
+		{
+			System.out.println(s);
+		}
+	}
+	
+	public void clearMemory()
+	{
+			lifeData.clear();
+	}
+}

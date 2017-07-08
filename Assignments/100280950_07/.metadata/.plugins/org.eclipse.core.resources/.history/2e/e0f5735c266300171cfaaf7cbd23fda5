@@ -1,0 +1,39 @@
+import java.time.temporal.ChronoUnit;
+
+/**
+ * 
+ * @author Joao Berardo
+ * @since 1.0 July, 07 2017
+ *
+ */
+public class Clock
+{
+	/**
+	 * 
+	 */
+	public Clock()
+	{
+		
+	}
+	
+	/**
+	 * 
+	 */
+	public String getHours()
+	{
+		String date = java.time.Instant.now().toString();
+		System.out.println(date.datetruncatedTo(ChronoUnit.MINUTES));
+		return "";
+	}
+	
+	public String getMinutes()
+	{
+		// java.time.Instant.now().toString()
+		return "";
+	}
+	
+	public String getTime()
+	{
+		return this.getHours() + ":" + this.getMinutes();
+	}
+}

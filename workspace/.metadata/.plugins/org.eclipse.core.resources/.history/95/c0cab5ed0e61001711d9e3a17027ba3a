@@ -1,0 +1,16 @@
+package question04;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Date;
+import java.util.Timer;
+
+public class CurrentTimePrinter implements ActionListener
+{
+
+	@Override
+	public void actionPerformed(ActionEvent arg0)
+	{
+		System.out.println(new Date());
+	}
+}

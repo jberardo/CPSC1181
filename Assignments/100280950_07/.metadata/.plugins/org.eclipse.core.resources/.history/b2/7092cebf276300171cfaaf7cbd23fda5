@@ -1,0 +1,41 @@
+import java.time.Instant;
+import java.time.LocalTime;
+import java.time.temporal.ChronoUnit;
+
+/**
+ * 
+ * @author Joao Berardo
+ * @since 1.0 July, 07 2017
+ *
+ */
+public class Clock
+{
+	/**
+	 * 
+	 */
+	public Clock()
+	{
+		
+	}
+	
+	/**
+	 * 
+	 */
+	public String getHours()
+	{
+		String date = java.time.Instant.now().toString();
+		.substring(11, 13)
+		return date;
+	}
+	
+	public String getMinutes()
+	{
+		// java.time.Instant.now().toString()
+		return "";
+	}
+	
+	public String getTime()
+	{
+		return this.getHours() + ":" + this.getMinutes();
+	}
+}

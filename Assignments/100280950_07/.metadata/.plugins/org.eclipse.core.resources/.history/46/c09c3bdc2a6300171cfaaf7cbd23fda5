@@ -1,0 +1,31 @@
+import java.time.Duration;
+
+/**
+ * 
+ * @author Joao Berardo
+ * @since 1.0 July, 07 2017
+ *
+ */
+public class WorldClock extends Clock
+{
+	/**
+	 * 
+	 */
+	public WorldClock (int offset)
+	{
+		// new WorldClock(3) = three time zones ahead
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public String getHours()
+	{
+//		String a = java.time.Instant.now().toString().substring(11, 13);
+//		int b = Integer.parseInt(a) % 24;
+//		System.out.println(b);
+		return java.time.Instant.now().plus(Duration.ofHours(3)).toString().substring(11, 13);
+		ZonedDateTime zdtKolkata = ZonedDateTime.ofInstant ( instant , zoneIdKolkata )
+	}
+}

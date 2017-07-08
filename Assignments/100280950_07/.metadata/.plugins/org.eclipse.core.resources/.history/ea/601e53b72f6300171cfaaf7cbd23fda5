@@ -1,0 +1,6 @@
+
+public class Appointment
+{
+	private String description;
+	private DateTime date;
+}

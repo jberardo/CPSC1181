@@ -1,0 +1,12 @@
+
+public class ClockTester
+{
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args)
+	{
+		Clock c = new Clock();
+	}
+}
