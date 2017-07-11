@@ -1,4 +1,0 @@
-INDEX VERSION 1.130+/home/jab/Langara/CPSC1181/Assignments/100280950_07/.metadata/.plugins/org.eclipse.jdt.core
-1071486819.index
-3520329295.index
-2798962393.index

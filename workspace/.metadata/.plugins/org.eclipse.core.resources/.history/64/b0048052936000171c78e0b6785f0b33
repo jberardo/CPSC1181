@@ -1,6 +1,0 @@
-1.6) We added two different classes that derives from the same Card class.
-From the output we can see that both objects have different output invoking the same method (formatCards() and toString()).
-Those methods were overridden by the child classes, so that they can have their own output.
-
-1.8) If they don't expire, they should not have a property for expiration date.
-The expiration date should be implemented only by the DriverLicense class.

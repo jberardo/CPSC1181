@@ -42,11 +42,11 @@ public class BankAccountTester
 		for (int i = 0; i < list.size(); i++)
 		{
 			BankAccount b = list.get(i);
-			System.out.printf("[%d]: %6.2f\n", i, b.getBalance());
+			System.out.printf("Account %d: %6.2f\n", i + 1, b.getBalance());
 		}
 		
 		// expected results from test
 		System.out.println("\n---------- Expected ----------");
-		System.out.println("[0]:  50.00\n[1]: 100.00\n[2]: 180.00\n[3]: 250.00\n[4]: 900.00");
+		System.out.println("Account 1:  50.00\nAccount 2: 100.00\nAccount 3: 180.00\nAccount 4: 250.00\nAccount 5: 900.00");
 	}
 }

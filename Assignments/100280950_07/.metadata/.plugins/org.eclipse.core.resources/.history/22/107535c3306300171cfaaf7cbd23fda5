@@ -1,9 +1,0 @@
-/**
- * 
- * @author jab
- *
- */
-public class Monthly extends Appointment
-{
-
-}

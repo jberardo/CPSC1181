@@ -1,4 +1,0 @@
-1.6) Explain why the output of your BillfoldTester program demonstrates polymorphism.
-
-1.8) If they don't expire, they should not have a property for expiration date.
-The expiration date should be implemented only by the DriverLicense class.

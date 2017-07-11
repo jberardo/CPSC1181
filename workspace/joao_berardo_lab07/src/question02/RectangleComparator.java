@@ -26,7 +26,6 @@ public class RectangleComparator implements Comparator<MyRectangle>
 	*/
 	public int compare(MyRectangle r1, MyRectangle r2)
 	{
-		//if (this.getArea(r1) < this.getArea(r2))
 		if (r1.getArea() < r2.getArea())
 		{
 			return -1;

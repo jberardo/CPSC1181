@@ -10,8 +10,7 @@ import java.util.ArrayList;
  */
 public class Memory
 {
-	//
-	ArrayList<String> lifeData;
+	private ArrayList<String> lifeData;
 
 	/**
 	 * 

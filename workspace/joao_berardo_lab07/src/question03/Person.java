@@ -3,22 +3,25 @@ package question03;
 import java.util.ArrayList;
 
 /**
- * 
+ * Person has a name and age<br/>
+ * Also, a Person has a Memory<br/>
+ * Users can add memories, erase memories and "tell" all memories
  * 
  * @author Joao Berardo
  * @since 1.0, July, 09 2017
  */
 public class Person
 {
-	//
+	// instance variables
 	private String name;
 	private int age;
 	private Memory mem;
 
 	/**
-	 * 
-	 * @param name
-	 * @param age
+	 * Creates a Person with name and age</br>
+	 * When a Person is created, is also creates a Memory for the Person
+	 * @param name person's name
+	 * @param age person's age
 	 */
 	public Person(String name, int age)
 	{
@@ -28,7 +31,8 @@ public class Person
 	}
 
 	/**
-	 * 
+	 * Returns the Person's name and age
+	 * @return person's name and age
 	 */
 	public String toString()
 	{
@@ -36,8 +40,8 @@ public class Person
 	}
 	
 	/**
-	 * 
-	 * @return
+	 * Returns person's name
+	 * @return person's ame
 	 */
 	public String getName()
 	{
@@ -45,8 +49,8 @@ public class Person
 	}
 	
 	/**
-	 * 
-	 * @return
+	 * Returns person's age
+	 * @return person's age
 	 */
 	public int getAge()
 	{
@@ -54,7 +58,7 @@ public class Person
 	}
 	
 	/**
-	 * 
+	 * Outputs all memories added to the Person
 	 */
 	public void tellAll()
 	{
@@ -62,8 +66,8 @@ public class Person
 	}
 	
 	/**
-	 * 
-	 * @param s
+	 * Creates a memory for the Person
+	 * @param s memory to remember
 	 */
 	public void rememberAnEvent(String s)
 	{
@@ -71,7 +75,7 @@ public class Person
 	}
 	
 	/**
-	 * 
+	 * Erases all Person's memory
 	 */
 	public void amnesia()
 	{
@@ -81,18 +85,20 @@ public class Person
 	// Start of inner class Memory
 	private class Memory
 	{
+		// memories collection
 		ArrayList<String> lifeData;
 
 		private Memory()
 		{
+			// initializes memory collection
 			lifeData = new ArrayList<String>();
 			lifeData.add("Name: " + name);
 			lifeData.add("Age: " + age);
 		}
 		
 		/**
-		 * 
-		 * @param datum
+		 * Creates a memory for the Person
+		 * @param datum memory to remember
 		 */
 		public void addLifeData(String datum)
 		{
@@ -100,7 +106,7 @@ public class Person
 		}
 		
 		/**
-		 * 
+		 * Prints all person's memory on console
 		 */
 		public void dumpMemory()
 		{
@@ -111,7 +117,7 @@ public class Person
 		}
 		
 		/**
-		 * 
+		 * Erases all person's memory
 		 */
 		public void clearMemory()
 		{

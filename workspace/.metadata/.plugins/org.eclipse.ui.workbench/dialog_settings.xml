@@ -17,6 +17,10 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
+		<item value="org.obeonetwork.dsl.uml2.wizard.newUmlModel" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.obeonetwork.dsl.uml2.design.category"/>
+		</list>
 	</section>
 	<section name="InstallationDialogSettings">
 		<item value="690" key="DIALOG_WIDTH"/>
@@ -35,6 +39,7 @@
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_lab07.zip"/>
 			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_lab06.zip"/>
 			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_lab05.zip"/>
 			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_labEliza.zip"/>

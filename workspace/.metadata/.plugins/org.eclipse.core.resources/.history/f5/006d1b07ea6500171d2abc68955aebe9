@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_2vnZ4GXbEeeSM5p6ZNpUZw" name="RectangleModel">
+  <packageImport xmi:id="_nPoVcGXpEee51pqcTPRX6A">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_02jTkGXoEee51pqcTPRX6A" name="Geometry">
+    <ownedOperation xmi:id="__cL1gGXoEee51pqcTPRX6A" name="getArea">
+      <ownedParameter xmi:id="_BLvuoGXpEee51pqcTPRX6A">
+        <name xsi:nil="true"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Fx7PkGXpEee51pqcTPRX6A" name="MyRectangle">
+    <ownedAttribute xmi:id="_HeFPYGXpEee51pqcTPRX6A" name="area">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:id="_17yn4GXpEee51pqcTPRX6A" client="_Fx7PkGXpEee51pqcTPRX6A" supplier="_02jTkGXoEee51pqcTPRX6A" contract="_02jTkGXoEee51pqcTPRX6A"/>
+    <ownedOperation xmi:id="_J23rsGXpEee51pqcTPRX6A" name="getArea">
+      <ownedParameter xmi:id="_LxHx4GXpEee51pqcTPRX6A" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UktHYGXpEee51pqcTPRX6A" name="RectangleComparator">
+    <ownedOperation xmi:id="_W8ZXgGXpEee51pqcTPRX6A" name="compare">
+      <ownedParameter xmi:id="_XhvgQGXpEee51pqcTPRX6A" name="r1">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_g-S6QGXpEee51pqcTPRX6A" name="r2">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_b8nJEGXpEee51pqcTPRX6A" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,127 @@
+package question03;
+
+import java.util.ArrayList;
+
+/**
+ * Person has a name and age<br/>
+ * Also, a Person has a Memory<br/>
+ * Users can add memories, erase memories and "tell" all memories
+ * 
+ * @author Joao Berardo
+ * @since 1.0, July, 09 2017
+ */
+public class Person
+{
+	// instance variables
+	private String name;
+	private int age;
+	private Memory mem;
+
+	/**
+	 * Creates a Person with name and age</br>
+	 * When a Person is created, is also creates a Memory for the Person
+	 * @param name person's name
+	 * @param age person's age
+	 */
+	public Person(String name, int age)
+	{
+		this.name = name;
+		this.age = age;
+		mem = new Memory();
+	}
+
+	/**
+	 * Returns the Person's name and age
+	 * @return person's name and age
+	 */
+	public String toString()
+	{
+		return "Name: " + name + '\n' +	"Age: " + age + '\n';
+	}
+	
+	/**
+	 * Returns person's name
+	 * @return person's ame
+	 */
+	public String getName()
+	{
+		return name;
+	}
+	
+	/**
+	 * Returns person's age
+	 * @return person's age
+	 */
+	public int getAge()
+	{
+		return age;
+	}
+	
+	/**
+	 * Outputs all memories added to the Person
+	 */
+	public void tellAll()
+	{
+		mem.dumpMemory();
+	}
+	
+	/**
+	 * Creates a memory for the Person
+	 * @param s memory to remember
+	 */
+	public void rememberAnEvent(String s)
+	{
+		mem.addLifeData(s);
+	}
+	
+	/**
+	 * Erases all Person's memory
+	 */
+	public void amnesia()
+	{
+		mem.clearMemory();
+	}
+	
+	// Start of inner class Memory
+	private class Memory
+	{
+		// memories collection
+		ArrayList<String> lifeData;
+
+		private Memory()
+		{
+			// initializes memory collection
+			lifeData = new ArrayList<String>();
+			lifeData.add("Name: " + name);
+			lifeData.add("Age: " + age);
+		}
+		
+		/**
+		 * Creates a memory for the Person
+		 * @param datum memory to be remembered
+		 */
+		public void addLifeData(String datum)
+		{
+			lifeData.add(datum);
+		}
+		
+		/**
+		 * 
+		 */
+		public void dumpMemory()
+		{
+			for (String s: lifeData)
+			{
+				System.out.println(s);
+			}
+		}
+		
+		/**
+		 * 
+		 */
+		public void clearMemory()
+		{
+				lifeData.clear();
+		}
+	}
+}

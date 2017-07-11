@@ -65,3 +65,15 @@
 2017-07-04 14:15:45,600 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2017-07-07 15:35:08,585 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2017-07-07 23:56:06,145 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-07-09 23:20:54,618 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-07-10 17:52:27,083 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-07-10 18:53:16,995 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-07-10 18:54:30,858 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @86894ms
+2017-07-10 18:54:30,992 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-07-10 18:54:31,088 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@15f37744{/help,null,AVAILABLE}
+2017-07-10 18:54:31,099 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@25e4b5d7{HTTP/1.1,[http/1.1]}{127.0.0.1:40095}
+2017-07-10 18:54:31,100 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @87136ms
+2017-07-10 20:24:52,642 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@25e4b5d7{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-07-10 20:24:52,652 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@15f37744{/help,null,UNAVAILABLE}
+2017-07-10 20:25:18,870 [Worker-19] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-07-11 12:12:34,081 [Worker-13] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

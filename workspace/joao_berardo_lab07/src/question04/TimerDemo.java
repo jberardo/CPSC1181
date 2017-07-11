@@ -7,18 +7,18 @@ import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
 /**
- * 
+ * Program that print the current date each second
  * 
  * @author Joao Berardo
  * @since 1.0, July, 09 2017
  */
 public class TimerDemo
 {
-	//
+	// class variables (timers)
 	static ActionListener listener;
-	static ActionListener listener2;
 	static Timer t;
-	Timer t2;
+	//	static ActionListener listener2;
+//	static Timer t2;
 	
 	/**
 	 * Main method
@@ -26,66 +26,70 @@ public class TimerDemo
 	 */
 	public static void main(String[] args)
 	{
-		/**
-		 * 
-		 * 
-		 * @author Joao Berardo
-		 * @since 1.0, July, 09 2017
-		 */
-		class CurrentTimePrinter implements ActionListener
-		{
-			/**
-			 * 
-			 */
-			@Override
-			public void actionPerformed(ActionEvent e)
-			{
-				Timer t = new Timer(1000, listener);
-				t.start();
-				
-				System.out.println(new Date());
-			}
-		}
-		
-		/**
-		 * 
-		 * 
-		 * @author Joao Berardo
-		 * @since 1.0, July, 09 2017
-		 */
-		class TimerToggler implements ActionListener
-		{
-			/**
-			 * 
-			 */
-			@Override
-			public void actionPerformed(ActionEvent event)
-			{
-				Timer t2 = new Timer(15000, listener2);
-				t2.start();
-				
-				if (t.isRunning())
-				{
-					t.stop();
-					System.out.println(new Date() + ": Listener 2 Stopped");
-				}
-				else
-				{
-					t.restart();
-					System.out.println(new Date() + ": Listener 2 Restarted");
-				}
-			}
-		}
-
-		//
+		// create new CurrentTimePrinter object
 		listener = new CurrentTimePrinter();
-		listener2 = new TimerToggler();
 
-		//
+		// create and start timer (1000 = 1 sec)
+		t = new Timer(1000, listener);
+		t.start();
+
+		//listener2 = new TimerToggler();
+		
+		// loop until user clicks 'OK' button
 		while (true)
 		{
 			JOptionPane.showMessageDialog(null, "Quit?");
 			System.exit(0);
 		}
 	}
+//		/**
+//		 * 
+//		 * 
+//		 * @author Joao Berardo
+//		 * @since 1.0, July, 09 2017
+//		 */
+//		class CurrentTimePrinter implements ActionListener
+//		{
+//			/**
+//			 * 
+//			 */
+//			@Override
+//			public void actionPerformed(ActionEvent e)
+//			{
+//				Timer t = new Timer(1000, listener);
+//				t.start();
+//				
+//				System.out.println(new Date());
+//			}
+//		}
+//		
+//		/**
+//		 * 
+//		 * 
+//		 * @author Joao Berardo
+//		 * @since 1.0, July, 09 2017
+//		 */
+//		class TimerToggler implements ActionListener
+//		{
+//			/**
+//			 * 
+//			 */
+//			@Override
+//			public void actionPerformed(ActionEvent event)
+//			{
+//				Timer t2 = new Timer(2000, listener2);
+//				t2.start();
+//				
+//				if (t.isRunning())
+//				{
+//					t.stop();
+//					System.out.println(new Date() + ": Listener 2 Stopped");
+//				}
+//				else
+//				{
+//					t.restart();
+//					System.out.println(new Date() + ": Listener 2 Restarted");
+//				}
+//			}
+//		}
 }

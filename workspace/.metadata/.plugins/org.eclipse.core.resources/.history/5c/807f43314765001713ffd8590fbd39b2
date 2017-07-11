@@ -1,0 +1,125 @@
+package question03;
+
+import java.util.ArrayList;
+
+/**
+ * Person has a name and age<br/>
+ * Also, a Person has a Memory<br/>
+ * Users can add memories, erase memories and "tell" all memories
+ * 
+ * @author Joao Berardo
+ * @since 1.0, July, 09 2017
+ */
+public class Person
+{
+	// instance variables
+	private String name;
+	private int age;
+	private Memory mem;
+
+	/**
+	 * Creates a Person with name and age</br>
+	 * When a Person is created, is also creates a Memory for the Person
+	 * @param name person's name
+	 * @param age person's age
+	 */
+	public Person(String name, int age)
+	{
+		this.name = name;
+		this.age = age;
+		mem = new Memory();
+	}
+
+	/**
+	 * Returns the Person's name and age
+	 * @return person's name and age
+	 */
+	public String toString()
+	{
+		return "Name: " + name + '\n' +	"Age: " + age + '\n';
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public String getName()
+	{
+		return name;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public int getAge()
+	{
+		return age;
+	}
+	
+	/**
+	 * 
+	 */
+	public void tellAll()
+	{
+		mem.dumpMemory();
+	}
+	
+	/**
+	 * 
+	 * @param s
+	 */
+	public void rememberAnEvent(String s)
+	{
+		mem.addLifeData(s);
+	}
+	
+	/**
+	 * 
+	 */
+	public void amnesia()
+	{
+		mem.clearMemory();
+	}
+	
+	// Start of inner class Memory
+	private class Memory
+	{
+		ArrayList<String> lifeData;
+
+		private Memory()
+		{
+			lifeData = new ArrayList<String>();
+			lifeData.add("Name: " + name);
+			lifeData.add("Age: " + age);
+		}
+		
+		/**
+		 * 
+		 * @param datum
+		 */
+		public void addLifeData(String datum)
+		{
+			lifeData.add(datum);
+		}
+		
+		/**
+		 * 
+		 */
+		public void dumpMemory()
+		{
+			for (String s: lifeData)
+			{
+				System.out.println(s);
+			}
+		}
+		
+		/**
+		 * 
+		 */
+		public void clearMemory()
+		{
+				lifeData.clear();
+		}
+	}
+}

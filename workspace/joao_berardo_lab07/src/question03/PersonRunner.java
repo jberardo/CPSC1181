@@ -1,7 +1,7 @@
 package question03;
 
 /**
- * 
+ * Program to test the Person class
  * 
  * @author Joao Berardo
  * @since 1.0, July, 09 2017
@@ -14,10 +14,10 @@ public class PersonRunner
 	 */
 	public static void main(String[] args)
 	{
-		//
+		// creates a Person object
 		Person aperson = new Person("Bob", 33);
 		
-		//
+		// 
 		displayMsg("After creation");
 		aperson.tellAll();
 

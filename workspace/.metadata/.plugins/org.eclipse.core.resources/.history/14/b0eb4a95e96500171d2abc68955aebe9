@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_2vnZ4GXbEeeSM5p6ZNpUZw" name="NewModel">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_HC2X0GXcEeeSM5p6ZNpUZw" name="Geometry"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_02jTkGXoEee51pqcTPRX6A" name="Geometry">
+    <ownedOperation xmi:id="__cL1gGXoEee51pqcTPRX6A" name="getArea">
+      <ownedParameter xmi:id="_BLvuoGXpEee51pqcTPRX6A" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Fx7PkGXpEee51pqcTPRX6A" name="MyRectangle">
+    <ownedAttribute xmi:id="_HeFPYGXpEee51pqcTPRX6A" name="area">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_J23rsGXpEee51pqcTPRX6A" name="getArea">
+      <ownedParameter xmi:id="_LxHx4GXpEee51pqcTPRX6A" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+</uml:Model>

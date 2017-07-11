@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_oBjIUGXuEee51pqcTPRX6A" name="NewModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4oTNQGXwEee51pqcTPRX6A" name="Person">
+    <ownedAttribute xmi:id="_-tLg0GXwEee51pqcTPRX6A" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HAh3EGXxEee51pqcTPRX6A" name="age" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Q2yxkGXxEee51pqcTPRX6A" name="mem" visibility="private" type="_OQxKgGXxEee51pqcTPRX6A"/>
+    <ownedOperation xmi:id="_xmtDsGX5Eee51pqcTPRX6A" name="toString">
+      <ownedParameter xmi:id="_y-NpMGX5Eee51pqcTPRX6A" direction="return">
+        <name xsi:nil="true"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_VuncIGXxEee51pqcTPRX6A" name="getName">
+      <ownedParameter xmi:id="_USp60GX5Eee51pqcTPRX6A" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_XiLEcGXxEee51pqcTPRX6A" name="getAge">
+      <ownedParameter xmi:id="_d8os0GX5Eee51pqcTPRX6A" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_aAAY0GXxEee51pqcTPRX6A" name="tellAll"/>
+    <ownedOperation xmi:id="_c0X94GXxEee51pqcTPRX6A" name="rememberAnEvent">
+      <ownedParameter xmi:id="_hiDN8GXxEee51pqcTPRX6A" name="s">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_l2ih8GXxEee51pqcTPRX6A" name="amnesia"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OQxKgGXxEee51pqcTPRX6A" name="Memory">
+    <ownedAttribute xmi:id="_HzLCsGX2Eee51pqcTPRX6A" name="lifeData" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HzLpwGX2Eee51pqcTPRX6A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HzLpwWX2Eee51pqcTPRX6A" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_8UZK4GX4Eee51pqcTPRX6A" name="addLifeData">
+      <ownedParameter xmi:id="_DpVYIGX5Eee51pqcTPRX6A" name="datum">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_96jQYGX4Eee51pqcTPRX6A" name="dumpMemory"/>
+    <ownedOperation xmi:id="_AwlCUGX5Eee51pqcTPRX6A" name="clearMemory"/>
+  </packagedElement>
+</uml:Model>
