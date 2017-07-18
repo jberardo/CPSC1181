@@ -1,0 +1,51 @@
+package io;
+
+/**
+This program encrypts a file using the Caesar cipher.
+*/
+public class CaesarCipher
+{
+	public static void main(String[] args)
+	{
+		final int DEFAULT_KEY = 3;
+		
+		int files = 0; // Number of command line arguments that are files
+		int key = DEFAULT_KEY;
+		
+		String inFile = "";
+		String outFile = "";
+		
+		for (int i = 0; i < args.length; i++)
+		{
+			String arg = args[i];
+
+			if (arg.charAt(0) == '-')
+			{
+				// It is a command line option
+				char option = arg.charAt ( 1);
+				if (option == 'd') { key = -key; }
+				else { usage(); return; }
+			}
+			else
+			{
+				// It is a file name
+				files++;
+				if (files == 1) { inFile = arg; }
+				else if (files == 2) { outFile = arg; }
+			}
+		}
+		
+		if (files != 2) { usage(); return; }
+		Scanner in = new Scanner(new File(inFile));
+		in.useDelimiter(""); // Process individual characters
+		PrintWriter out = new PrintWriter(outFile);
+		while (in.hasNext())
+		{
+		char from = in.next().charAt(0);
+		char to = encrypt(from, key);
+		out.print(to);
+		}
+		in.close();
+		out.close();
+	}
+}

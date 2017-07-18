@@ -3,16 +3,16 @@
 	<section name="TaskSelectionDialogSection">
 		<item value="false" key="OpenInBrowser"/>
 		<item value="true" key="ShowCompletedTasks"/>
-		<item value="Aggregate for window 1494363066830" key="WorkingSetName"/>
+		<item value="Aggregate for window 1500107485285" key="WorkingSetName"/>
 		<item value="true" key="IsUsingWindowWorkingSet"/>
 		<item value="true" key="ShowStatusLine"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;" key="History"/>
 		<section name="DialogBoundsSettings">
-			<item value="376" key="DIALOG_WIDTH"/>
-			<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-			<item value="624" key="DIALOG_HEIGHT"/>
-			<item value="661" key="DIALOG_X_ORIGIN"/>
-			<item value="157" key="DIALOG_Y_ORIGIN"/>
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="660" key="DIALOG_X_ORIGIN"/>
+			<item value="189" key="DIALOG_Y_ORIGIN"/>
 		</section>
 	</section>
 </section>

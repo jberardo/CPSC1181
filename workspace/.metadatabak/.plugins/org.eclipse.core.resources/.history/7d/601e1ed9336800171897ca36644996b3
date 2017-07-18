@@ -1,0 +1,34 @@
+package question02;
+
+import java.util.Scanner;
+import java.io.File;
+
+public class MemoPadReader
+{
+	public static void main(String[] args) throws IOException
+	{
+	Scanner console = new Scanner(System.in);
+	System.out.print("Input file: ");
+	String inputFileName = console.nextLine();
+	File inFile = null;
+	Scanner in = new Scanner(inFile);
+	boolean done = false;
+	while (in.hasNextLine() && !done)
+	{
+	String topic = . . .;
+	String dateStamp = . . .;
+	String message = . . .;
+	System.out.println(topic + "\n" + dateStamp + "\n" + message);
+	if (. . .) // You should only ask to display the next memo if
+	// there are more memos in the file
+	{
+		System.out.println("Do you want to read the next memo (y/n)?");
+		String ans = console.nextLine();
+		if (ans.equalsIgnoreCase("n"))
+		{
+		done = true;
+		}
+		}
+		}
+	}
+}

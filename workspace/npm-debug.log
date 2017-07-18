@@ -1,0 +1,128 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'git://github.com/adobe-fonts/source-code-pro.git#release' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData git://github.com/adobe-fonts/source-code-pro.git#release
+8 silly fetchOtherPackageData git://github.com/adobe-fonts/source-code-pro.git#release
+9 silly cache add args [ 'git://github.com/adobe-fonts/source-code-pro.git#release',
+9 silly cache add   null ]
+10 verbose cache add spec git://github.com/adobe-fonts/source-code-pro.git#release
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'git://github.com/adobe-fonts/source-code-pro.git#release',
+11 silly cache add   scope: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'git://github.com/adobe-fonts/source-code-pro.git#release',
+11 silly cache add   spec: 'git://github.com/adobe-fonts/source-code-pro.git#release',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:adobe-fonts/source-code-pro.git#release',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/adobe-fonts/source-code-pro.git#release',
+11 silly cache add      httpsUrl: 'git+https://github.com/adobe-fonts/source-code-pro.git#release',
+11 silly cache add      gitUrl: 'git://github.com/adobe-fonts/source-code-pro.git#release',
+11 silly cache add      shortcut: 'github:adobe-fonts/source-code-pro#release',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/adobe-fonts/source-code-pro/release/package.json' } }
+12 verbose addRemoteGit caching git://github.com/adobe-fonts/source-code-pro.git#release
+13 verbose addRemoteGit git://github.com/adobe-fonts/source-code-pro.git#release is a repository hosted by github
+14 silly tryClone cloning git://github.com/adobe-fonts/source-code-pro.git#release via git://github.com/adobe-fonts/source-code-pro.git#release
+15 verbose tryClone git-github-com-adobe-fonts-source-code-pro-git-release-227a5d16 not in flight; caching
+16 info git [ 'config', '--get', 'remote.origin.url' ]
+17 silly validateExistingRemote git://github.com/adobe-fonts/source-code-pro.git#release remote.origin.url: git://github.com/adobe-fonts/source-code-pro.git
+18 verbose validateExistingRemote git://github.com/adobe-fonts/source-code-pro.git#release is updating existing cached remote /home/joca/.npm/_git-remotes/git-github-com-adobe-fonts-source-code-pro-git-release-227a5d16
+19 info git [ 'fetch', '-a', 'origin' ]
+20 verbose updateRemote git fetch -a origin (git://github.com/adobe-fonts/source-code-pro.git)
+21 verbose setPermissions git://github.com/adobe-fonts/source-code-pro.git#release set permissions on /home/joca/.npm/_git-remotes/git-github-com-adobe-fonts-source-code-pro-git-release-227a5d16
+22 verbose resolveHead git://github.com/adobe-fonts/source-code-pro.git#release original treeish: release
+23 info git [ 'rev-list', '-n1', 'release' ]
+24 silly resolveHead git://github.com/adobe-fonts/source-code-pro.git#release resolved treeish: 7e2094d0e1536ddb87672e9cbaba6c34510fc274
+25 verbose resolveHead git://github.com/adobe-fonts/source-code-pro.git#release resolved Git URL: git://github.com/adobe-fonts/source-code-pro.git#7e2094d0e1536ddb87672e9cbaba6c34510fc274
+26 silly resolveHead Git working directory: /tmp/npm-11766-47e8d670/git-cache-c8d37451/7e2094d0e1536ddb87672e9cbaba6c34510fc274
+27 info git [ 'clone',
+27 info git   '/home/joca/.npm/_git-remotes/git-github-com-adobe-fonts-source-code-pro-git-release-227a5d16',
+27 info git   '/tmp/npm-11766-47e8d670/git-cache-c8d37451/7e2094d0e1536ddb87672e9cbaba6c34510fc274' ]
+28 verbose cloneResolved git://github.com/adobe-fonts/source-code-pro.git#release clone Cloning into '/tmp/npm-11766-47e8d670/git-cache-c8d37451/7e2094d0e1536ddb87672e9cbaba6c34510fc274'...
+28 verbose cloneResolved done.
+29 info git [ 'checkout', '7e2094d0e1536ddb87672e9cbaba6c34510fc274' ]
+30 verbose checkoutTreeish git://github.com/adobe-fonts/source-code-pro.git#release checkout Note: checking out '7e2094d0e1536ddb87672e9cbaba6c34510fc274'.
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+30 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+30 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+30 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish   git checkout -b <new-branch-name>
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish HEAD is now at 7e2094d... Update macOS link
+31 verbose addLocalDirectory /home/joca/.npm/source-code-pro/2.10.0/package.tgz not in flight; packing
+32 verbose tar pack [ '/home/joca/.npm/source-code-pro/2.10.0/package.tgz',
+32 verbose tar pack   '/tmp/npm-11766-47e8d670/git-cache-c8d37451/7e2094d0e1536ddb87672e9cbaba6c34510fc274' ]
+33 verbose tarball /home/joca/.npm/source-code-pro/2.10.0/package.tgz
+34 verbose folder /tmp/npm-11766-47e8d670/git-cache-c8d37451/7e2094d0e1536ddb87672e9cbaba6c34510fc274
+35 verbose addLocalTarball adding from inside cache /home/joca/.npm/source-code-pro/2.10.0/package.tgz
+36 verbose addRemoteGit data._from: git://github.com/adobe-fonts/source-code-pro.git#release
+37 verbose addRemoteGit data._resolved: git://github.com/adobe-fonts/source-code-pro.git#7e2094d0e1536ddb87672e9cbaba6c34510fc274
+38 silly cache afterAdd source-code-pro@2.10.0
+39 verbose afterAdd /home/joca/.npm/source-code-pro/2.10.0/package/package.json not in flight; writing
+40 verbose afterAdd /home/joca/.npm/source-code-pro/2.10.0/package/package.json written
+41 silly install normalizeTree
+42 silly loadCurrentTree Finishing
+43 silly loadIdealTree Starting
+44 silly install loadIdealTree
+45 silly cloneCurrentTree Starting
+46 silly install cloneCurrentTreeToIdealTree
+47 silly cloneCurrentTree Finishing
+48 silly loadShrinkwrap Starting
+49 silly install loadShrinkwrap
+50 silly loadShrinkwrap Finishing
+51 silly loadAllDepsIntoIdealTree Starting
+52 silly install loadAllDepsIntoIdealTree
+53 silly resolveWithNewModule source-code-pro@2.10.0 checking installable status
+54 silly loadAllDepsIntoIdealTree Finishing
+55 silly idealTree:prePrune workspace
+55 silly idealTree:prePrune └── source-code-pro@2.10.0
+56 silly loadIdealTree Finishing
+57 silly currentTree workspace
+57 silly currentTree └── source-code-pro@2.10.0
+58 silly idealTree workspace
+58 silly idealTree └── source-code-pro@2.10.0
+59 silly generateActionsToTake Starting
+60 silly install generateActionsToTake
+61 warn checkPermissions Missing write access to /home/joca/Langara/CPSC1181/workspace/node_modules
+62 silly rollbackFailedOptional Starting
+63 silly rollbackFailedOptional Finishing
+64 silly runTopLevelLifecycles Starting
+65 silly runTopLevelLifecycles Finishing
+66 silly install printInstalled
+67 warn enoent ENOENT: no such file or directory, open '/home/joca/Langara/CPSC1181/workspace/package.json'
+68 warn workspace No description
+69 warn workspace No repository field.
+70 warn workspace No README data
+71 warn workspace No license field.
+72 verbose stack Error: EACCES: permission denied, access '/home/joca/Langara/CPSC1181/workspace/node_modules'
+72 verbose stack     at Error (native)
+73 verbose cwd /home/joca/Langara/CPSC1181/workspace
+74 error Linux 4.8.0-58-generic
+75 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "git://github.com/adobe-fonts/source-code-pro.git#release"
+76 error node v4.2.6
+77 error npm  v3.5.2
+78 error path /home/joca/Langara/CPSC1181/workspace/node_modules
+79 error code EACCES
+80 error errno -13
+81 error syscall access
+82 error Error: EACCES: permission denied, access '/home/joca/Langara/CPSC1181/workspace/node_modules'
+82 error     at Error (native)
+82 error  { [Error: EACCES: permission denied, access '/home/joca/Langara/CPSC1181/workspace/node_modules']
+82 error   errno: -13,
+82 error   code: 'EACCES',
+82 error   syscall: 'access',
+82 error   path: '/home/joca/Langara/CPSC1181/workspace/node_modules' }
+83 error Please try running this command again as root/Administrator.
+84 verbose exit [ -13, true ]

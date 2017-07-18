@@ -1,6 +1,4 @@
-import java.io.InputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
@@ -46,6 +44,7 @@ public class BankService implements Runnable {
 	Executes all commands until the QUIT command or the
 	end of input.
 	*/
+	@SuppressWarnings("unlikely-arg-type")
 	public void doService() throws IOException
 	{
 		while (true)

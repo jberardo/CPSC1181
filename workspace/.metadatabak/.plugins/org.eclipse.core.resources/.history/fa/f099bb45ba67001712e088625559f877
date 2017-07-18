@@ -1,0 +1,33 @@
+package io;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class DuplicateRunner
+{
+	public static void main(String[] args)
+	{
+		File inputFile;
+		Scanner userInput;
+		PrintWriter userOutput;
+		
+		try
+		{
+			inputFile = new File("input.txt");
+			userInput = new Scanner(inputFile);
+
+			userOutput = new PrintWriter("output.txt");
+		}
+		catch (FileNotFoundException e)
+		{
+			System.out.println("Error reading files.");
+			
+		}
+		
+		
+		userInput.close();
+		out.close();
+	}
+}

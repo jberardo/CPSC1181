@@ -9,12 +9,8 @@
 		<item value="*" key="patterns"/>
 	</section>
 	<section name="RefactoringStatusDialog">
-		<item value="802" key="DIALOG_WIDTH"/>
-		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="485" key="DIALOG_HEIGHT"/>
-	</section>
-	<section name="InferTypeArguments">
-		<item value="false" key="leaveUnconstrainedRaw"/>
-		<item value="false" key="assumeCloneReturnsSameType"/>
+		<item value="800" key="DIALOG_WIDTH"/>
+		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="502" key="DIALOG_HEIGHT"/>
 	</section>
 </section>

@@ -1,0 +1,131 @@
+package question01;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+ * Reads and prints each line of input file.
+ * 
+ * @author Joao Berardo
+ * @since 1.0, July, 11 2017
+ *
+ */
+public class ZipsReader
+{
+	// reg ex
+	final static String REG_EXP1 = "\\d{3}-\\d{3}"; // 000-000
+	final static String REG_EXP2 = "\\d{3}"; // 000
+	
+	/**
+	 * Main method
+	 * @param args not used
+	 */
+	public static void main(String[] args)
+	{
+		File inFile = new File("ziptable.txt");
+		Scanner in = null;
+		ArrayList<State> stateList = new ArrayList<State>();
+		
+		try
+		{
+			in = new Scanner(inFile);
+		}
+		catch (FileNotFoundException e)
+		{
+			System.out.println("Error reading file ziptable.txt");
+			System.exit(1);
+		}
+		finally
+		{
+			if (in != null)
+			{
+				//in.close();
+			}
+		}
+		
+		System.out.println("----- Contents of ziptable.txt -----");
+				
+		while (in.hasNextLine())
+		{
+			//System.out.printf("%s\n", in.nextLine());
+			State state = new State();
+			state = readLine(in.nextLine());
+			stateList.add(state);
+		}
+		
+		for (State s : stateList)
+		{
+			System.out.println(s.toString());
+		}
+		
+		exportData(stateList);
+	}
+	
+	private static State readLine(String line)
+	{
+		Scanner inputWord = new Scanner(line);
+		String name = "";
+		String abbreviation = "";
+		ArrayList<String> zipcodes = new ArrayList<String>();
+		State state = new State();
+		
+		while (inputWord.hasNext())
+		{
+			String temp = inputWord.next();
+			
+			if (temp.length() == 2)
+			{
+				abbreviation = temp;
+			}
+			
+			if (temp.length() > 2 && !temp.matches(REG_EXP1) && !temp.matches(REG_EXP2))
+			{
+				name+= temp.trim() + " ";
+			}
+			
+			if (temp.matches(REG_EXP1) && !temp.matches(REG_EXP2))
+			{
+				zipcodes.add(temp);
+			}
+			
+			if (temp.matches(REG_EXP2) && !temp.matches(REG_EXP1))
+			{
+				zipcodes.add(temp + "-" + temp);
+			}
+		}
+		
+		state.setAbbreviation(abbreviation);
+		state.setName(name.trim());
+		state.addZipCode(zipcodes);
+		inputWord.close();
+		
+		return state;
+	}
+	
+	/**
+	 * Export the zip code list to a output file
+	 * @param list Zip code list
+	 */
+	private static void exportData(ArrayList<State> list)
+	{
+		PrintWriter out = null;
+		try
+		{
+			out = new PrintWriter("output.txt");
+		}
+		catch (FileNotFoundException e)
+		{
+			e.printStackTrace();
+		}
+		
+		for (State s : list)
+		{
+			out.println(s.getName() + ":" + s.getAbbreviation() + ":" + s.getZipCode());
+		}
+		
+		out.close();
+	}
+}

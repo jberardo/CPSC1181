@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="631" key="DIALOG_X_ORIGIN"/>
-		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="572" key="DIALOG_X_ORIGIN"/>
+		<item value="135" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="759" key="dialogHeight"/>
-		<item value="1440" key="dialogWidth"/>
+		<item value="-1" key="dialogHeight"/>
+		<item value="-1" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
@@ -17,20 +17,17 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.obeonetwork.dsl.uml2.wizard.newUmlModel" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.ui.editors.wizards.UntitledTextFileWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.obeonetwork.dsl.uml2.design.category"/>
+			<item value="org.eclipse.ui.Basic"/>
 		</list>
-	</section>
-	<section name="InstallationDialogSettings">
-		<item value="690" key="DIALOG_WIDTH"/>
-		<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="832" key="DIALOG_HEIGHT"/>
-		<item value="-68" key="DIALOG_X_ORIGIN"/>
-		<item value="-295" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.ui.wizards.export.ZipFile" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
 		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
@@ -39,15 +36,7 @@
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
-			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_lab07.zip"/>
-			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_lab06.zip"/>
-			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_lab05.zip"/>
-			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_labEliza.zip"/>
-			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_lab04.zip"/>
-			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_lab03.zip"/>
-			<item value="/home/jab/Langara/CPSC1181/workspace/100280950_lab02.zip"/>
-			<item value="H:\Documents\201710\CPSC\1181\workspace\100280950_lab02.zip"/>
-			<item value="H:\Documents\201710\CPSC\1181\workspace\100280950_lab01.zip"/>
+			<item value="/home/joca/Langara/CPSC1181/workspace/100280950_lab08.zip"/>
 		</list>
 	</section>
 </section>
