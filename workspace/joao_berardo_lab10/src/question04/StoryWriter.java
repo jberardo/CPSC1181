@@ -14,8 +14,10 @@ public class StoryWriter extends Thread
 	* storyWriter construction simply allocates the local variable myStory to the inputStory reference
 	* @param inputStory
 	*/
-	public StoryWriter(Story inputStory)
+	public StoryWriter(Story inputStory, String newName)
 	{
+		super(newName);
+		
 		this.myStory = inputStory;
 	}
 

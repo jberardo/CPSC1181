@@ -18,7 +18,7 @@ public class DateUtil
 		// ex: format a string of the form " 05-02-25 17:30:49 UTC
 		// server response => 57959 17-07-25 07:33:59 50 0 0 777.2 UTC(NIST) *
 		String[] fields = date.split(" ");
-		
+
 		String rawDate = fields[1];
 		String rawTime = fields[2];
 		String fuso = fields[7].substring(0, 3);

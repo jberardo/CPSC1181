@@ -25,13 +25,13 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class Story
 {
 	public static ReentrantReadWriteLock storyLock = null;
-	private String inputFilePath = null;
-	private String outputFilePath = null;
+	//private String inputFilePath = null;
+	//private String outputFilePath = null;
 	private File inputFile = null;
 	private File outputFile = null;
-	private Scanner in = null;
+	//private Scanner in = null;
 	//Booleans that may not need to be used
-	private Integer inputStoryLength = 0; // the length of the input story in sentences
+	//private Integer inputStoryLength = 0; // the length of the input story in sentences
 	private Integer inputStoryWords = 0; // the number of words in the input story
 	private Integer outputStoryLength = 0; // the length of the output story in sentences
 	private BufferedWriter out = null; // the writer controlling all output to the output file
@@ -53,14 +53,14 @@ public class Story
 
 		FileWriter fw = new FileWriter(outputFile);
 		
-		in = retrieveFile(inputFile);
+		//in = retrieveFile(inputFile);
 		out = new BufferedWriter(fw);
 		storyLock = new ReentrantReadWriteLock();
 		generator = new Random();
 		
 		WordCount wct = new WordCount(inputFilename);
 		inputStoryWords = wct.getTotalWords();
-		inputStoryLength = wct.getLenght();
+		//inputStoryLength = wct.getLenght();
 	}
 
 	/**
@@ -71,19 +71,29 @@ public class Story
 	{
 		storyLock.writeLock().lock();
 		
-		String sentence = "";
-		int position = generator.nextInt(inputStoryWords);
-		String randomWord = "";
+		String currentWord = "";
+		int sentencesPerLine = 3;
+		int totalSentences = 0;
 		
 		try
 		{
-			sentence = this.getRandomSearchWord();
+			currentWord = this.getRandomSearchWord();
+			String separator = "";
 			
-    		out.write(sentence + " ");
+			if (totalSentences > sentencesPerLine || currentWord.endsWith(".") || currentWord.endsWith("\""))
+			{
+				separator = "\n";
+			}
+			else
+			{
+				separator = " "; 
+			}
+			
+			out.write(currentWord + separator);
+    		totalSentences++;
     		outputStoryLength++;
-    		out.flush();
-			
-			outputStoryLength += sentence.length();
+    		out.flush();				
+			outputStoryLength += currentWord.length();
 		}
 		catch (IOException e)
 		{
@@ -114,6 +124,7 @@ public class Story
 				if (word.equals(searchWord))
 				{
 					returnValue = true;
+					break;
 				}
 			}
 

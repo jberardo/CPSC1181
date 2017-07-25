@@ -6,13 +6,17 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class SimpleProtocolService implements Runnable
 {
 	private final int PORT = 8888;
 	private final String ADDRESS = "localhost";
+	private MyLogger logger;
 	
 	Socket socket;
+	PrintWriter out;
+	BufferedReader in;
 	
 	private int countRequests;
 	
@@ -20,16 +24,35 @@ public class SimpleProtocolService implements Runnable
 	{ 
 		this.socket = aSocket;
 		countRequests = 1;
+		try {
+			logger = new MyLogger();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void run()
 	{
-		try(BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-				PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-				)
+		try
 		{
+			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			out = new PrintWriter(socket.getOutputStream(), true);
+			String command = "";
 			
-			doService();
+			while ((command = in.readLine()) != null)
+			{
+				if (command.equals("QUIT"))
+				{
+					out.printf("Bye bye..");
+					break;
+				}
+
+				doService(command);
+			}
+			
+			// close socket!!
+			socket.close();	
 		}
 		catch (IOException e)
 		{
@@ -37,27 +60,9 @@ public class SimpleProtocolService implements Runnable
 		}
 	}
 
-	public void doService() throws IOException
+	private void doService(String command) throws IOException
 	{ 
-		while (true)
-		{
-			if (!in.hasNext())
-			{
-				return;
-			}
-			
-			String command = in.next();
-
-			if (command.equals("QUIT"))
-			{
-				out.printf("Bye bye..");
-				return;
-			}
-			else
-			{
-				executeCommand(command);
-			}
-		}
+			executeCommand(command);
 	}
 	
 	private void executeCommand(String command)
@@ -68,7 +73,12 @@ public class SimpleProtocolService implements Runnable
 		// COUNT -> returns the number of ECHO requests
 		// QUIT -> prints goodbye and exit
 		
-		switch (command)
+		if (command.length() < 4)
+		{
+			out.println("Invalid command.");
+		}
+		
+		switch (command.split(" ")[0])
 		{
 			case "HELLO": hello(); break;
 			case "ECHO": echo(command); break;
@@ -85,20 +95,33 @@ public class SimpleProtocolService implements Runnable
 	
 	private void echo(String command)
 	{
-		out.printf("%s\n", command.replace("ECHO ", ""));
+		countRequests++;
+		
+		// "ECHO " => length = 5
+		if (command.length() <= 5)
+		{
+			out.printf("Usage: ECHO n\n");
+			return;
+		}
+		
+		out.printf("ECHO => %s\n", command.replace("ECHO ", ""));
 		out.flush();
 	}
 
 	private void count()
 	{
 		out.printf("%d\n", countRequests);
-		countRequests++;
 		out.flush();
 	}
 	
 	private void defaultResponse()
 	{
-		out.printf("Invalid command\n");
-		out.flush();
+		try
+		{
+			this.socket.close();
+		}
+		catch (IOException e) {	}
+		//out.printf("ops");
+		//out.flush();
 	}
 }

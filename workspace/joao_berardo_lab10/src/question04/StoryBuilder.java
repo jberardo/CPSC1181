@@ -37,21 +37,48 @@ public class StoryBuilder
 		Story story = null;
 		readers = new StoryReader[readerThreads];
 		writers = new StoryWriter[writerThreads];
+		
+		
 		try
 		{
 			story = new Story(inputFileName, outputFileName);
 			
 			for (int i = 0; i < readerThreads; i++)
 			{
-				readers[i] = new StoryReader(story);
+				readers[i] = new StoryReader(story, "Reader[" + i + "]");
 				readers[i].start();
 			}
 			
 			for (int i = 0; i < writerThreads; i++)
 			{
-				writers[i] = new StoryWriter(story);
+				writers[i] = new StoryWriter(story, "Writer[" + i + "]");
 				writers[i].start();
 			}
+			
+			int interruptedReaders = 0;
+
+	    	while (true)
+	    	{
+	    		//!sr.isInterrupted() || sr.isAlive()
+	    		for (int i = 0; i < readerThreads; i++)
+	    		{
+	    			if (!readers[i].isAlive())
+	    			{
+	    				interruptedReaders++;
+	    			}
+	    		}
+	    		
+	    		if (interruptedReaders == readerThreads)
+	    		{
+	    			for (int i = 0; i < writerThreads; i++)
+	    			{
+	    				writers[i].finnishWriting();
+	    			}
+
+	    			break;
+	    		}
+	    		interruptedReaders = 0;
+	    	}
 		}
 		catch (IOException ex)
 		{
@@ -59,48 +86,6 @@ public class StoryBuilder
 			System.out.println(ex.getMessage());
 			System.exit(1);
 		}
-//
-//		Thread readerThread1 = null;
-//		Thread writerThread1 = null;
-//		Thread readerThread2 = null;
-//		Thread writerThread2 = null;
-//
-//		StoryReader sr = new StoryReader(story);
-//		StoryWriter sw = new StoryWriter(story);
-//		
-//		readerThread1 = new Thread(sr);
-//		readerThread2 = new Thread(sr);
-//		writerThread1 = new Thread(sw);
-//		writerThread2 = new Thread(sw);
-//		
-//		readerThread1.start();
-//		readerThread2.start();
-//		writerThread1.start();
-//		writerThread2.start();
-//		
-//		readerThread1.join();
-//		readerThread2.join();
-//		writerThread1.join();
-//		writerThread2.join();
-		
-//		for (int i = 0; i < readers.length; i++)
-//		{
-//			// Create one reader thread
-//			readerThread = new Thread(readers[i]);	
-//			readerThread.start();
-//		}
-//
-//		for (int i = 0; i < writers.length; i++)
-//		{
-//			// Create one writer thread
-//			writerThread = new Thread(writers[i]);	
-//			writerThread.start();
-//		}
-
-		//////////////////////////////////////////////////////////
-		// If a short story constructed from random sentences	//
-		// the first major step is complete						//
-		//////////////////////////////////////////////////////////
 	}
 	
 	private static void usage()

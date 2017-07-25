@@ -76,7 +76,7 @@ public class StoryBuilder
     			{
     				writers[i].finnishWriting();
     			}
-    			System.out.println("what??");
+
     			break;
     		}
     		interruptedReaders = 0;
@@ -85,7 +85,14 @@ public class StoryBuilder
     
     private static void usage()
     {
-    	System.out.println("Usage: ");
-    	System.exit(1);
+		System.out.println("--- Usage ---\n");
+		System.out.println("java " + StoryBuilder.class.getSimpleName() + " inputFile outputFile readThreads writeThreads\n");
+		System.out.println("Where:");
+		System.out.println("\tinputFile: location of the input file");
+		System.out.println("\toutputFile: location of the output file");
+		System.out.println("\treadThreads: number of reader threads to be created");
+		System.out.println("\twriteThreads: number of writer threads to be created");
+		
+    	System.exit(-1);
     }
 }

@@ -10,20 +10,26 @@ public class SimpleProtocolServer
 {
 	public static void main(String[] args) throws IOException
 	{
-		int portNumber = Integer.parseInt(args[0]);
-		ServerSocket server = new ServerSocket(portNumber);
-
+		//int portNumber = Integer.parseInt(args[0]);
+		int portNumber = 8888;
+		boolean listening = true;
+		MyLogger logger = new MyLogger();
+		
 		System.out.println("Waiting for clients to connect...");
 	
-		while (true)
+		try (ServerSocket server = new ServerSocket(portNumber))
 		{
-			try (Socket s = server.accept())
+			while(listening)
 			{
-				System.out.println("Client connected.");
-				SimpleProtocolService service = new SimpleProtocolService(s);
-				Thread t = new Thread(service);
-				t.start();
+				new Thread(new SimpleProtocolService(server.accept())).start();				
 			}
+			System.out.println("Client connected.");
+			logger.test();
+		}
+		catch (IOException ex)
+		{
+	         System.err.println("Could not listen on port " + portNumber);
+	         System.exit(-1);
 		}
 	}
 }

@@ -4,18 +4,16 @@ public class StoryReader extends Thread
 {
 	private String searchWord;
 	private boolean wordFound = false;
-	public boolean isWordFound() {
-		return wordFound;
-	}
-
 	private Story myStory = null;
 
 	/**
 	* storyReader constructor sets the Story value as well as determining the SearchWord
 	* @param inputStory a reference for the Story which will be read.
 	*/
-	public StoryReader(Story inputStory)
+	public StoryReader(Story inputStory, String newName)
 	{
+		super(newName);
+		
 		// initialize private variables
 		if (inputStory != null)
 		{
@@ -24,11 +22,16 @@ public class StoryReader extends Thread
 		else
 		{
 			// debug
-			System.out.println(this.getName() + ": null inputStory!");
+			System.err.println(this.getName() + ": null inputStory!");
 		}
 
 		// choose a word from the original Hansel and Gretel at random
 		this.searchWord = this.myStory.getRandomSearchWord();
+	}
+	
+	public boolean isWordFound()
+	{
+		return wordFound;
 	}
 
 	/**

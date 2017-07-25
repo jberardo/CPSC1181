@@ -1,12 +1,16 @@
 package question01;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 
 /**
  * This class connects to three of the NIST servers using the DAYTIME protocol <br/>
@@ -40,13 +44,17 @@ public class DateClient
 	{
 		Scanner in = null;
 		PrintWriter out = null;
-		String host;
-		String resource;
+		String[] host = new String[3];
+		String resource = "";
+		String output = "";
+		
 		init();
-		host = servers.get(5).getName();
+		host[0] = servers.get(5).getName();
+		host[1] = servers.get(8).getName();
+		host[2] = servers.get(3).getName();
 		resource = "\n";
 		
-		try(Socket socket = new Socket(host, TS_PORT))
+		try(Socket socket = new Socket(host[0], TS_PORT))
 		{
 			InputStream instream = socket.getInputStream();
 			OutputStream outstream = socket.getOutputStream();
@@ -69,7 +77,11 @@ public class DateClient
 				//System.out.println(input);
 			}
 			
-			System.out.println(DateUtil.formatDate(input));
+			//System.out.println(DateUtil.formatDate(input));
+			output = "Server                                  Local Date\n";
+			output += host[0] + "       ";
+			output += DateUtil.formatDate(input) + "\n";
+			JOptionPane.showMessageDialog(null, output);
 		}
 		finally
 		{
