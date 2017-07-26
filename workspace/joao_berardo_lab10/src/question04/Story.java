@@ -128,8 +128,6 @@ public class Story
 				}
 			}
 
-			System.out.println("[" + Thread.currentThread().getName() + "] Found!");
-			
 			return returnValue;
 		}
 		catch (FileNotFoundException e)

@@ -79,6 +79,8 @@ public class StoryBuilder
 	    		}
 	    		interruptedReaders = 0;
 	    	}
+	    	
+	    	System.out.println("Finished writing story to => " + outputFileName);
 		}
 		catch (IOException ex)
 		{

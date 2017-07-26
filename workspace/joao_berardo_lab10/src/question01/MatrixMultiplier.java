@@ -27,7 +27,7 @@ public class MatrixMultiplier
 	  * @param inputFileMatrix2 matrix two
 	  * @throws Exception
 	 */
-	public MatrixMultiplier (String inputFileMatrix1, String inputFileMatrix2) throws Exception
+	public MatrixMultiplier (String inputFileMatrix1, String inputFileMatrix2) throws FileNotFoundException
 	{
 		// test if the matrices are valid
 		if (fileContainsValidMatrix(inputFileMatrix1) && fileContainsValidMatrix(inputFileMatrix2))
@@ -244,13 +244,17 @@ public class MatrixMultiplier
 	 */
 	public void printOutput()
 	{
+		System.out.printf("----- Output matrix -----\n\n");
+		System.out.printf("-------------------\n");
 		for (int row = 0; row < this.outputMatrix.length; row++)
 		{
 			for (int col = 0; col < this.outputMatrix[row].length; col++)
 			{
-				System.out.printf("%-8d", outputMatrix[row][col]);
+				System.out.printf("| ");
+				System.out.printf("%-4d", outputMatrix[row][col]);
 			}
-			System.out.println();
+			System.out.printf("|");
+			System.out.printf("%s", "\n-------------------\n");
 		}
 		System.out.println();
 	}

@@ -50,9 +50,11 @@ public class StoryReader extends Thread
 					wordFound = true;
 				}
 				
-				Thread.sleep(1);
+				Thread.sleep(5);
 			}
+			
+			System.out.println("[" + Thread.currentThread().getName() + "] Done!");
 		}
-		catch (InterruptedException exception) {}
+		catch (InterruptedException exception) {} // do nothing
 	}
 }

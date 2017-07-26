@@ -1,0 +1,17 @@
+1.7) The final step is to create a running class, 
+\
+the class which will control the synchronization of the
+
+
+fb b fg vb
+
+ threads as well as
+  the initialization
+   of the MatrixMultiplyer. Creat test e the
+
+runner class which takes the file names which
+
+
+as
+ommand line arguments. You will then need test to initialize a MultiplyerThread 
+or each index in the output matrix.

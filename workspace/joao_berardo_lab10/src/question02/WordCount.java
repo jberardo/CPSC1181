@@ -33,6 +33,7 @@ public class WordCount
 		for (int i = 0; i < args.length; i++)
 		{
 			// each thread will require a reference to the filename
+			// question02-01.txt question02-02.txt question02-03.txt
 			WordCountThread wct = new WordCountThread(args[i].toString());
 			// create and start thread
 			Thread t = new Thread(wct);

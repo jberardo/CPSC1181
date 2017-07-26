@@ -22,7 +22,7 @@ public class FindThread extends Thread implements Runnable
 	private Scanner in;
 	
 	/**
-	 * 
+	 * Class to find the string value inside the file passed as argument
 	 * 
 	 * @param filename input path name of the file
 	 * @param value word to look in the file
@@ -30,6 +30,8 @@ public class FindThread extends Thread implements Runnable
 	 */
 	public FindThread(String filename, String value) throws FileNotFoundException
 	{
+		// arguments: search file1 file2 ... fileN
+		// plyer question02-01.txt question02-02.txt question02-03.txt
 		this.fileName = filename;
 		this.searchPattern = value;
 		
@@ -46,6 +48,8 @@ public class FindThread extends Thread implements Runnable
 		String output = "";
 		int total = 0;
 		
+		// arguments: 
+		// arguments: plyer question02-01.txt question02-02.txt question02-03.txt
 		if (in.hasNext())
 		{
 			output = fileName + ": ";
